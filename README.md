@@ -85,3 +85,28 @@ npm run test:ui
 - **尚未实现**：企业日志系统持续采集/检索适配器、自动应用/数据库调用发现、真实 trace/CPU flamegraph、SSO/RBAC、通知升级/值班/静默、SLO、变更时间线、Runbook 审批和生产存储迁移执行。
 - **不提供**：自动 Shell、任意 SQL、生产修复工具；模型没有执行权限。自然语言图表当前是受控规则解析，不宣称通用 AI BI。
 - **扩展路线**：[架构与阶段](docs/ARCHITECTURE.md)，明确接入已有观测系统，避免重写时序/日志数据库。
+
+
+## 实际运行截图
+
+以下截图于 2026-10-02 在云端运行本项目后，由 Chromium 实际渲染截取，均使用 **DEMO 演示空间**，不含企业真实数据。页面保留 DEMO 标识；告警与日志报告展示的是规则分析（未调用模型），并非设计稿或生成图片。点击图片可查看原图。
+
+### 总览（DEMO）
+
+[![总览实际运行截图（DEMO）](docs/screenshots/demo-overview.png)](docs/screenshots/demo-overview.png)
+
+### 资产拓扑（DEMO）
+
+[![资产拓扑实际运行截图（DEMO）](docs/screenshots/demo-topology.png)](docs/screenshots/demo-topology.png)
+
+### 告警事件与诊断（DEMO）
+
+[![告警事件与诊断实际运行截图（DEMO）](docs/screenshots/demo-alert-diagnosis.png)](docs/screenshots/demo-alert-diagnosis.png)
+
+### 日志分析（DEMO）
+
+[![日志分析实际运行截图（DEMO）](docs/screenshots/demo-log-analysis.png)](docs/screenshots/demo-log-analysis.png)
+
+### 图表（DEMO）
+
+[![图表实际运行截图（DEMO）](docs/screenshots/demo-charts.png)](docs/screenshots/demo-charts.png)
