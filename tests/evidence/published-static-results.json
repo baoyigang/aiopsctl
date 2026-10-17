@@ -1,0 +1,54 @@
+{
+  "ranAt": "2026-10-17T07:51:04.148379+00:00",
+  "base": "http://127.0.0.1:5080",
+  "results": [
+    {
+      "route": "/polaris",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 503
+    },
+    {
+      "route": "/polaris/n/biz-checkout",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 503
+    },
+    {
+      "route": "/polaris/indicator",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 503
+    },
+    {
+      "route": "/polaris/statuspage",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 503
+    },
+    {
+      "route": "/polaris/stability",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 503
+    },
+    {
+      "route": "/polaris/screen",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 503
+    },
+    {
+      "asset": "/assets/index-D_LaTk7w.js",
+      "status": 200,
+      "bytes": 189219,
+      "sha256": "29c32583c2a549d47ea15bb5dbed96eb766b5c20fbc020f40e2aa333faf24667"
+    },
+    {
+      "asset": "/assets/index-DmRVsMeD.css",
+      "status": 200,
+      "bytes": 26748,
+      "sha256": "0c898b3bd3b8bbde9b30b80ac74819d92cfe0331bdaeae4aa1ed9aa8f5194d7d"
+    }
+  ]
+}

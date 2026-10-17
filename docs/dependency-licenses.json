@@ -1,0 +1,3042 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-10-17T07:49:52.149383+00:00",
+  "method": "Locked versions plus installed package.json/license files and NuGet nuspec declarations; no legal opinion or project license grant",
+  "projectLicense": "Not assigned; original application code is not automatically relicensed by this inventory",
+  "summary": {
+    "frontendLocked": 72,
+    "frontendInstalled": 49,
+    "acceptanceLocked": 1,
+    "uniqueNugetPackages": 19,
+    "unverifiedOrMismatched": [
+      "NuGet xunit.abstractions@2.0.3: unverified-legacy-license-url"
+    ]
+  },
+  "inputs": [
+    {
+      "path": "frontend/package-lock.json",
+      "sha256": "813affab3ba0dec450512e8e86900f1cc80671c17b271f1cd314b675105e4eaf"
+    },
+    {
+      "path": "tests/package-lock.json",
+      "sha256": "0002291c534110c08b91a886bfeda64c363180153bd1c1220ed347b5c9e0f1ad"
+    },
+    {
+      "path": "backend/Hengchuan.Api/packages.lock.json",
+      "sha256": "9f4b83e824f5898270e0a7e17836288886f45a2f7f455a501e141e61de7b58d2"
+    },
+    {
+      "path": "backend/Hengchuan.Tests/packages.lock.json",
+      "sha256": "0604d47e8a2ed87b386e81f2cd66b00a78ca7472df690d4e39200d4e4db37fef"
+    }
+  ],
+  "npm": [
+    {
+      "ecosystem": "npm",
+      "scope": "frontend",
+      "name": "@babel/helper-string-parser",
+      "version": "7.29.7",
+      "direct": false,
+      "directUse": null,
+      "development": false,
+      "optional": false,
+      "lockfile": "frontend/package-lock.json",
+      "location": "node_modules/@babel/helper-string-parser",
+      "integrity": "sha512-Pb5ijPrZ89GDH8223L4UP8i6QApWxs04RbPQJTeWDV0/keR2E36MeKnyr6LYmUUvqRRI+Iv87SuF1W6ErINzYw==",
+      "resolved": "https://registry.npmjs.org/@babel/helper-string-parser/-/helper-string-parser-7.29.7.tgz",
+      "installed": true,
+      "installedFrom": "frontend/node_modules/@babel/helper-string-parser",
+      "installationKind": "project-node_modules",
+      "installedVersion": "7.29.7",
+      "declaredLicense": "MIT",
+      "lockDeclaredLicense": "MIT",
+      "installedDeclaredLicense": "MIT",
+      "licenseStatus": "installed-metadata",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/babel/babel.git",
+        "directory": "packages/babel-helper-string-parser"
+      },
+      "homepage": "https://babel.dev/docs/en/next/babel-helper-string-parser",
+      "licenseFiles": [
+        {
+          "path": "frontend/node_modules/@babel/helper-string-parser/LICENSE",
+          "sha256": "117da2af0d4ce0fe1c8e19b5cff9dcd806adf973d328d27b11d4448c4ff24f76"
+        }
+      ]
+    },
+    {
+      "ecosystem": "npm",
+      "scope": "frontend",
+      "name": "@babel/helper-validator-identifier",
+      "version": "7.29.7",
+      "direct": false,
+      "directUse": null,
+      "development": false,
+      "optional": false,
+      "lockfile": "frontend/package-lock.json",
+      "location": "node_modules/@babel/helper-validator-identifier",
+      "integrity": "sha512-qehxGkRj55h/ff8EMaJ+cYhyaKlHIxqYDn682wQD7RNp9UujOQsHog2uS0r2vzr4pW+sXf90NeeayjcNaX3fFg==",
+      "resolved": "https://registry.npmjs.org/@babel/helper-validator-identifier/-/helper-validator-identifier-7.29.7.tgz",
+      "installed": true,
+      "installedFrom": "frontend/node_modules/@babel/helper-validator-identifier",
+      "installationKind": "project-node_modules",
+      "installedVersion": "7.29.7",
+      "declaredLicense": "MIT",
+      "lockDeclaredLicense": "MIT",
+      "installedDeclaredLicense": "MIT",
+      "licenseStatus": "installed-metadata",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/babel/babel.git",
+        "directory": "packages/babel-helper-validator-identifier"
+      },
+      "homepage": null,
+      "licenseFiles": [
+        {
+          "path": "frontend/node_modules/@babel/helper-validator-identifier/LICENSE",
+          "sha256": "117da2af0d4ce0fe1c8e19b5cff9dcd806adf973d328d27b11d4448c4ff24f76"
+        }
+      ]
+    },
+    {
+      "ecosystem": "npm",
+      "scope": "frontend",
+      "name": "@babel/parser",
+      "version": "7.29.9",
+      "direct": false,
+      "directUse": null,
+      "development": false,
+      "optional": false,
+      "lockfile": "frontend/package-lock.json",
+      "location": "node_modules/@babel/parser",
+      "integrity": "sha512-CjXrNHTnvqBVqHgdBysY3vk2T8tpJHb5/RMeHJBTyVa9xgugCB0CJTx/3oO8RV2QRQP391RWpB7D6hLjm8V9uA==",
+      "resolved": "https://registry.npmjs.org/@babel/parser/-/parser-7.29.9.tgz",
+      "installed": true,
+      "installedFrom": "frontend/node_modules/@babel/parser",
+      "installationKind": "project-node_modules",
+      "installedVersion": "7.29.9",
+      "declaredLicense": "MIT",
+      "lockDeclaredLicense": "MIT",
+      "installedDeclaredLicense": "MIT",
+      "licenseStatus": "installed-metadata",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/babel/babel.git",
+        "directory": "packages/babel-parser"
+      },
+      "homepage": "https://babel.dev/docs/en/next/babel-parser",
+      "licenseFiles": [
+        {
+          "path": "frontend/node_modules/@babel/parser/LICENSE",
+          "sha256": "2e97627cb278aa7556fb9e8817368302301a595b6c7582512b8d74c57b773652"
+        }
+      ]
+    },
+    {
+      "ecosystem": "npm",
+      "scope": "frontend",
+      "name": "@babel/types",
+      "version": "7.29.8",
+      "direct": false,
+      "directUse": null,
+      "development": false,
+      "optional": false,
+      "lockfile": "frontend/package-lock.json",
+      "location": "node_modules/@babel/types",
+      "integrity": "sha512-Vj1jF3cPfxg7OAfoI7QnVKLoILlm2JF9pnVHrX8qx7AHMiYWT+NDAA7jChlNgRS4WTLc/fD1lXLmPixluj+3Gg==",
+      "resolved": "https://registry.npmjs.org/@babel/types/-/types-7.29.8.tgz",
+      "installed": true,
+      "installedFrom": "frontend/node_modules/@babel/types",
+      "installationKind": "project-node_modules",
+      "installedVersion": "7.29.8",
+      "declaredLicense": "MIT",
+      "lockDeclaredLicense": "MIT",
+      "installedDeclaredLicense": "MIT",
+      "licenseStatus": "installed-metadata",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/babel/babel.git",
+        "directory": "packages/babel-types"
+      },
+      "homepage": "https://babel.dev/docs/en/next/babel-types",
+      "licenseFiles": [
+        {
+          "path": "frontend/node_modules/@babel/types/LICENSE",
+          "sha256": "117da2af0d4ce0fe1c8e19b5cff9dcd806adf973d328d27b11d4448c4ff24f76"
+        }
+      ]
+    },
+    {
+      "ecosystem": "npm",
+      "scope": "frontend",
+      "name": "@jridgewell/sourcemap-codec",
+      "version": "1.6.0",
+      "direct": false,
+      "directUse": null,
+      "development": false,
+      "optional": false,
+      "lockfile": "frontend/package-lock.json",
+      "location": "node_modules/@jridgewell/sourcemap-codec",
+      "integrity": "sha512-T7jf+5zgsZHwNJ4lvQ7/aezbyk0nNX+zJVWpmHA7VYsEx7a7qr5Rg5IbtJFqkgze5Y2sruq1RUY8Q837Od7iFw==",
+      "resolved": "https://registry.npmjs.org/@jridgewell/sourcemap-codec/-/sourcemap-codec-1.6.0.tgz",
+      "installed": true,
+      "installedFrom": "frontend/node_modules/@jridgewell/sourcemap-codec",
+      "installationKind": "project-node_modules",
+      "installedVersion": "1.6.0",
+      "declaredLicense": "MIT",
+      "lockDeclaredLicense": "MIT",
+      "installedDeclaredLicense": "MIT",
+      "licenseStatus": "installed-metadata",
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/jridgewell/sourcemaps.git",
+        "directory": "packages/sourcemap-codec"
+      },
+      "homepage": "https://github.com/jridgewell/sourcemaps/tree/main/packages/sourcemap-codec",
+      "licenseFiles": [
+        {
+          "path": "frontend/node_modules/@jridgewell/sourcemap-codec/LICENSE",
+          "sha256": "769d154fbde32a915af110b1123650bc79f4cbe675acc66e005265bf069c6c6c"
+        }
+      ]
+    },
+    {
+      "ecosystem": "npm",
+      "scope": "frontend",
+      "name": "@oxc-project/types",
+      "version": "0.154.0",
+      "direct": false,
+      "directUse": null,
+      "development": true,
+      "optional": false,
+      "lockfile": "frontend/package-lock.json",
+      "location": "node_modules/@oxc-project/types",
+      "integrity": "sha512-KYOUGQFlLWR+s4QMV2Q9ko38TZm7EdO87Qm7rvZLqk/webse/cDjtyxKhg/47l0byCbs/k46LT8qc4PKjAikzA==",
+      "resolved": "https://registry.npmjs.org/@oxc-project/types/-/types-0.154.0.tgz",
+      "installed": true,
+      "installedFrom": "frontend/node_modules/@oxc-project/types",
+      "installationKind": "project-node_modules",
+      "installedVersion": "0.154.0",
+      "declaredLicense": "MIT",
+      "lockDeclaredLicense": "MIT",
+      "installedDeclaredLicense": "MIT",
+      "licenseStatus": "installed-metadata",
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/oxc-project/oxc.git",
+        "directory": "npm/oxc-types"
+      },
+      "homepage": "https://oxc.rs",
+      "licenseFiles": [
+        {
+          "path": "frontend/node_modules/@oxc-project/types/LICENSE",
+          "sha256": "95ced5ecf1133fbf41d409b5555c86c344f83f3b019926057ddbc07cfdcc27b3"
+        }
+      ]
+    },
+    {
+      "ecosystem": "npm",
+      "scope": "frontend",
+      "name": "@rolldown/binding-android-arm-eabi",
+      "version": "1.2.14",
+      "direct": false,
+      "directUse": null,
+      "development": true,
+      "optional": true,
+      "lockfile": "frontend/package-lock.json",
+      "location": "node_modules/@rolldown/binding-android-arm-eabi",
+      "integrity": "sha512-aWR+XKH9+rW7m5fWq/5360J3mHycrx/o6xZM2DQFdJnTMdyP7/WzxPjhtLbVWdKo2y612/4U1bWqb3HQhiF7vg==",
+      "resolved": "https://registry.npmjs.org/@rolldown/binding-android-arm-eabi/-/binding-android-arm-eabi-1.2.14.tgz",
+      "installed": false,
+      "installedFrom": null,
+      "installationKind": "not-installed-on-this-platform",
+      "installedVersion": null,
+      "declaredLicense": "MIT",
+      "lockDeclaredLicense": "MIT",
+      "installedDeclaredLicense": null,
+      "licenseStatus": "lock-metadata-only",
+      "repository": null,
+      "homepage": null,
+      "licenseFiles": []
+    },
+    {
+      "ecosystem": "npm",
+      "scope": "frontend",
+      "name": "@rolldown/binding-android-arm64",
+      "version": "1.2.14",
+      "direct": false,
+      "directUse": null,
+      "development": true,
+      "optional": true,
+      "lockfile": "frontend/package-lock.json",
+      "location": "node_modules/@rolldown/binding-android-arm64",
+      "integrity": "sha512-QiVxHofl6A8lQU7WAtOUY4QMVZXohxwz7WJJoeh8NBEUyKfIkMRKhYyq8az/1RypNiIXzNTtiS6KwHz0erxYRQ==",
+      "resolved": "https://registry.npmjs.org/@rolldown/binding-android-arm64/-/binding-android-arm64-1.2.14.tgz",
+      "installed": false,
+      "installedFrom": null,
+      "installationKind": "not-installed-on-this-platform",
+      "installedVersion": null,
+      "declaredLicense": "MIT",
+      "lockDeclaredLicense": "MIT",
+      "installedDeclaredLicense": null,
+      "licenseStatus": "lock-metadata-only",
+      "repository": null,
+      "homepage": null,
+      "licenseFiles": []
+    },
+    {
+      "ecosystem": "npm",
+      "scope": "frontend",
+      "name": "@rolldown/binding-darwin-arm64",
+      "version": "1.2.14",
+      "direct": false,
+      "directUse": null,
+      "development": true,
+      "optional": true,
+      "lockfile": "frontend/package-lock.json",
+      "location": "node_modules/@rolldown/binding-darwin-arm64",
+      "integrity": "sha512-lTQOzHuBIooh3jIr5XINQkjPGEuGy+Dsy0meXDr6Sjty0b99kYgGh4uBC/8mJX1T0kC8d6S0aPP1Y+bHkh6aBw==",
+      "resolved": "https://registry.npmjs.org/@rolldown/binding-darwin-arm64/-/binding-darwin-arm64-1.2.14.tgz",
+      "installed": false,
+      "installedFrom": null,
+      "installationKind": "not-installed-on-this-platform",
+      "installedVersion": null,
+      "declaredLicense": "MIT",
+      "lockDeclaredLicense": "MIT",
+      "installedDeclaredLicense": null,
+      "licenseStatus": "lock-metadata-only",
+      "repository": null,
+      "homepage": null,
+      "licenseFiles": []
+    },
+    {
+      "ecosystem": "npm",
+      "scope": "frontend",
+      "name": "@rolldown/binding-darwin-x64",
+      "version": "1.2.14",
+      "direct": false,
+      "directUse": null,
+      "development": true,
+      "optional": true,
+      "lockfile": "frontend/package-lock.json",
+      "location": "node_modules/@rolldown/binding-darwin-x64",
+      "integrity": "sha512-hyMKEGatjmBYCs/Q4sbIcL/GqpFEqsX3wc+HYVQ/85A4rxc1o7rPm4DUI4GV4k/h0ITddwFSGpqQunI14GXjTA==",
+      "resolved": "https://registry.npmjs.org/@rolldown/binding-darwin-x64/-/binding-darwin-x64-1.2.14.tgz",
+      "installed": false,
+      "installedFrom": null,
+      "installationKind": "not-installed-on-this-platform",
+      "installedVersion": null,
+      "declaredLicense": "MIT",
+      "lockDeclaredLicense": "MIT",
+      "installedDeclaredLicense": null,
+      "licenseStatus": "lock-metadata-only",
+      "repository": null,
+      "homepage": null,
+      "licenseFiles": []
+    },
+    {
+      "ecosystem": "npm",
+      "scope": "frontend",
+      "name": "@rolldown/binding-freebsd-x64",
+      "version": "1.2.14",
+      "direct": false,
+      "directUse": null,
+      "development": true,
+      "optional": true,
+      "lockfile": "frontend/package-lock.json",
+      "location": "node_modules/@rolldown/binding-freebsd-x64",
+      "integrity": "sha512-u371GbXoVXrEgP20PwzoGNOdAOqAMhzo19JzzY+V4YmmnC+DTOoqdbMu+O+54emM59Mik/UdrtWgcuEDKWRPKA==",
+      "resolved": "https://registry.npmjs.org/@rolldown/binding-freebsd-x64/-/binding-freebsd-x64-1.2.14.tgz",
+      "installed": false,
+      "installedFrom": null,
+      "installationKind": "not-installed-on-this-platform",
+      "installedVersion": null,
+      "declaredLicense": "MIT",
+      "lockDeclaredLicense": "MIT",
+      "installedDeclaredLicense": null,
+      "licenseStatus": "lock-metadata-only",
+      "repository": null,
+      "homepage": null,
+      "licenseFiles": []
+    },
+    {
+      "ecosystem": "npm",
+      "scope": "frontend",
+      "name": "@rolldown/binding-linux-arm-gnueabihf",
+      "version": "1.2.14",
+      "direct": false,
+      "directUse": null,
+      "development": true,
+      "optional": true,
+      "lockfile": "frontend/package-lock.json",
+      "location": "node_modules/@rolldown/binding-linux-arm-gnueabihf",
+      "integrity": "sha512-BqwKsdZQf6EqVWr8fv2MrDYzAvOZ7+NYFSJESRGs87fkseEhs0TU9TXgRJTkZoRRkxTizyEg1LKUXfU3/78uqg==",
+      "resolved": "https://registry.npmjs.org/@rolldown/binding-linux-arm-gnueabihf/-/binding-linux-arm-gnueabihf-1.2.14.tgz",
+      "installed": false,
+      "installedFrom": null,
+      "installationKind": "not-installed-on-this-platform",
+      "installedVersion": null,
+      "declaredLicense": "MIT",
+      "lockDeclaredLicense": "MIT",
+      "installedDeclaredLicense": null,
+      "licenseStatus": "lock-metadata-only",
+      "repository": null,
+      "homepage": null,
+      "licenseFiles": []
+    },
+    {
+      "ecosystem": "npm",
+      "scope": "frontend",
+      "name": "@rolldown/binding-linux-arm64-gnu",
+      "version": "1.2.14",
+      "direct": false,
+      "directUse": null,
+      "development": true,
+      "optional": true,
+      "lockfile": "frontend/package-lock.json",
+      "location": "node_modules/@rolldown/binding-linux-arm64-gnu",
+      "integrity": "sha512-SD9kY8M009x/7s57Z1dgUVlP5+uYBgKQK0Tkr1WIWngrtUJmRCW1RJFMY7QDla2khXhmg2i5Io7MUjcmZNZ/KQ==",
+      "resolved": "https://registry.npmjs.org/@rolldown/binding-linux-arm64-gnu/-/binding-linux-arm64-gnu-1.2.14.tgz",
+      "installed": false,
+      "installedFrom": null,
+      "installationKind": "not-installed-on-this-platform",
+      "installedVersion": null,
+      "declaredLicense": "MIT",
+      "lockDeclaredLicense": "MIT",
+      "installedDeclaredLicense": null,
+      "licenseStatus": "lock-metadata-only",
+      "repository": null,
+      "homepage": null,
+      "licenseFiles": []
+    },
+    {
+      "ecosystem": "npm",
+      "scope": "frontend",
+      "name": "@rolldown/binding-linux-arm64-musl",
+      "version": "1.2.14",
+      "direct": false,
+      "directUse": null,
+      "development": true,
+      "optional": true,
+      "lockfile": "frontend/package-lock.json",
+      "location": "node_modules/@rolldown/binding-linux-arm64-musl",
+      "integrity": "sha512-BJ2CL19M6uuWesMgnqJzgxoI+N+eV7b0A9O9vLV42y+gitC41fNa8KElau1tHVzuLWX5GzEuxMPhAO0tQXQMkg==",
+      "resolved": "https://registry.npmjs.org/@rolldown/binding-linux-arm64-musl/-/binding-linux-arm64-musl-1.2.14.tgz",
+      "installed": false,
+      "installedFrom": null,
+      "installationKind": "not-installed-on-this-platform",
+      "installedVersion": null,
+      "declaredLicense": "MIT",
+      "lockDeclaredLicense": "MIT",
+      "installedDeclaredLicense": null,
+      "licenseStatus": "lock-metadata-only",
+      "repository": null,
+      "homepage": null,
+      "licenseFiles": []
+    },
+    {
+      "ecosystem": "npm",
+      "scope": "frontend",
+      "name": "@rolldown/binding-linux-ppc64-gnu",
+      "version": "1.2.14",
+      "direct": false,
+      "directUse": null,
+      "development": true,
+      "optional": true,
+      "lockfile": "frontend/package-lock.json",
+      "location": "node_modules/@rolldown/binding-linux-ppc64-gnu",
+      "integrity": "sha512-4+Kl8daPV8NDHaD7mfCcc1pRM+Qg7ab8DyMm5FG5WoZgv4h2i3KFN1CybYBNbQqmuYm7ftJLvmMI1eHYJ22S/Q==",
+      "resolved": "https://registry.npmjs.org/@rolldown/binding-linux-ppc64-gnu/-/binding-linux-ppc64-gnu-1.2.14.tgz",
+      "installed": false,
+      "installedFrom": null,
+      "installationKind": "not-installed-on-this-platform",
+      "installedVersion": null,
+      "declaredLicense": "MIT",
+      "lockDeclaredLicense": "MIT",
+      "installedDeclaredLicense": null,
+      "licenseStatus": "lock-metadata-only",
+      "repository": null,
+      "homepage": null,
+      "licenseFiles": []
+    },
+    {
+      "ecosystem": "npm",
+      "scope": "frontend",
+      "name": "@rolldown/binding-linux-s390x-gnu",
+      "version": "1.2.14",
+      "direct": false,
+      "directUse": null,
+      "development": true,
+      "optional": true,
+      "lockfile": "frontend/package-lock.json",
+      "location": "node_modules/@rolldown/binding-linux-s390x-gnu",
+      "integrity": "sha512-V/h8ePq1fKDrmtFMz6xcCN3DKvuvMRrwwD1q0PkBeeo4DpK64biaKvqWGVxqCeYKqeRk7gE7/iKPxLCn08O97A==",
+      "resolved": "https://registry.npmjs.org/@rolldown/binding-linux-s390x-gnu/-/binding-linux-s390x-gnu-1.2.14.tgz",
+      "installed": false,
+      "installedFrom": null,
+      "installationKind": "not-installed-on-this-platform",
+      "installedVersion": null,
+      "declaredLicense": "MIT",
+      "lockDeclaredLicense": "MIT",
+      "installedDeclaredLicense": null,
+      "licenseStatus": "lock-metadata-only",
+      "repository": null,
+      "homepage": null,
+      "licenseFiles": []
+    },
+    {
+      "ecosystem": "npm",
+      "scope": "frontend",
+      "name": "@rolldown/binding-linux-x64-gnu",
+      "version": "1.2.14",
+      "direct": false,
+      "directUse": null,
+      "development": true,
+      "optional": true,
+      "lockfile": "frontend/package-lock.json",
+      "location": "node_modules/@rolldown/binding-linux-x64-gnu",
+      "integrity": "sha512-WxalXzgrLVpKC93xfpaJ3gCXUWzeCr+FRCbDVD2mUAy4L6Vo3lNVz0epUEUpxPWJkLNYUwM4OSIikv36OJ9mLg==",
+      "resolved": "https://registry.npmjs.org/@rolldown/binding-linux-x64-gnu/-/binding-linux-x64-gnu-1.2.14.tgz",
+      "installed": true,
+      "installedFrom": "frontend/node_modules/@rolldown/binding-linux-x64-gnu",
+      "installationKind": "project-node_modules",
+      "installedVersion": "1.2.14",
+      "declaredLicense": "MIT",
+      "lockDeclaredLicense": "MIT",
+      "installedDeclaredLicense": "MIT",
+      "licenseStatus": "installed-metadata",
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/rolldown/rolldown.git",
+        "directory": "packages/rolldown"
+      },
+      "homepage": "https://rolldown.rs/",
+      "licenseFiles": []
+    },
+    {
+      "ecosystem": "npm",
+      "scope": "frontend",
+      "name": "@rolldown/binding-linux-x64-musl",
+      "version": "1.2.14",
+      "direct": false,
+      "directUse": null,
+      "development": true,
+      "optional": true,
+      "lockfile": "frontend/package-lock.json",
+      "location": "node_modules/@rolldown/binding-linux-x64-musl",
+      "integrity": "sha512-3G3tnAmTpdk9jO3GQtyHXqeFD2SlecfTws/Y3M2mmj9nMBwwuLT4kur8sZKeu7ENUHSpVO3cIsm5A52LEWWwlg==",
+      "resolved": "https://registry.npmjs.org/@rolldown/binding-linux-x64-musl/-/binding-linux-x64-musl-1.2.14.tgz",
+      "installed": true,
+      "installedFrom": "frontend/node_modules/@rolldown/binding-linux-x64-musl",
+      "installationKind": "project-node_modules",
+      "installedVersion": "1.2.14",
+      "declaredLicense": "MIT",
+      "lockDeclaredLicense": "MIT",
+      "installedDeclaredLicense": "MIT",
+      "licenseStatus": "installed-metadata",
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/rolldown/rolldown.git",
+        "directory": "packages/rolldown"
+      },
+      "homepage": "https://rolldown.rs/",
+      "licenseFiles": []
+    },
+    {
+      "ecosystem": "npm",
+      "scope": "frontend",
+      "name": "@rolldown/binding-openharmony-arm64",
+      "version": "1.2.14",
+      "direct": false,
+      "directUse": null,
+      "development": true,
+      "optional": true,
+      "lockfile": "frontend/package-lock.json",
+      "location": "node_modules/@rolldown/binding-openharmony-arm64",
+      "integrity": "sha512-qyr5XiNGxm2ytx17vvtcJ9nXn6v1gENETi503bJx3OGwZ1tSonj7BosxbMa/xeAfSl5iS9X6KjEWYXLu6v1L7Q==",
+      "resolved": "https://registry.npmjs.org/@rolldown/binding-openharmony-arm64/-/binding-openharmony-arm64-1.2.14.tgz",
+      "installed": false,
+      "installedFrom": null,
+      "installationKind": "not-installed-on-this-platform",
+      "installedVersion": null,
+      "declaredLicense": "MIT",
+      "lockDeclaredLicense": "MIT",
+      "installedDeclaredLicense": null,
+      "licenseStatus": "lock-metadata-only",
+      "repository": null,
+      "homepage": null,
+      "licenseFiles": []
+    },
+    {
+      "ecosystem": "npm",
+      "scope": "frontend",
+      "name": "@rolldown/binding-win32-arm64-msvc",
+      "version": "1.2.14",
+      "direct": false,
+      "directUse": null,
+      "development": true,
+      "optional": true,
+      "lockfile": "frontend/package-lock.json",
+      "location": "node_modules/@rolldown/binding-win32-arm64-msvc",
+      "integrity": "sha512-oA4o5o0S2yB199YyYXDzKUv1Z56Rc+mgOjwm7Z/vJ9Z8igiDPYvoOuDyo6g7AK/ZaF09nPhDKVnGBcYHO11GXA==",
+      "resolved": "https://registry.npmjs.org/@rolldown/binding-win32-arm64-msvc/-/binding-win32-arm64-msvc-1.2.14.tgz",
+      "installed": false,
+      "installedFrom": null,
+      "installationKind": "not-installed-on-this-platform",
+      "installedVersion": null,
+      "declaredLicense": "MIT",
+      "lockDeclaredLicense": "MIT",
+      "installedDeclaredLicense": null,
+      "licenseStatus": "lock-metadata-only",
+      "repository": null,
+      "homepage": null,
+      "licenseFiles": []
+    },
+    {
+      "ecosystem": "npm",
+      "scope": "frontend",
+      "name": "@rolldown/binding-win32-x64-msvc",
+      "version": "1.2.14",
+      "direct": false,
+      "directUse": null,
+      "development": true,
+      "optional": true,
+      "lockfile": "frontend/package-lock.json",
+      "location": "node_modules/@rolldown/binding-win32-x64-msvc",
+      "integrity": "sha512-9mE94bf2GZUaR/fUSXCMpBoWkctu421Mi0ORpm4zqfbkjKep7RxzPFa5etcGs5h+2KApoWBOA/hAJa/7saGgEQ==",
+      "resolved": "https://registry.npmjs.org/@rolldown/binding-win32-x64-msvc/-/binding-win32-x64-msvc-1.2.14.tgz",
+      "installed": false,
+      "installedFrom": null,
+      "installationKind": "not-installed-on-this-platform",
+      "installedVersion": null,
+      "declaredLicense": "MIT",
+      "lockDeclaredLicense": "MIT",
+      "installedDeclaredLicense": null,
+      "licenseStatus": "lock-metadata-only",
+      "repository": null,
+      "homepage": null,
+      "licenseFiles": []
+    },
+    {
+      "ecosystem": "npm",
+      "scope": "frontend",
+      "name": "@rolldown/pluginutils",
+      "version": "1.0.1",
+      "direct": false,
+      "directUse": null,
+      "development": true,
+      "optional": false,
+      "lockfile": "frontend/package-lock.json",
+      "location": "node_modules/@rolldown/pluginutils",
+      "integrity": "sha512-2j9bGt5Jh8hj+vPtgzPtl72j0yRxHAyumoo6TNfAjsLB04UtpSvPbPcDcBMxz7n+9CYB0c1GxQFxYRg2jimqGw==",
+      "resolved": "https://registry.npmjs.org/@rolldown/pluginutils/-/pluginutils-1.0.1.tgz",
+      "installed": true,
+      "installedFrom": "frontend/node_modules/@rolldown/pluginutils",
+      "installationKind": "project-node_modules",
+      "installedVersion": "1.0.1",
+      "declaredLicense": "MIT",
+      "lockDeclaredLicense": "MIT",
+      "installedDeclaredLicense": "MIT",
+      "licenseStatus": "installed-metadata",
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/rolldown/plugins.git",
+        "directory": "packages/pluginutils"
+      },
+      "homepage": "https://github.com/rolldown/plugins/tree/main/packages/pluginutils#readme",
+      "licenseFiles": [
+        {
+          "path": "frontend/node_modules/@rolldown/pluginutils/LICENSE",
+          "sha256": "e1919b3b98b8bf6c1b99fcc60a0ed46027c97ac947432e1278446c9606f50161"
+        }
+      ]
+    },
+    {
+      "ecosystem": "npm",
+      "scope": "frontend",
+      "name": "@vitejs/plugin-vue",
+      "version": "6.0.10",
+      "direct": true,
+      "directUse": "development/test",
+      "development": true,
+      "optional": false,
+      "lockfile": "frontend/package-lock.json",
+      "location": "node_modules/@vitejs/plugin-vue",
+      "integrity": "sha512-b80aUQh3n+qEzzZm5oQp3rT2QImeCx58K6eFl/RkJ3d65KW0kTuv5lNsLRVAjbW9YRUpo/wzmvzMgV34bTAItA==",
+      "resolved": "https://registry.npmjs.org/@vitejs/plugin-vue/-/plugin-vue-6.0.10.tgz",
+      "installed": true,
+      "installedFrom": "frontend/node_modules/@vitejs/plugin-vue",
+      "installationKind": "project-node_modules",
+      "installedVersion": "6.0.10",
+      "declaredLicense": "MIT",
+      "lockDeclaredLicense": "MIT",
+      "installedDeclaredLicense": "MIT",
+      "licenseStatus": "installed-metadata",
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/vitejs/vite-plugin-vue.git",
+        "directory": "packages/plugin-vue"
+      },
+      "homepage": "https://github.com/vitejs/vite-plugin-vue/tree/main/packages/plugin-vue#readme",
+      "licenseFiles": [
+        {
+          "path": "frontend/node_modules/@vitejs/plugin-vue/LICENSE",
+          "sha256": "29b68325fe026047d13e187b44c33b2acacf7dc647dec4583702e59f235e13b5"
+        }
+      ]
+    },
+    {
+      "ecosystem": "npm",
+      "scope": "frontend",
+      "name": "@volar/language-core",
+      "version": "2.4.28",
+      "direct": false,
+      "directUse": null,
+      "development": true,
+      "optional": false,
+      "lockfile": "frontend/package-lock.json",
+      "location": "node_modules/@volar/language-core",
+      "integrity": "sha512-w4qhIJ8ZSitgLAkVay6AbcnC7gP3glYM3fYwKV3srj8m494E3xtrCv6E+bWviiK/8hs6e6t1ij1s2Endql7vzQ==",
+      "resolved": "https://registry.npmjs.org/@volar/language-core/-/language-core-2.4.28.tgz",
+      "installed": true,
+      "installedFrom": "frontend/node_modules/@volar/language-core",
+      "installationKind": "project-node_modules",
+      "installedVersion": "2.4.28",
+      "declaredLicense": "MIT",
+      "lockDeclaredLicense": "MIT",
+      "installedDeclaredLicense": "MIT",
+      "licenseStatus": "installed-metadata",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/volarjs/volar.js.git",
+        "directory": "packages/language-core"
+      },
+      "homepage": null,
+      "licenseFiles": [
+        {
+          "path": "frontend/node_modules/@volar/language-core/LICENSE",
+          "sha256": "a56351045b45475385a9479d7310208ff0be9489babdb4e635fcea5d7dc1fb02"
+        }
+      ]
+    },
+    {
+      "ecosystem": "npm",
+      "scope": "frontend",
+      "name": "@volar/source-map",
+      "version": "2.4.28",
+      "direct": false,
+      "directUse": null,
+      "development": true,
+      "optional": false,
+      "lockfile": "frontend/package-lock.json",
+      "location": "node_modules/@volar/source-map",
+      "integrity": "sha512-yX2BDBqJkRXfKw8my8VarTyjv48QwxdJtvRgUpNE5erCsgEUdI2DsLbpa+rOQVAJYshY99szEcRDmyHbF10ggQ==",
+      "resolved": "https://registry.npmjs.org/@volar/source-map/-/source-map-2.4.28.tgz",
+      "installed": true,
+      "installedFrom": "frontend/node_modules/@volar/source-map",
+      "installationKind": "project-node_modules",
+      "installedVersion": "2.4.28",
+      "declaredLicense": "MIT",
+      "lockDeclaredLicense": "MIT",
+      "installedDeclaredLicense": "MIT",
+      "licenseStatus": "installed-metadata",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/volarjs/volar.js.git",
+        "directory": "packages/source-map"
+      },
+      "homepage": null,
+      "licenseFiles": [
+        {
+          "path": "frontend/node_modules/@volar/source-map/LICENSE",
+          "sha256": "a56351045b45475385a9479d7310208ff0be9489babdb4e635fcea5d7dc1fb02"
+        }
+      ]
+    },
+    {
+      "ecosystem": "npm",
+      "scope": "frontend",
+      "name": "@volar/typescript",
+      "version": "2.4.28",
+      "direct": false,
+      "directUse": null,
+      "development": true,
+      "optional": false,
+      "lockfile": "frontend/package-lock.json",
+      "location": "node_modules/@volar/typescript",
+      "integrity": "sha512-Ja6yvWrbis2QtN4ClAKreeUZPVYMARDYZl9LMEv1iQ1QdepB6wn0jTRxA9MftYmYa4DQ4k/DaSZpFPUfxl8giw==",
+      "resolved": "https://registry.npmjs.org/@volar/typescript/-/typescript-2.4.28.tgz",
+      "installed": true,
+      "installedFrom": "frontend/node_modules/@volar/typescript",
+      "installationKind": "project-node_modules",
+      "installedVersion": "2.4.28",
+      "declaredLicense": "MIT",
+      "lockDeclaredLicense": "MIT",
+      "installedDeclaredLicense": "MIT",
+      "licenseStatus": "installed-metadata",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/volarjs/volar.js.git",
+        "directory": "packages/typescript"
+      },
+      "homepage": null,
+      "licenseFiles": [
+        {
+          "path": "frontend/node_modules/@volar/typescript/LICENSE",
+          "sha256": "a56351045b45475385a9479d7310208ff0be9489babdb4e635fcea5d7dc1fb02"
+        }
+      ]
+    },
+    {
+      "ecosystem": "npm",
+      "scope": "frontend",
+      "name": "@vue/compiler-core",
+      "version": "3.5.44",
+      "direct": false,
+      "directUse": null,
+      "development": false,
+      "optional": false,
+      "lockfile": "frontend/package-lock.json",
+      "location": "node_modules/@vue/compiler-core",
+      "integrity": "sha512-k34nCytbK8PQ1gR2mGROYOw6Pnv/mumqIdrZ3x2tbyXZDWm7ViKGLTfdB+DRrWqEQsLgGJvn0WN9jBif5zCTLQ==",
+      "resolved": "https://registry.npmjs.org/@vue/compiler-core/-/compiler-core-3.5.44.tgz",
+      "installed": true,
+      "installedFrom": "frontend/node_modules/@vue/compiler-core",
+      "installationKind": "project-node_modules",
+      "installedVersion": "3.5.44",
+      "declaredLicense": "MIT",
+      "lockDeclaredLicense": "MIT",
+      "installedDeclaredLicense": "MIT",
+      "licenseStatus": "installed-metadata",
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/vuejs/core.git",
+        "directory": "packages/compiler-core"
+      },
+      "homepage": "https://github.com/vuejs/core/tree/main/packages/compiler-core#readme",
+      "licenseFiles": [
+        {
+          "path": "frontend/node_modules/@vue/compiler-core/LICENSE",
+          "sha256": "1bb85cc9b13b81ef41c81c51866172fc345e0503c86726a6755b796590b70175"
+        }
+      ]
+    },
+    {
+      "ecosystem": "npm",
+      "scope": "frontend",
+      "name": "@vue/compiler-dom",
+      "version": "3.5.44",
+      "direct": false,
+      "directUse": null,
+      "development": false,
+      "optional": false,
+      "lockfile": "frontend/package-lock.json",
+      "location": "node_modules/@vue/compiler-dom",
+      "integrity": "sha512-W5AoBFWdw1lQAKiHowkfgFKFab82oSRT6sGsPfw/q1GRjsy/ZJFLHGhJyBRIFN9APLTUduDH9U2JAiPOIyKuYg==",
+      "resolved": "https://registry.npmjs.org/@vue/compiler-dom/-/compiler-dom-3.5.44.tgz",
+      "installed": true,
+      "installedFrom": "frontend/node_modules/@vue/compiler-dom",
+      "installationKind": "project-node_modules",
+      "installedVersion": "3.5.44",
+      "declaredLicense": "MIT",
+      "lockDeclaredLicense": "MIT",
+      "installedDeclaredLicense": "MIT",
+      "licenseStatus": "installed-metadata",
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/vuejs/core.git",
+        "directory": "packages/compiler-dom"
+      },
+      "homepage": "https://github.com/vuejs/core/tree/main/packages/compiler-dom#readme",
+      "licenseFiles": [
+        {
+          "path": "frontend/node_modules/@vue/compiler-dom/LICENSE",
+          "sha256": "1bb85cc9b13b81ef41c81c51866172fc345e0503c86726a6755b796590b70175"
+        }
+      ]
+    },
+    {
+      "ecosystem": "npm",
+      "scope": "frontend",
+      "name": "@vue/compiler-sfc",
+      "version": "3.5.44",
+      "direct": false,
+      "directUse": null,
+      "development": false,
+      "optional": false,
+      "lockfile": "frontend/package-lock.json",
+      "location": "node_modules/@vue/compiler-sfc",
+      "integrity": "sha512-dzHmQ4jXTpdr5FjIQUeykVakN/uzqFbUo9/C5ikBFg3a3PeM6uRxeczx1ZbXBML0/zJstEh3ygYipzR5Z7b2Pw==",
+      "resolved": "https://registry.npmjs.org/@vue/compiler-sfc/-/compiler-sfc-3.5.44.tgz",
+      "installed": true,
+      "installedFrom": "frontend/node_modules/@vue/compiler-sfc",
+      "installationKind": "project-node_modules",
+      "installedVersion": "3.5.44",
+      "declaredLicense": "MIT",
+      "lockDeclaredLicense": "MIT",
+      "installedDeclaredLicense": "MIT",
+      "licenseStatus": "installed-metadata",
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/vuejs/core.git",
+        "directory": "packages/compiler-sfc"
+      },
+      "homepage": "https://github.com/vuejs/core/tree/main/packages/compiler-sfc#readme",
+      "licenseFiles": [
+        {
+          "path": "frontend/node_modules/@vue/compiler-sfc/LICENSE",
+          "sha256": "1bb85cc9b13b81ef41c81c51866172fc345e0503c86726a6755b796590b70175"
+        }
+      ]
+    },
+    {
+      "ecosystem": "npm",
+      "scope": "frontend",
+      "name": "@vue/compiler-ssr",
+      "version": "3.5.44",
+      "direct": false,
+      "directUse": null,
+      "development": false,
+      "optional": false,
+      "lockfile": "frontend/package-lock.json",
+      "location": "node_modules/@vue/compiler-ssr",
+      "integrity": "sha512-xr5gb1JVHlfXJwSlRz1FeP6uxoazdzHuMTVLE7up+4Vrqxk219CvxLPxD9NXBt47yvZW7+p4DXfyp4O1fkByIA==",
+      "resolved": "https://registry.npmjs.org/@vue/compiler-ssr/-/compiler-ssr-3.5.44.tgz",
+      "installed": true,
+      "installedFrom": "frontend/node_modules/@vue/compiler-ssr",
+      "installationKind": "project-node_modules",
+      "installedVersion": "3.5.44",
+      "declaredLicense": "MIT",
+      "lockDeclaredLicense": "MIT",
+      "installedDeclaredLicense": "MIT",
+      "licenseStatus": "installed-metadata",
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/vuejs/core.git",
+        "directory": "packages/compiler-ssr"
+      },
+      "homepage": "https://github.com/vuejs/core/tree/main/packages/compiler-ssr#readme",
+      "licenseFiles": [
+        {
+          "path": "frontend/node_modules/@vue/compiler-ssr/LICENSE",
+          "sha256": "1bb85cc9b13b81ef41c81c51866172fc345e0503c86726a6755b796590b70175"
+        }
+      ]
+    },
+    {
+      "ecosystem": "npm",
+      "scope": "frontend",
+      "name": "@vue/devtools-api",
+      "version": "6.6.4",
+      "direct": false,
+      "directUse": null,
+      "development": false,
+      "optional": false,
+      "lockfile": "frontend/package-lock.json",
+      "location": "node_modules/@vue/devtools-api",
+      "integrity": "sha512-sGhTPMuXqZ1rVOk32RylztWkfXTRhuS7vgAKv0zjqk8gbsHkJ7xfFf+jbySxt7tWObEJwyKaHMikV/WGDiQm8g==",
+      "resolved": "https://registry.npmjs.org/@vue/devtools-api/-/devtools-api-6.6.4.tgz",
+      "installed": true,
+      "installedFrom": "frontend/node_modules/@vue/devtools-api",
+      "installationKind": "project-node_modules",
+      "installedVersion": "6.6.4",
+      "declaredLicense": "MIT",
+      "lockDeclaredLicense": "MIT",
+      "installedDeclaredLicense": "MIT",
+      "licenseStatus": "installed-metadata",
+      "repository": {
+        "url": "https://github.com/vuejs/vue-devtools.git",
+        "type": "git",
+        "directory": "packages/api"
+      },
+      "homepage": null,
+      "licenseFiles": []
+    },
+    {
+      "ecosystem": "npm",
+      "scope": "frontend",
+      "name": "@vue/language-core",
+      "version": "3.3.12",
+      "direct": false,
+      "directUse": null,
+      "development": true,
+      "optional": false,
+      "lockfile": "frontend/package-lock.json",
+      "location": "node_modules/@vue/language-core",
+      "integrity": "sha512-k7uIKR0n4CBidk233y7cac9osnDQ5WRidTl6nsrNvpZ3nf8cx9iJxRVsRzVsoPRHbowT/iKgGMTS9RGov3jeIA==",
+      "resolved": "https://registry.npmjs.org/@vue/language-core/-/language-core-3.3.12.tgz",
+      "installed": true,
+      "installedFrom": "frontend/node_modules/@vue/language-core",
+      "installationKind": "project-node_modules",
+      "installedVersion": "3.3.12",
+      "declaredLicense": "MIT",
+      "lockDeclaredLicense": "MIT",
+      "installedDeclaredLicense": "MIT",
+      "licenseStatus": "installed-metadata",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/vuejs/language-tools.git",
+        "directory": "packages/language-core"
+      },
+      "homepage": null,
+      "licenseFiles": [
+        {
+          "path": "frontend/node_modules/@vue/language-core/LICENSE",
+          "sha256": "a56351045b45475385a9479d7310208ff0be9489babdb4e635fcea5d7dc1fb02"
+        }
+      ]
+    },
+    {
+      "ecosystem": "npm",
+      "scope": "frontend",
+      "name": "@vue/reactivity",
+      "version": "3.5.44",
+      "direct": false,
+      "directUse": null,
+      "development": false,
+      "optional": false,
+      "lockfile": "frontend/package-lock.json",
+      "location": "node_modules/@vue/reactivity",
+      "integrity": "sha512-u+QJdKeBBEADkPdevsL+6E12QlYVfBD8Zcw5qjDQKtamI6l14KyqazJMobhCKelhWN5zpyKUiEDoTyHE93cqWw==",
+      "resolved": "https://registry.npmjs.org/@vue/reactivity/-/reactivity-3.5.44.tgz",
+      "installed": true,
+      "installedFrom": "frontend/node_modules/@vue/reactivity",
+      "installationKind": "project-node_modules",
+      "installedVersion": "3.5.44",
+      "declaredLicense": "MIT",
+      "lockDeclaredLicense": "MIT",
+      "installedDeclaredLicense": "MIT",
+      "licenseStatus": "installed-metadata",
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/vuejs/core.git",
+        "directory": "packages/reactivity"
+      },
+      "homepage": "https://github.com/vuejs/core/tree/main/packages/reactivity#readme",
+      "licenseFiles": [
+        {
+          "path": "frontend/node_modules/@vue/reactivity/LICENSE",
+          "sha256": "1bb85cc9b13b81ef41c81c51866172fc345e0503c86726a6755b796590b70175"
+        }
+      ]
+    },
+    {
+      "ecosystem": "npm",
+      "scope": "frontend",
+      "name": "@vue/runtime-core",
+      "version": "3.5.44",
+      "direct": false,
+      "directUse": null,
+      "development": false,
+      "optional": false,
+      "lockfile": "frontend/package-lock.json",
+      "location": "node_modules/@vue/runtime-core",
+      "integrity": "sha512-uEa/ndwjhrrhnOfb2p+sZy6zeoamJOISqaLSJGk/8R6nABT1ZldpzcJoPzKj+zHVomVBPcmQYyC2r4LtvDV6CQ==",
+      "resolved": "https://registry.npmjs.org/@vue/runtime-core/-/runtime-core-3.5.44.tgz",
+      "installed": true,
+      "installedFrom": "frontend/node_modules/@vue/runtime-core",
+      "installationKind": "project-node_modules",
+      "installedVersion": "3.5.44",
+      "declaredLicense": "MIT",
+      "lockDeclaredLicense": "MIT",
+      "installedDeclaredLicense": "MIT",
+      "licenseStatus": "installed-metadata",
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/vuejs/core.git",
+        "directory": "packages/runtime-core"
+      },
+      "homepage": "https://github.com/vuejs/core/tree/main/packages/runtime-core#readme",
+      "licenseFiles": [
+        {
+          "path": "frontend/node_modules/@vue/runtime-core/LICENSE",
+          "sha256": "1bb85cc9b13b81ef41c81c51866172fc345e0503c86726a6755b796590b70175"
+        }
+      ]
+    },
+    {
+      "ecosystem": "npm",
+      "scope": "frontend",
+      "name": "@vue/runtime-dom",
+      "version": "3.5.44",
+      "direct": false,
+      "directUse": null,
+      "development": false,
+      "optional": false,
+      "lockfile": "frontend/package-lock.json",
+      "location": "node_modules/@vue/runtime-dom",
+      "integrity": "sha512-3fc4ARcXVhVBaJ3ujWiNZJARD6pkyRcwG+ZYhMzjKtKUp7MAY0HLwr7r3Smep3Li6ZaWT6ewdmx8XqdaD5oNZg==",
+      "resolved": "https://registry.npmjs.org/@vue/runtime-dom/-/runtime-dom-3.5.44.tgz",
+      "installed": true,
+      "installedFrom": "frontend/node_modules/@vue/runtime-dom",
+      "installationKind": "project-node_modules",
+      "installedVersion": "3.5.44",
+      "declaredLicense": "MIT",
+      "lockDeclaredLicense": "MIT",
+      "installedDeclaredLicense": "MIT",
+      "licenseStatus": "installed-metadata",
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/vuejs/core.git",
+        "directory": "packages/runtime-dom"
+      },
+      "homepage": "https://github.com/vuejs/core/tree/main/packages/runtime-dom#readme",
+      "licenseFiles": [
+        {
+          "path": "frontend/node_modules/@vue/runtime-dom/LICENSE",
+          "sha256": "1bb85cc9b13b81ef41c81c51866172fc345e0503c86726a6755b796590b70175"
+        }
+      ]
+    },
+    {
+      "ecosystem": "npm",
+      "scope": "frontend",
+      "name": "@vue/server-renderer",
+      "version": "3.5.44",
+      "direct": false,
+      "directUse": null,
+      "development": false,
+      "optional": false,
+      "lockfile": "frontend/package-lock.json",
+      "location": "node_modules/@vue/server-renderer",
+      "integrity": "sha512-R4S1UoH4h5Frrauv8Z5XE5TxV9oBiUSgWIC4TyVK1FK+RocRnOLwFA5Xcmo2011RlgJp+AbZCnw6afrhlgRuUQ==",
+      "resolved": "https://registry.npmjs.org/@vue/server-renderer/-/server-renderer-3.5.44.tgz",
+      "installed": true,
+      "installedFrom": "frontend/node_modules/@vue/server-renderer",
+      "installationKind": "project-node_modules",
+      "installedVersion": "3.5.44",
+      "declaredLicense": "MIT",
+      "lockDeclaredLicense": "MIT",
+      "installedDeclaredLicense": "MIT",
+      "licenseStatus": "installed-metadata",
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/vuejs/core.git",
+        "directory": "packages/server-renderer"
+      },
+      "homepage": "https://github.com/vuejs/core/tree/main/packages/server-renderer#readme",
+      "licenseFiles": [
+        {
+          "path": "frontend/node_modules/@vue/server-renderer/LICENSE",
+          "sha256": "1bb85cc9b13b81ef41c81c51866172fc345e0503c86726a6755b796590b70175"
+        }
+      ]
+    },
+    {
+      "ecosystem": "npm",
+      "scope": "frontend",
+      "name": "@vue/shared",
+      "version": "3.5.44",
+      "direct": false,
+      "directUse": null,
+      "development": false,
+      "optional": false,
+      "lockfile": "frontend/package-lock.json",
+      "location": "node_modules/@vue/shared",
+      "integrity": "sha512-H82XLH0DjmSOdbEwO15x3QTo1f5PWEtv237eLpYKc0mqLu+B8hnq16lFWmuBmNurkeiG3wr+oM1FhOll/YVFRg==",
+      "resolved": "https://registry.npmjs.org/@vue/shared/-/shared-3.5.44.tgz",
+      "installed": true,
+      "installedFrom": "frontend/node_modules/@vue/shared",
+      "installationKind": "project-node_modules",
+      "installedVersion": "3.5.44",
+      "declaredLicense": "MIT",
+      "lockDeclaredLicense": "MIT",
+      "installedDeclaredLicense": "MIT",
+      "licenseStatus": "installed-metadata",
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/vuejs/core.git",
+        "directory": "packages/shared"
+      },
+      "homepage": "https://github.com/vuejs/core/tree/main/packages/shared#readme",
+      "licenseFiles": [
+        {
+          "path": "frontend/node_modules/@vue/shared/LICENSE",
+          "sha256": "1bb85cc9b13b81ef41c81c51866172fc345e0503c86726a6755b796590b70175"
+        }
+      ]
+    },
+    {
+      "ecosystem": "npm",
+      "scope": "frontend",
+      "name": "alien-signals",
+      "version": "3.2.1",
+      "direct": false,
+      "directUse": null,
+      "development": true,
+      "optional": false,
+      "lockfile": "frontend/package-lock.json",
+      "location": "node_modules/alien-signals",
+      "integrity": "sha512-I8FjmltrfnDFoZedi5CG8DghVYNhzb/Ijluz7tCSJH0xpd0484Kowhbb1XDYOxfJpU1p5wnM2X54dA+IfGyD1g==",
+      "resolved": "https://registry.npmjs.org/alien-signals/-/alien-signals-3.2.1.tgz",
+      "installed": true,
+      "installedFrom": "frontend/node_modules/alien-signals",
+      "installationKind": "project-node_modules",
+      "installedVersion": "3.2.1",
+      "declaredLicense": "MIT",
+      "lockDeclaredLicense": "MIT",
+      "installedDeclaredLicense": "MIT",
+      "licenseStatus": "installed-metadata",
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/stackblitz/alien-signals.git"
+      },
+      "homepage": null,
+      "licenseFiles": [
+        {
+          "path": "frontend/node_modules/alien-signals/LICENSE",
+          "sha256": "75863f712f8f0603b0dba33edf4b725bab80fc858a51756e5905a3c4c8087169"
+        }
+      ]
+    },
+    {
+      "ecosystem": "npm",
+      "scope": "frontend",
+      "name": "csstype",
+      "version": "3.2.3",
+      "direct": false,
+      "directUse": null,
+      "development": false,
+      "optional": false,
+      "lockfile": "frontend/package-lock.json",
+      "location": "node_modules/csstype",
+      "integrity": "sha512-z1HGKcYy2xA8AGQfwrn0PAy+PB7X/GSj3UVJW9qKyn43xWa+gl5nXmU4qqLMRzWVLFC8KusUX8T/0kCiOYpAIQ==",
+      "resolved": "https://registry.npmjs.org/csstype/-/csstype-3.2.3.tgz",
+      "installed": true,
+      "installedFrom": "frontend/node_modules/csstype",
+      "installationKind": "project-node_modules",
+      "installedVersion": "3.2.3",
+      "declaredLicense": "MIT",
+      "lockDeclaredLicense": "MIT",
+      "installedDeclaredLicense": "MIT",
+      "licenseStatus": "installed-metadata",
+      "repository": "https://github.com/frenic/csstype",
+      "homepage": null,
+      "licenseFiles": [
+        {
+          "path": "frontend/node_modules/csstype/LICENSE",
+          "sha256": "11d55bd4541c75ee7879547ac49089c489163dae49551389713c3d026cab383e"
+        }
+      ]
+    },
+    {
+      "ecosystem": "npm",
+      "scope": "frontend",
+      "name": "detect-libc",
+      "version": "2.1.2",
+      "direct": false,
+      "directUse": null,
+      "development": true,
+      "optional": false,
+      "lockfile": "frontend/package-lock.json",
+      "location": "node_modules/detect-libc",
+      "integrity": "sha512-Btj2BOOO83o3WyH59e8MgXsxEQVcarkUOpEYrubB0urwnN10yQ364rsiByU11nZlqWYZm05i/of7io4mzihBtQ==",
+      "resolved": "https://registry.npmjs.org/detect-libc/-/detect-libc-2.1.2.tgz",
+      "installed": true,
+      "installedFrom": "frontend/node_modules/detect-libc",
+      "installationKind": "project-node_modules",
+      "installedVersion": "2.1.2",
+      "declaredLicense": "Apache-2.0",
+      "lockDeclaredLicense": "Apache-2.0",
+      "installedDeclaredLicense": "Apache-2.0",
+      "licenseStatus": "installed-metadata",
+      "repository": {
+        "type": "git",
+        "url": "git://github.com/lovell/detect-libc.git"
+      },
+      "homepage": null,
+      "licenseFiles": [
+        {
+          "path": "frontend/node_modules/detect-libc/LICENSE",
+          "sha256": "b40930bbcf80744c86c46a12bc9da056641d722716c378f5659b9e555ef833e1"
+        }
+      ]
+    },
+    {
+      "ecosystem": "npm",
+      "scope": "frontend",
+      "name": "entities",
+      "version": "7.0.1",
+      "direct": false,
+      "directUse": null,
+      "development": false,
+      "optional": false,
+      "lockfile": "frontend/package-lock.json",
+      "location": "node_modules/entities",
+      "integrity": "sha512-TWrgLOFUQTH994YUyl1yT4uyavY5nNB5muff+RtWaqNVCAK408b5ZnnbNAUEWLTCpum9w6arT70i1XdQ4UeOPA==",
+      "resolved": "https://registry.npmjs.org/entities/-/entities-7.0.1.tgz",
+      "installed": true,
+      "installedFrom": "frontend/node_modules/entities",
+      "installationKind": "project-node_modules",
+      "installedVersion": "7.0.1",
+      "declaredLicense": "BSD-2-Clause",
+      "lockDeclaredLicense": "BSD-2-Clause",
+      "installedDeclaredLicense": "BSD-2-Clause",
+      "licenseStatus": "installed-metadata",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/fb55/entities.git"
+      },
+      "homepage": null,
+      "licenseFiles": [
+        {
+          "path": "frontend/node_modules/entities/LICENSE",
+          "sha256": "cb992345949ccd6e8394b2cd6c465f7b897c864f845937dbf64e8997f389e164"
+        }
+      ]
+    },
+    {
+      "ecosystem": "npm",
+      "scope": "frontend",
+      "name": "estree-walker",
+      "version": "2.0.2",
+      "direct": false,
+      "directUse": null,
+      "development": false,
+      "optional": false,
+      "lockfile": "frontend/package-lock.json",
+      "location": "node_modules/estree-walker",
+      "integrity": "sha512-Rfkk/Mp/DL7JVje3u18FxFujQlTNR2q6QfMSMB7AvCBx91NGj/ba3kCfza0f6dVDbw7YlRf/nDrn7pQrCCyQ/w==",
+      "resolved": "https://registry.npmjs.org/estree-walker/-/estree-walker-2.0.2.tgz",
+      "installed": true,
+      "installedFrom": "frontend/node_modules/estree-walker",
+      "installationKind": "project-node_modules",
+      "installedVersion": "2.0.2",
+      "declaredLicense": "MIT",
+      "lockDeclaredLicense": "MIT",
+      "installedDeclaredLicense": "MIT",
+      "licenseStatus": "installed-metadata",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/Rich-Harris/estree-walker"
+      },
+      "homepage": null,
+      "licenseFiles": [
+        {
+          "path": "frontend/node_modules/estree-walker/LICENSE",
+          "sha256": "8a6dcbabe7179f9c8489c08a7d874d0f1e093ae7449e03756ccf87cb9d0e296e"
+        }
+      ]
+    },
+    {
+      "ecosystem": "npm",
+      "scope": "frontend",
+      "name": "fdir",
+      "version": "6.5.0",
+      "direct": false,
+      "directUse": null,
+      "development": true,
+      "optional": false,
+      "lockfile": "frontend/package-lock.json",
+      "location": "node_modules/fdir",
+      "integrity": "sha512-tIbYtZbucOs0BRGqPJkshJUYdL+SDH7dVM8gjy+ERp3WAUjLEFJE+02kanyHtwjWOnwrKYBiwAmM0p4kLJAnXg==",
+      "resolved": "https://registry.npmjs.org/fdir/-/fdir-6.5.0.tgz",
+      "installed": true,
+      "installedFrom": "frontend/node_modules/fdir",
+      "installationKind": "project-node_modules",
+      "installedVersion": "6.5.0",
+      "declaredLicense": "MIT",
+      "lockDeclaredLicense": "MIT",
+      "installedDeclaredLicense": "MIT",
+      "licenseStatus": "installed-metadata",
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/thecodrr/fdir.git"
+      },
+      "homepage": "https://github.com/thecodrr/fdir#readme",
+      "licenseFiles": [
+        {
+          "path": "frontend/node_modules/fdir/LICENSE",
+          "sha256": "9a39f2aadab11a3697edd668ff2d8ad885b649737b7ab4d3bf12b34e5ada0c86"
+        }
+      ]
+    },
+    {
+      "ecosystem": "npm",
+      "scope": "frontend",
+      "name": "fsevents",
+      "version": "2.3.3",
+      "direct": false,
+      "directUse": null,
+      "development": true,
+      "optional": true,
+      "lockfile": "frontend/package-lock.json",
+      "location": "node_modules/fsevents",
+      "integrity": "sha512-5xoDfX+fL7faATnagmWPpbFtwh/R77WmMMqqHGS65C3vvB0YHrgF+B1YmZ3441tMj5n63k0212XNoJwzlhffQw==",
+      "resolved": "https://registry.npmjs.org/fsevents/-/fsevents-2.3.3.tgz",
+      "installed": false,
+      "installedFrom": null,
+      "installationKind": "not-installed-on-this-platform",
+      "installedVersion": null,
+      "declaredLicense": "MIT",
+      "lockDeclaredLicense": "MIT",
+      "installedDeclaredLicense": null,
+      "licenseStatus": "lock-metadata-only",
+      "repository": null,
+      "homepage": null,
+      "licenseFiles": []
+    },
+    {
+      "ecosystem": "npm",
+      "scope": "frontend",
+      "name": "lightningcss",
+      "version": "1.33.0",
+      "direct": false,
+      "directUse": null,
+      "development": true,
+      "optional": false,
+      "lockfile": "frontend/package-lock.json",
+      "location": "node_modules/lightningcss",
+      "integrity": "sha512-WkUDrojuJs0xkgGf2udWxa3yGBRxPtxUkB79i6aCZLRgc7PM8fZe9TosfPDcvEpQZbuFASnHYmRLBLUbmLOIIA==",
+      "resolved": "https://registry.npmjs.org/lightningcss/-/lightningcss-1.33.0.tgz",
+      "installed": true,
+      "installedFrom": "frontend/node_modules/lightningcss",
+      "installationKind": "project-node_modules",
+      "installedVersion": "1.33.0",
+      "declaredLicense": "MPL-2.0",
+      "lockDeclaredLicense": "MPL-2.0",
+      "installedDeclaredLicense": "MPL-2.0",
+      "licenseStatus": "installed-metadata",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/parcel-bundler/lightningcss.git"
+      },
+      "homepage": null,
+      "licenseFiles": [
+        {
+          "path": "frontend/node_modules/lightningcss/LICENSE",
+          "sha256": "5eba353fe5076ac3432177f8ab1cf75e3afcd0584251e37c3bfead5f447d040e"
+        }
+      ]
+    },
+    {
+      "ecosystem": "npm",
+      "scope": "frontend",
+      "name": "lightningcss-android-arm64",
+      "version": "1.33.0",
+      "direct": false,
+      "directUse": null,
+      "development": true,
+      "optional": true,
+      "lockfile": "frontend/package-lock.json",
+      "location": "node_modules/lightningcss-android-arm64",
+      "integrity": "sha512-gEpRTalKdosp4Bb8qWtc2iOgE5SeIHlpS1up9bFq2wAyYhl1UdTObYiHe98zEM9SQvSoqQZ1IQD0JNpg3Ml5pg==",
+      "resolved": "https://registry.npmjs.org/lightningcss-android-arm64/-/lightningcss-android-arm64-1.33.0.tgz",
+      "installed": false,
+      "installedFrom": null,
+      "installationKind": "not-installed-on-this-platform",
+      "installedVersion": null,
+      "declaredLicense": "MPL-2.0",
+      "lockDeclaredLicense": "MPL-2.0",
+      "installedDeclaredLicense": null,
+      "licenseStatus": "lock-metadata-only",
+      "repository": null,
+      "homepage": null,
+      "licenseFiles": []
+    },
+    {
+      "ecosystem": "npm",
+      "scope": "frontend",
+      "name": "lightningcss-darwin-arm64",
+      "version": "1.33.0",
+      "direct": false,
+      "directUse": null,
+      "development": true,
+      "optional": true,
+      "lockfile": "frontend/package-lock.json",
+      "location": "node_modules/lightningcss-darwin-arm64",
+      "integrity": "sha512-Sciaz8eenNTKn9b3t7+xr0ipTp9YxKQY4npwQ3mrRuL0BAVHBLyZxofhaKBAVtzmtRZ/zTyo0/to4B1uWG/Djg==",
+      "resolved": "https://registry.npmjs.org/lightningcss-darwin-arm64/-/lightningcss-darwin-arm64-1.33.0.tgz",
+      "installed": false,
+      "installedFrom": null,
+      "installationKind": "not-installed-on-this-platform",
+      "installedVersion": null,
+      "declaredLicense": "MPL-2.0",
+      "lockDeclaredLicense": "MPL-2.0",
+      "installedDeclaredLicense": null,
+      "licenseStatus": "lock-metadata-only",
+      "repository": null,
+      "homepage": null,
+      "licenseFiles": []
+    },
+    {
+      "ecosystem": "npm",
+      "scope": "frontend",
+      "name": "lightningcss-darwin-x64",
+      "version": "1.33.0",
+      "direct": false,
+      "directUse": null,
+      "development": true,
+      "optional": true,
+      "lockfile": "frontend/package-lock.json",
+      "location": "node_modules/lightningcss-darwin-x64",
+      "integrity": "sha512-Z5UPAxzrjlWNNyGy6i65cJzzvgJ5D3T6wMvs+gWpY9d7qRhANrxqAp6LhxIgZhWEw18RfJTGcRxjuLIBr+m8XQ==",
+      "resolved": "https://registry.npmjs.org/lightningcss-darwin-x64/-/lightningcss-darwin-x64-1.33.0.tgz",
+      "installed": false,
+      "installedFrom": null,
+      "installationKind": "not-installed-on-this-platform",
+      "installedVersion": null,
+      "declaredLicense": "MPL-2.0",
+      "lockDeclaredLicense": "MPL-2.0",
+      "installedDeclaredLicense": null,
+      "licenseStatus": "lock-metadata-only",
+      "repository": null,
+      "homepage": null,
+      "licenseFiles": []
+    },
+    {
+      "ecosystem": "npm",
+      "scope": "frontend",
+      "name": "lightningcss-freebsd-x64",
+      "version": "1.33.0",
+      "direct": false,
+      "directUse": null,
+      "development": true,
+      "optional": true,
+      "lockfile": "frontend/package-lock.json",
+      "location": "node_modules/lightningcss-freebsd-x64",
+      "integrity": "sha512-QQM/Ti/hQajJwCY+RiWuCZ9sdtI/XQk7nDK5vC8kkdwixezOlDgvDx7+RT+QjK6FcFT4MpsuoBnHIo/O3StRRg==",
+      "resolved": "https://registry.npmjs.org/lightningcss-freebsd-x64/-/lightningcss-freebsd-x64-1.33.0.tgz",
+      "installed": false,
+      "installedFrom": null,
+      "installationKind": "not-installed-on-this-platform",
+      "installedVersion": null,
+      "declaredLicense": "MPL-2.0",
+      "lockDeclaredLicense": "MPL-2.0",
+      "installedDeclaredLicense": null,
+      "licenseStatus": "lock-metadata-only",
+      "repository": null,
+      "homepage": null,
+      "licenseFiles": []
+    },
+    {
+      "ecosystem": "npm",
+      "scope": "frontend",
+      "name": "lightningcss-linux-arm-gnueabihf",
+      "version": "1.33.0",
+      "direct": false,
+      "directUse": null,
+      "development": true,
+      "optional": true,
+      "lockfile": "frontend/package-lock.json",
+      "location": "node_modules/lightningcss-linux-arm-gnueabihf",
+      "integrity": "sha512-N7FVBe6iS24MlM6R/4RBTxGhQheZGs7tiQ9U32UtF75NzP5Q7xWPRqLBCKxlRQRk3rY1jCIPLzx7WzOhuUIRLQ==",
+      "resolved": "https://registry.npmjs.org/lightningcss-linux-arm-gnueabihf/-/lightningcss-linux-arm-gnueabihf-1.33.0.tgz",
+      "installed": false,
+      "installedFrom": null,
+      "installationKind": "not-installed-on-this-platform",
+      "installedVersion": null,
+      "declaredLicense": "MPL-2.0",
+      "lockDeclaredLicense": "MPL-2.0",
+      "installedDeclaredLicense": null,
+      "licenseStatus": "lock-metadata-only",
+      "repository": null,
+      "homepage": null,
+      "licenseFiles": []
+    },
+    {
+      "ecosystem": "npm",
+      "scope": "frontend",
+      "name": "lightningcss-linux-arm64-gnu",
+      "version": "1.33.0",
+      "direct": false,
+      "directUse": null,
+      "development": true,
+      "optional": true,
+      "lockfile": "frontend/package-lock.json",
+      "location": "node_modules/lightningcss-linux-arm64-gnu",
+      "integrity": "sha512-j2v/itmy4HlNxlc6voKXYgBqNi0Ng2LShg4z7GufpEgs05P+2suBVyi9I6YHq5uoVFx9ETin3eCEhLVyXGQnKg==",
+      "resolved": "https://registry.npmjs.org/lightningcss-linux-arm64-gnu/-/lightningcss-linux-arm64-gnu-1.33.0.tgz",
+      "installed": false,
+      "installedFrom": null,
+      "installationKind": "not-installed-on-this-platform",
+      "installedVersion": null,
+      "declaredLicense": "MPL-2.0",
+      "lockDeclaredLicense": "MPL-2.0",
+      "installedDeclaredLicense": null,
+      "licenseStatus": "lock-metadata-only",
+      "repository": null,
+      "homepage": null,
+      "licenseFiles": []
+    },
+    {
+      "ecosystem": "npm",
+      "scope": "frontend",
+      "name": "lightningcss-linux-arm64-musl",
+      "version": "1.33.0",
+      "direct": false,
+      "directUse": null,
+      "development": true,
+      "optional": true,
+      "lockfile": "frontend/package-lock.json",
+      "location": "node_modules/lightningcss-linux-arm64-musl",
+      "integrity": "sha512-yiO5ROMuYQgXbC60yjZU5CYSFZGKXL0HFATXt9mHJn1+zW55oCtMI9NfcVhYLMFDL7gV7oBPon/EmMMGg2OvtQ==",
+      "resolved": "https://registry.npmjs.org/lightningcss-linux-arm64-musl/-/lightningcss-linux-arm64-musl-1.33.0.tgz",
+      "installed": false,
+      "installedFrom": null,
+      "installationKind": "not-installed-on-this-platform",
+      "installedVersion": null,
+      "declaredLicense": "MPL-2.0",
+      "lockDeclaredLicense": "MPL-2.0",
+      "installedDeclaredLicense": null,
+      "licenseStatus": "lock-metadata-only",
+      "repository": null,
+      "homepage": null,
+      "licenseFiles": []
+    },
+    {
+      "ecosystem": "npm",
+      "scope": "frontend",
+      "name": "lightningcss-linux-x64-gnu",
+      "version": "1.33.0",
+      "direct": false,
+      "directUse": null,
+      "development": true,
+      "optional": true,
+      "lockfile": "frontend/package-lock.json",
+      "location": "node_modules/lightningcss-linux-x64-gnu",
+      "integrity": "sha512-ar+Ju7LmcN0Jo4FpL4hpFybwNG9/3A/Br5KW2n2jyODg3MEZXaDYADdemoNS+BDNfMgKvylJLj4S5tyRActuAg==",
+      "resolved": "https://registry.npmjs.org/lightningcss-linux-x64-gnu/-/lightningcss-linux-x64-gnu-1.33.0.tgz",
+      "installed": true,
+      "installedFrom": "frontend/node_modules/lightningcss-linux-x64-gnu",
+      "installationKind": "project-node_modules",
+      "installedVersion": "1.33.0",
+      "declaredLicense": "MPL-2.0",
+      "lockDeclaredLicense": "MPL-2.0",
+      "installedDeclaredLicense": "MPL-2.0",
+      "licenseStatus": "installed-metadata",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/parcel-bundler/lightningcss.git"
+      },
+      "homepage": null,
+      "licenseFiles": [
+        {
+          "path": "frontend/node_modules/lightningcss-linux-x64-gnu/LICENSE",
+          "sha256": "5eba353fe5076ac3432177f8ab1cf75e3afcd0584251e37c3bfead5f447d040e"
+        }
+      ]
+    },
+    {
+      "ecosystem": "npm",
+      "scope": "frontend",
+      "name": "lightningcss-linux-x64-musl",
+      "version": "1.33.0",
+      "direct": false,
+      "directUse": null,
+      "development": true,
+      "optional": true,
+      "lockfile": "frontend/package-lock.json",
+      "location": "node_modules/lightningcss-linux-x64-musl",
+      "integrity": "sha512-RYiYbkokw0trfKqqzfF55lginwEPrD3OJDfTuJzFs1MK6iFnDenaz1fqLLtX4ITG3OktJQXOeTaw1awrBAlZPw==",
+      "resolved": "https://registry.npmjs.org/lightningcss-linux-x64-musl/-/lightningcss-linux-x64-musl-1.33.0.tgz",
+      "installed": true,
+      "installedFrom": "frontend/node_modules/lightningcss-linux-x64-musl",
+      "installationKind": "project-node_modules",
+      "installedVersion": "1.33.0",
+      "declaredLicense": "MPL-2.0",
+      "lockDeclaredLicense": "MPL-2.0",
+      "installedDeclaredLicense": "MPL-2.0",
+      "licenseStatus": "installed-metadata",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/parcel-bundler/lightningcss.git"
+      },
+      "homepage": null,
+      "licenseFiles": [
+        {
+          "path": "frontend/node_modules/lightningcss-linux-x64-musl/LICENSE",
+          "sha256": "5eba353fe5076ac3432177f8ab1cf75e3afcd0584251e37c3bfead5f447d040e"
+        }
+      ]
+    },
+    {
+      "ecosystem": "npm",
+      "scope": "frontend",
+      "name": "lightningcss-win32-arm64-msvc",
+      "version": "1.33.0",
+      "direct": false,
+      "directUse": null,
+      "development": true,
+      "optional": true,
+      "lockfile": "frontend/package-lock.json",
+      "location": "node_modules/lightningcss-win32-arm64-msvc",
+      "integrity": "sha512-1K+MPfLSFVpphzpdbfkhlWk6wBrTObBzS2T6db10PNOZgR9GoVsAWzwNyuhUYYbTp23j+4RrncfujZ4uAzXvwA==",
+      "resolved": "https://registry.npmjs.org/lightningcss-win32-arm64-msvc/-/lightningcss-win32-arm64-msvc-1.33.0.tgz",
+      "installed": false,
+      "installedFrom": null,
+      "installationKind": "not-installed-on-this-platform",
+      "installedVersion": null,
+      "declaredLicense": "MPL-2.0",
+      "lockDeclaredLicense": "MPL-2.0",
+      "installedDeclaredLicense": null,
+      "licenseStatus": "lock-metadata-only",
+      "repository": null,
+      "homepage": null,
+      "licenseFiles": []
+    },
+    {
+      "ecosystem": "npm",
+      "scope": "frontend",
+      "name": "lightningcss-win32-x64-msvc",
+      "version": "1.33.0",
+      "direct": false,
+      "directUse": null,
+      "development": true,
+      "optional": true,
+      "lockfile": "frontend/package-lock.json",
+      "location": "node_modules/lightningcss-win32-x64-msvc",
+      "integrity": "sha512-OlEICDx/Xl0FqSp4bry8zFnCvGpig3Gl4gCquvYwHuqJKEC1+n9NgDniFvqHGmMv1ZkqDJrDqKKSykTDX+ehuA==",
+      "resolved": "https://registry.npmjs.org/lightningcss-win32-x64-msvc/-/lightningcss-win32-x64-msvc-1.33.0.tgz",
+      "installed": false,
+      "installedFrom": null,
+      "installationKind": "not-installed-on-this-platform",
+      "installedVersion": null,
+      "declaredLicense": "MPL-2.0",
+      "lockDeclaredLicense": "MPL-2.0",
+      "installedDeclaredLicense": null,
+      "licenseStatus": "lock-metadata-only",
+      "repository": null,
+      "homepage": null,
+      "licenseFiles": []
+    },
+    {
+      "ecosystem": "npm",
+      "scope": "frontend",
+      "name": "magic-string",
+      "version": "0.30.21",
+      "direct": false,
+      "directUse": null,
+      "development": false,
+      "optional": false,
+      "lockfile": "frontend/package-lock.json",
+      "location": "node_modules/magic-string",
+      "integrity": "sha512-vd2F4YUyEXKGcLHoq+TEyCjxueSeHnFxyyjNp80yg0XV4vUhnDer/lvvlqM/arB5bXQN5K2/3oinyCRyx8T2CQ==",
+      "resolved": "https://registry.npmjs.org/magic-string/-/magic-string-0.30.21.tgz",
+      "installed": true,
+      "installedFrom": "frontend/node_modules/magic-string",
+      "installationKind": "project-node_modules",
+      "installedVersion": "0.30.21",
+      "declaredLicense": "MIT",
+      "lockDeclaredLicense": "MIT",
+      "installedDeclaredLicense": "MIT",
+      "licenseStatus": "installed-metadata",
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Rich-Harris/magic-string.git"
+      },
+      "homepage": null,
+      "licenseFiles": [
+        {
+          "path": "frontend/node_modules/magic-string/LICENSE",
+          "sha256": "1cbe51b907662f6cb1492b16c359384a595180bf0e4d101603ed525e75c4e484"
+        }
+      ]
+    },
+    {
+      "ecosystem": "npm",
+      "scope": "frontend",
+      "name": "muggle-string",
+      "version": "0.4.1",
+      "direct": false,
+      "directUse": null,
+      "development": true,
+      "optional": false,
+      "lockfile": "frontend/package-lock.json",
+      "location": "node_modules/muggle-string",
+      "integrity": "sha512-VNTrAak/KhO2i8dqqnqnAHOa3cYBwXEZe9h+D5h/1ZqFSTEFHdM65lR7RoIqq3tBBYavsOXV84NoHXZ0AkPyqQ==",
+      "resolved": "https://registry.npmjs.org/muggle-string/-/muggle-string-0.4.1.tgz",
+      "installed": true,
+      "installedFrom": "frontend/node_modules/muggle-string",
+      "installationKind": "project-node_modules",
+      "installedVersion": "0.4.1",
+      "declaredLicense": "MIT",
+      "lockDeclaredLicense": "MIT",
+      "installedDeclaredLicense": "MIT",
+      "licenseStatus": "installed-metadata",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/johnsoncodehk/muggle-string.git"
+      },
+      "homepage": null,
+      "licenseFiles": [
+        {
+          "path": "frontend/node_modules/muggle-string/LICENSE",
+          "sha256": "df52411dcd3c8f5897bbbec8c94e971519e13e75818c263e9a99a86255dd301b"
+        }
+      ]
+    },
+    {
+      "ecosystem": "npm",
+      "scope": "frontend",
+      "name": "nanoid",
+      "version": "3.3.20",
+      "direct": false,
+      "directUse": null,
+      "development": false,
+      "optional": false,
+      "lockfile": "frontend/package-lock.json",
+      "location": "node_modules/nanoid",
+      "integrity": "sha512-uKdg2G3GNCKQn9byYOpxbGqrT2fGO5KRt5J/8b3pok8rT6qxGWF6hxMyJiEYtAf+FVyYuD9hRaDqX5uPFYJ4ZQ==",
+      "resolved": "https://registry.npmjs.org/nanoid/-/nanoid-3.3.20.tgz",
+      "installed": true,
+      "installedFrom": "frontend/node_modules/nanoid",
+      "installationKind": "project-node_modules",
+      "installedVersion": "3.3.20",
+      "declaredLicense": "MIT",
+      "lockDeclaredLicense": "MIT",
+      "installedDeclaredLicense": "MIT",
+      "licenseStatus": "installed-metadata",
+      "repository": "ai/nanoid",
+      "homepage": null,
+      "licenseFiles": [
+        {
+          "path": "frontend/node_modules/nanoid/LICENSE",
+          "sha256": "da4db1480d9beea3483a2eda5c53b22238d0827d57da162b48f122e04d2d9987"
+        }
+      ]
+    },
+    {
+      "ecosystem": "npm",
+      "scope": "frontend",
+      "name": "path-browserify",
+      "version": "1.0.1",
+      "direct": false,
+      "directUse": null,
+      "development": true,
+      "optional": false,
+      "lockfile": "frontend/package-lock.json",
+      "location": "node_modules/path-browserify",
+      "integrity": "sha512-b7uo2UCUOYZcnF/3ID0lulOJi/bafxa1xPe7ZPsammBSpjSWQkjNxlt635YGS2MiR9GjvuXCtz2emr3jbsz98g==",
+      "resolved": "https://registry.npmjs.org/path-browserify/-/path-browserify-1.0.1.tgz",
+      "installed": true,
+      "installedFrom": "frontend/node_modules/path-browserify",
+      "installationKind": "project-node_modules",
+      "installedVersion": "1.0.1",
+      "declaredLicense": "MIT",
+      "lockDeclaredLicense": "MIT",
+      "installedDeclaredLicense": "MIT",
+      "licenseStatus": "installed-metadata",
+      "repository": {
+        "type": "git",
+        "url": "git://github.com/browserify/path-browserify.git"
+      },
+      "homepage": "https://github.com/browserify/path-browserify",
+      "licenseFiles": [
+        {
+          "path": "frontend/node_modules/path-browserify/LICENSE",
+          "sha256": "a22b9d5763f574e5db347c30acc0b33eaf4846767c03d2e27d012e864e79a824"
+        }
+      ]
+    },
+    {
+      "ecosystem": "npm",
+      "scope": "frontend",
+      "name": "picocolors",
+      "version": "1.1.1",
+      "direct": false,
+      "directUse": null,
+      "development": false,
+      "optional": false,
+      "lockfile": "frontend/package-lock.json",
+      "location": "node_modules/picocolors",
+      "integrity": "sha512-xceH2snhtb5M9liqDsmEw56le376mTZkEX/jEb/RxNFyegNul7eNslCXP9FDj/Lcu0X8KEyMceP2ntpaHrDEVA==",
+      "resolved": "https://registry.npmjs.org/picocolors/-/picocolors-1.1.1.tgz",
+      "installed": true,
+      "installedFrom": "frontend/node_modules/picocolors",
+      "installationKind": "project-node_modules",
+      "installedVersion": "1.1.1",
+      "declaredLicense": "ISC",
+      "lockDeclaredLicense": "ISC",
+      "installedDeclaredLicense": "ISC",
+      "licenseStatus": "installed-metadata",
+      "repository": "alexeyraspopov/picocolors",
+      "homepage": null,
+      "licenseFiles": [
+        {
+          "path": "frontend/node_modules/picocolors/LICENSE",
+          "sha256": "6582629e2979466878f6014313dcc2f3756c9616148682227ce3063dde310750"
+        }
+      ]
+    },
+    {
+      "ecosystem": "npm",
+      "scope": "frontend",
+      "name": "picomatch",
+      "version": "4.0.7",
+      "direct": false,
+      "directUse": null,
+      "development": true,
+      "optional": false,
+      "lockfile": "frontend/package-lock.json",
+      "location": "node_modules/picomatch",
+      "integrity": "sha512-qcJu88Q2IWqJsDD529JKMdwGm/dvInW4HvQnRwiH9JtihJvzGOscDtHE3x1pBKeUOTysQ8kVmLnJ2kJu7yhcGA==",
+      "resolved": "https://registry.npmjs.org/picomatch/-/picomatch-4.0.7.tgz",
+      "installed": true,
+      "installedFrom": "frontend/node_modules/picomatch",
+      "installationKind": "project-node_modules",
+      "installedVersion": "4.0.7",
+      "declaredLicense": "MIT",
+      "lockDeclaredLicense": "MIT",
+      "installedDeclaredLicense": "MIT",
+      "licenseStatus": "installed-metadata",
+      "repository": "micromatch/picomatch",
+      "homepage": "https://github.com/micromatch/picomatch",
+      "licenseFiles": [
+        {
+          "path": "frontend/node_modules/picomatch/LICENSE",
+          "sha256": "d0cd141b0c322fded5dfad1d4645bb2fedfc05b7321fe1009469638190d59ef9"
+        }
+      ]
+    },
+    {
+      "ecosystem": "npm",
+      "scope": "frontend",
+      "name": "postcss",
+      "version": "8.5.30",
+      "direct": false,
+      "directUse": null,
+      "development": false,
+      "optional": false,
+      "lockfile": "frontend/package-lock.json",
+      "location": "node_modules/postcss",
+      "integrity": "sha512-zkd+e9S1AQHhmaBKye9zlFHWjOwVgqXl1q3ECYy8561K7qxR2cREf/STLskulBFd78k6AOFeA+ff1TtEzk9bAA==",
+      "resolved": "https://registry.npmjs.org/postcss/-/postcss-8.5.30.tgz",
+      "installed": true,
+      "installedFrom": "frontend/node_modules/postcss",
+      "installationKind": "project-node_modules",
+      "installedVersion": "8.5.30",
+      "declaredLicense": "MIT",
+      "lockDeclaredLicense": "MIT",
+      "installedDeclaredLicense": "MIT",
+      "licenseStatus": "installed-metadata",
+      "repository": "postcss/postcss",
+      "homepage": "https://postcss.org/",
+      "licenseFiles": [
+        {
+          "path": "frontend/node_modules/postcss/LICENSE",
+          "sha256": "5be1f3465bba68a626777f984878814aaf35e7ef8e9fd314d469bcf887050fb8"
+        }
+      ]
+    },
+    {
+      "ecosystem": "npm",
+      "scope": "frontend",
+      "name": "rolldown",
+      "version": "1.2.14",
+      "direct": false,
+      "directUse": null,
+      "development": true,
+      "optional": false,
+      "lockfile": "frontend/package-lock.json",
+      "location": "node_modules/rolldown",
+      "integrity": "sha512-eTBTTqMR6uHKLgcUqpJP8ntzDI6V4LYA8negAMBEI7gkgVvOdrx6VsvS2Ym+83KhOPdLCHWJu0w7UQFJZhHKNw==",
+      "resolved": "https://registry.npmjs.org/rolldown/-/rolldown-1.2.14.tgz",
+      "installed": true,
+      "installedFrom": "frontend/node_modules/rolldown",
+      "installationKind": "project-node_modules",
+      "installedVersion": "1.2.14",
+      "declaredLicense": "MIT",
+      "lockDeclaredLicense": "MIT",
+      "installedDeclaredLicense": "MIT",
+      "licenseStatus": "installed-metadata",
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/rolldown/rolldown.git",
+        "directory": "packages/rolldown"
+      },
+      "homepage": "https://rolldown.rs/",
+      "licenseFiles": [
+        {
+          "path": "frontend/node_modules/rolldown/LICENSE",
+          "sha256": "23ecfff35a5a2e80d92142f75228912c3b1abc4b5a8337a821ff4397e2f9f734"
+        },
+        {
+          "path": "frontend/node_modules/rolldown/THIRD-PARTY-LICENSE",
+          "sha256": "a877291d800ed43692f3f9ae09d8e01cc6f7293ad39d43896059c188ffbb8b7c"
+        }
+      ]
+    },
+    {
+      "ecosystem": "npm",
+      "scope": "frontend",
+      "name": "source-map-js",
+      "version": "1.2.2",
+      "direct": false,
+      "directUse": null,
+      "development": false,
+      "optional": false,
+      "lockfile": "frontend/package-lock.json",
+      "location": "node_modules/source-map-js",
+      "integrity": "sha512-KGj/8Y43x35aZVDtt+J4mK1hoLGHULMYfSkODJNQjNDC3oW1PqPoxMwo0pLUsWM/UEGzON/NxeHywEfNXNP3Vw==",
+      "resolved": "https://registry.npmjs.org/source-map-js/-/source-map-js-1.2.2.tgz",
+      "installed": true,
+      "installedFrom": "frontend/node_modules/source-map-js",
+      "installationKind": "project-node_modules",
+      "installedVersion": "1.2.2",
+      "declaredLicense": "BSD-3-Clause",
+      "lockDeclaredLicense": "BSD-3-Clause",
+      "installedDeclaredLicense": "BSD-3-Clause",
+      "licenseStatus": "installed-metadata",
+      "repository": "7rulnik/source-map-js",
+      "homepage": "https://github.com/7rulnik/source-map-js",
+      "licenseFiles": [
+        {
+          "path": "frontend/node_modules/source-map-js/LICENSE",
+          "sha256": "6cb0631f71c7749763fd3dd1d5bee52dd1070ec17f2edc1710079ad070bd2fbd"
+        }
+      ]
+    },
+    {
+      "ecosystem": "npm",
+      "scope": "frontend",
+      "name": "tinyglobby",
+      "version": "0.2.17",
+      "direct": false,
+      "directUse": null,
+      "development": true,
+      "optional": false,
+      "lockfile": "frontend/package-lock.json",
+      "location": "node_modules/tinyglobby",
+      "integrity": "sha512-wXR/dYpcqKmfWpEdZjiKJOwCNFndD0DMnrW/cYjVGttEkBfVgcLFHoNrlj47mjOVic9yyNu65alsgF4NQyTa2g==",
+      "resolved": "https://registry.npmjs.org/tinyglobby/-/tinyglobby-0.2.17.tgz",
+      "installed": true,
+      "installedFrom": "frontend/node_modules/tinyglobby",
+      "installationKind": "project-node_modules",
+      "installedVersion": "0.2.17",
+      "declaredLicense": "MIT",
+      "lockDeclaredLicense": "MIT",
+      "installedDeclaredLicense": "MIT",
+      "licenseStatus": "installed-metadata",
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/SuperchupuDev/tinyglobby.git"
+      },
+      "homepage": "https://superchupu.dev/tinyglobby",
+      "licenseFiles": [
+        {
+          "path": "frontend/node_modules/tinyglobby/LICENSE",
+          "sha256": "22c68811e174cbbfb3813d4135918df4f540959c14d872e601d9abe83d3cde8f"
+        }
+      ]
+    },
+    {
+      "ecosystem": "npm",
+      "scope": "frontend",
+      "name": "typescript",
+      "version": "5.9.3",
+      "direct": true,
+      "directUse": "development/test",
+      "development": false,
+      "optional": false,
+      "lockfile": "frontend/package-lock.json",
+      "location": "node_modules/typescript",
+      "integrity": "sha512-jl1vZzPDinLr9eUt3J/t7V6FgNEw9QjvBPdysz9KfQDD41fQrC2Y4vKQdiaUpFT4bXlb1RHhLpp8wtm6M5TgSw==",
+      "resolved": "https://registry.npmjs.org/typescript/-/typescript-5.9.3.tgz",
+      "installed": true,
+      "installedFrom": "frontend/node_modules/typescript",
+      "installationKind": "project-node_modules",
+      "installedVersion": "5.9.3",
+      "declaredLicense": "Apache-2.0",
+      "lockDeclaredLicense": "Apache-2.0",
+      "installedDeclaredLicense": "Apache-2.0",
+      "licenseStatus": "installed-metadata",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/microsoft/TypeScript.git"
+      },
+      "homepage": "https://www.typescriptlang.org/",
+      "licenseFiles": [
+        {
+          "path": "frontend/node_modules/typescript/LICENSE.txt",
+          "sha256": "a7d00bfd54525bc694b6e32f64c7ebcf5e6b7ae3657be5cc12767bce74654a47"
+        },
+        {
+          "path": "frontend/node_modules/typescript/ThirdPartyNoticeText.txt",
+          "sha256": "1af3c68039c57e539422da82a4faada506ce6d0ea6f90e0b699d02dbcdb7a90c"
+        }
+      ]
+    },
+    {
+      "ecosystem": "npm",
+      "scope": "frontend",
+      "name": "vite",
+      "version": "8.3.4",
+      "direct": true,
+      "directUse": "development/test",
+      "development": true,
+      "optional": false,
+      "lockfile": "frontend/package-lock.json",
+      "location": "node_modules/vite",
+      "integrity": "sha512-IftLE8phJhdNRIGNEV4JCCvfNScoZQVfcXaN8TQropWGJtOHcu+iAB9pHcuGvmEb/kddw0LBe/jS8ztdC6xdiQ==",
+      "resolved": "https://registry.npmjs.org/vite/-/vite-8.3.4.tgz",
+      "installed": true,
+      "installedFrom": "frontend/node_modules/vite",
+      "installationKind": "project-node_modules",
+      "installedVersion": "8.3.4",
+      "declaredLicense": "MIT",
+      "lockDeclaredLicense": "MIT",
+      "installedDeclaredLicense": "MIT",
+      "licenseStatus": "installed-metadata",
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/vitejs/vite.git",
+        "directory": "packages/vite"
+      },
+      "homepage": "https://vite.dev",
+      "licenseFiles": [
+        {
+          "path": "frontend/node_modules/vite/LICENSE.md",
+          "sha256": "a47172e44a86a7e2cd1c16282341f7726ec60caafe3a6166fe3e0602005b6fa6"
+        }
+      ]
+    },
+    {
+      "ecosystem": "npm",
+      "scope": "frontend",
+      "name": "vscode-uri",
+      "version": "3.2.0",
+      "direct": false,
+      "directUse": null,
+      "development": true,
+      "optional": false,
+      "lockfile": "frontend/package-lock.json",
+      "location": "node_modules/vscode-uri",
+      "integrity": "sha512-m2gXo3bn0G1kT9InzMf07fTbqMbGtyckj3bH5ktLO+1Ssv+yiATZ4dhwaQv9UZWxJh6E9IFGnQyjgWVDWVBDrg==",
+      "resolved": "https://registry.npmjs.org/vscode-uri/-/vscode-uri-3.2.0.tgz",
+      "installed": true,
+      "installedFrom": "frontend/node_modules/vscode-uri",
+      "installationKind": "project-node_modules",
+      "installedVersion": "3.2.0",
+      "declaredLicense": "MIT",
+      "lockDeclaredLicense": "MIT",
+      "installedDeclaredLicense": "MIT",
+      "licenseStatus": "installed-metadata",
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/microsoft/vscode-uri.git"
+      },
+      "homepage": "https://github.com/microsoft/vscode-uri#readme",
+      "licenseFiles": [
+        {
+          "path": "frontend/node_modules/vscode-uri/LICENSE.md",
+          "sha256": "c669138cb1eb01fbb745e8e460b291e4f2869c14a40061390b6095d845ed4c82"
+        }
+      ]
+    },
+    {
+      "ecosystem": "npm",
+      "scope": "frontend",
+      "name": "vue",
+      "version": "3.5.44",
+      "direct": true,
+      "directUse": "runtime",
+      "development": false,
+      "optional": false,
+      "lockfile": "frontend/package-lock.json",
+      "location": "node_modules/vue",
+      "integrity": "sha512-dvvmaOCG7lAMkJTPqPwWeGMsPS6DIsFsfZDUgBp9V6mHf9b3+/wyVwYR4Es+WV6uJC0FKRxp81Obcq0ZwUcGFQ==",
+      "resolved": "https://registry.npmjs.org/vue/-/vue-3.5.44.tgz",
+      "installed": true,
+      "installedFrom": "frontend/node_modules/vue",
+      "installationKind": "project-node_modules",
+      "installedVersion": "3.5.44",
+      "declaredLicense": "MIT",
+      "lockDeclaredLicense": "MIT",
+      "installedDeclaredLicense": "MIT",
+      "licenseStatus": "installed-metadata",
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/vuejs/core.git"
+      },
+      "homepage": "https://vuejs.org/",
+      "licenseFiles": [
+        {
+          "path": "frontend/node_modules/vue/LICENSE",
+          "sha256": "1bb85cc9b13b81ef41c81c51866172fc345e0503c86726a6755b796590b70175"
+        }
+      ]
+    },
+    {
+      "ecosystem": "npm",
+      "scope": "frontend",
+      "name": "vue-router",
+      "version": "4.6.4",
+      "direct": true,
+      "directUse": "runtime",
+      "development": false,
+      "optional": false,
+      "lockfile": "frontend/package-lock.json",
+      "location": "node_modules/vue-router",
+      "integrity": "sha512-Hz9q5sa33Yhduglwz6g9skT8OBPii+4bFn88w6J+J4MfEo4KRRpmiNG/hHHkdbRFlLBOqxN8y8gf2Fb0MTUgVg==",
+      "resolved": "https://registry.npmjs.org/vue-router/-/vue-router-4.6.4.tgz",
+      "installed": true,
+      "installedFrom": "frontend/node_modules/vue-router",
+      "installationKind": "project-node_modules",
+      "installedVersion": "4.6.4",
+      "declaredLicense": "MIT",
+      "lockDeclaredLicense": "MIT",
+      "installedDeclaredLicense": "MIT",
+      "licenseStatus": "installed-metadata",
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/vuejs/router.git"
+      },
+      "homepage": "https://router.vuejs.org",
+      "licenseFiles": [
+        {
+          "path": "frontend/node_modules/vue-router/LICENSE",
+          "sha256": "91a2845c4db44e7497b514b98634a674c737986ad0db81599307cf733bf850b2"
+        }
+      ]
+    },
+    {
+      "ecosystem": "npm",
+      "scope": "frontend",
+      "name": "vue-tsc",
+      "version": "3.3.12",
+      "direct": true,
+      "directUse": "development/test",
+      "development": true,
+      "optional": false,
+      "lockfile": "frontend/package-lock.json",
+      "location": "node_modules/vue-tsc",
+      "integrity": "sha512-kbpaz18O9jPVkXVHD1BEjpUXM6WhXSu+62L1sGGr6Wbzd8GbvkBQWjoj3KZ/C0aq2MZllce7UdtWzwCIYsBMGA==",
+      "resolved": "https://registry.npmjs.org/vue-tsc/-/vue-tsc-3.3.12.tgz",
+      "installed": true,
+      "installedFrom": "frontend/node_modules/vue-tsc",
+      "installationKind": "project-node_modules",
+      "installedVersion": "3.3.12",
+      "declaredLicense": "MIT",
+      "lockDeclaredLicense": "MIT",
+      "installedDeclaredLicense": "MIT",
+      "licenseStatus": "installed-metadata",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/vuejs/language-tools.git",
+        "directory": "packages/tsc"
+      },
+      "homepage": null,
+      "licenseFiles": [
+        {
+          "path": "frontend/node_modules/vue-tsc/LICENSE",
+          "sha256": "a56351045b45475385a9479d7310208ff0be9489babdb4e635fcea5d7dc1fb02"
+        }
+      ]
+    },
+    {
+      "ecosystem": "npm",
+      "scope": "tests",
+      "name": "playwright-core",
+      "version": "1.58.2",
+      "direct": true,
+      "directUse": "development/test",
+      "development": true,
+      "optional": false,
+      "lockfile": "tests/package-lock.json",
+      "location": "node_modules/playwright-core",
+      "integrity": "sha512-yZkEtftgwS8CsfYo7nm0KE8jsvm6i/PTgVtB8DL726wNf6H2IMsDuxCpJj59KDaxCtSnrWan2AeDqM7JBaultg==",
+      "resolved": "https://registry.npmjs.org/playwright-core/-/playwright-core-1.58.2.tgz",
+      "installed": true,
+      "installedFrom": "/workspace/rea-tool/node_modules/playwright-core",
+      "installationKind": "external-test-tool-package; no REA code copied",
+      "installedVersion": "1.58.2",
+      "declaredLicense": "Apache-2.0",
+      "lockDeclaredLicense": "Apache-2.0",
+      "installedDeclaredLicense": "Apache-2.0",
+      "licenseStatus": "installed-metadata",
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/microsoft/playwright.git"
+      },
+      "homepage": "https://playwright.dev",
+      "licenseFiles": [
+        {
+          "path": "/workspace/rea-tool/node_modules/playwright-core/LICENSE",
+          "sha256": "45873d00a0dd243596deb4aa23b2493b3d1f0671921bf2538ea431d7380220eb"
+        },
+        {
+          "path": "/workspace/rea-tool/node_modules/playwright-core/NOTICE",
+          "sha256": "6d602191187b35b9b01d2cffa01c8469c2c8d9de8a96f1bf868e0f264f51c81d"
+        },
+        {
+          "path": "/workspace/rea-tool/node_modules/playwright-core/ThirdPartyNotices.txt",
+          "sha256": "36aa7e5d56f9a7d4cdb85e570500e0dcdd36799c0e937199dd6cb9813a8fdce9"
+        }
+      ]
+    }
+  ],
+  "nuget": [
+    {
+      "ecosystem": "NuGet",
+      "name": "Microsoft.CodeCoverage",
+      "version": "18.0.1",
+      "contentHash": "O+utSr97NAJowIQT/OVp3Lh9QgW/wALVTP4RG1m2AfFP4IyJmJz0ZBmFJUsRQiAPgq6IRC0t8AAzsiPIsaUDEA==",
+      "projects": [
+        {
+          "lockfile": "backend/Hengchuan.Tests/packages.lock.json",
+          "framework": "net10.0",
+          "type": "Transitive"
+        }
+      ],
+      "installed": true,
+      "nuspec": {
+        "path": "/workspace/.tools/nuget/microsoft.codecoverage/18.0.1/microsoft.codecoverage.nuspec",
+        "sha256": "74de7a528b43919fc9bb6825ffe804e78fcdb5ce3f43e11d00a6ed7b92fbd662"
+      },
+      "installedVersion": "18.0.1",
+      "licenseDeclaration": {
+        "type": "expression",
+        "value": "MIT"
+      },
+      "legacyLicenseUrl": "https://licenses.nuget.org/MIT",
+      "declaredLicense": "MIT",
+      "licenseStatus": "nuspec-expression",
+      "authors": "Microsoft",
+      "copyright": "© Microsoft Corporation. All rights reserved.",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/microsoft/vstest",
+        "commit": "ef89ad17b5252e082698557246e61c98bef7a5d5"
+      },
+      "projectUrl": "https://github.com/microsoft/vstest",
+      "licenseFiles": [
+        {
+          "path": "/workspace/.tools/nuget/microsoft.codecoverage/18.0.1/ThirdPartyNotices.txt",
+          "sha256": "4fc4244935bbe3516164402c573f053a5d246571ed4d357e6cccd8ebec296bbc"
+        }
+      ]
+    },
+    {
+      "ecosystem": "NuGet",
+      "name": "Microsoft.Data.Sqlite",
+      "version": "10.0.13",
+      "contentHash": "w37nz3WFmDtRfXxWEwIXX2OgqDRiwhD1JGbFwfpFCF8GkCrV/yO6Y2JF5058J2RGoI2sCcdn02wrk0yEcekWcw==",
+      "projects": [
+        {
+          "lockfile": "backend/Hengchuan.Api/packages.lock.json",
+          "framework": "net10.0",
+          "type": "Direct"
+        },
+        {
+          "lockfile": "backend/Hengchuan.Tests/packages.lock.json",
+          "framework": "net10.0",
+          "type": "Transitive"
+        }
+      ],
+      "installed": true,
+      "nuspec": {
+        "path": "/workspace/.tools/nuget/microsoft.data.sqlite/10.0.13/microsoft.data.sqlite.nuspec",
+        "sha256": "14548e9e520e10f9dc16261c64a59606731d962ffe8a90043fcf96dc33ffac40"
+      },
+      "installedVersion": "10.0.13",
+      "licenseDeclaration": {
+        "type": "expression",
+        "value": "MIT"
+      },
+      "legacyLicenseUrl": "https://licenses.nuget.org/MIT",
+      "declaredLicense": "MIT",
+      "licenseStatus": "nuspec-expression",
+      "authors": "Microsoft",
+      "copyright": "© Microsoft Corporation. All rights reserved.",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/dotnet/dotnet",
+        "commit": "4099f83977f4d29604a9aeb971fb0a7bc1d5f699"
+      },
+      "projectUrl": "https://docs.microsoft.com/dotnet/standard/data/sqlite/",
+      "licenseFiles": []
+    },
+    {
+      "ecosystem": "NuGet",
+      "name": "Microsoft.Data.Sqlite.Core",
+      "version": "10.0.13",
+      "contentHash": "Gge8XsSCOwcbkbdmt2UDAe6kIv9Q0vA6yb3wsTStjjexaMFLTWfc/1gH4kbhJ+zWiXRTRA4lG2sOQNVfir204w==",
+      "projects": [
+        {
+          "lockfile": "backend/Hengchuan.Api/packages.lock.json",
+          "framework": "net10.0",
+          "type": "Transitive"
+        },
+        {
+          "lockfile": "backend/Hengchuan.Tests/packages.lock.json",
+          "framework": "net10.0",
+          "type": "Transitive"
+        }
+      ],
+      "installed": true,
+      "nuspec": {
+        "path": "/workspace/.tools/nuget/microsoft.data.sqlite.core/10.0.13/microsoft.data.sqlite.core.nuspec",
+        "sha256": "cae22388d3e0d116841a8285d4a6b922156c4bdb30b890687d40813f290767a6"
+      },
+      "installedVersion": "10.0.13",
+      "licenseDeclaration": {
+        "type": "expression",
+        "value": "MIT"
+      },
+      "legacyLicenseUrl": "https://licenses.nuget.org/MIT",
+      "declaredLicense": "MIT",
+      "licenseStatus": "nuspec-expression",
+      "authors": "Microsoft",
+      "copyright": "© Microsoft Corporation. All rights reserved.",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/dotnet/dotnet",
+        "commit": "4099f83977f4d29604a9aeb971fb0a7bc1d5f699"
+      },
+      "projectUrl": "https://docs.microsoft.com/dotnet/standard/data/sqlite/",
+      "licenseFiles": []
+    },
+    {
+      "ecosystem": "NuGet",
+      "name": "Microsoft.NET.Test.Sdk",
+      "version": "18.0.1",
+      "contentHash": "WNpu6vI2rA0pXY4r7NKxCN16XRWl5uHu6qjuyVLoDo6oYEggIQefrMjkRuibQHm/NslIUNCcKftvoWAN80MSAg==",
+      "projects": [
+        {
+          "lockfile": "backend/Hengchuan.Tests/packages.lock.json",
+          "framework": "net10.0",
+          "type": "Direct"
+        }
+      ],
+      "installed": true,
+      "nuspec": {
+        "path": "/workspace/.tools/nuget/microsoft.net.test.sdk/18.0.1/microsoft.net.test.sdk.nuspec",
+        "sha256": "2dd29606329ec4f855d243329f56fad96b71cd315897a1f721eeb57f38f85290"
+      },
+      "installedVersion": "18.0.1",
+      "licenseDeclaration": {
+        "type": "expression",
+        "value": "MIT"
+      },
+      "legacyLicenseUrl": "https://licenses.nuget.org/MIT",
+      "declaredLicense": "MIT",
+      "licenseStatus": "nuspec-expression",
+      "authors": "Microsoft",
+      "copyright": "© Microsoft Corporation. All rights reserved.",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/microsoft/vstest",
+        "commit": "ef89ad17b5252e082698557246e61c98bef7a5d5"
+      },
+      "projectUrl": "https://github.com/microsoft/vstest",
+      "licenseFiles": []
+    },
+    {
+      "ecosystem": "NuGet",
+      "name": "Microsoft.TestPlatform.ObjectModel",
+      "version": "18.0.1",
+      "contentHash": "qT/mwMcLF9BieRkzOBPL2qCopl8hQu6A1P7JWAoj/FMu5i9vds/7cjbJ/LLtaiwWevWLAeD5v5wjQJ/l6jvhWQ==",
+      "projects": [
+        {
+          "lockfile": "backend/Hengchuan.Tests/packages.lock.json",
+          "framework": "net10.0",
+          "type": "Transitive"
+        }
+      ],
+      "installed": true,
+      "nuspec": {
+        "path": "/workspace/.tools/nuget/microsoft.testplatform.objectmodel/18.0.1/microsoft.testplatform.objectmodel.nuspec",
+        "sha256": "7e1022c4905b928b562395bd14a8a1c042c199efb6746715a2acf100a6604acc"
+      },
+      "installedVersion": "18.0.1",
+      "licenseDeclaration": {
+        "type": "expression",
+        "value": "MIT"
+      },
+      "legacyLicenseUrl": "https://licenses.nuget.org/MIT",
+      "declaredLicense": "MIT",
+      "licenseStatus": "nuspec-expression",
+      "authors": "Microsoft",
+      "copyright": "© Microsoft Corporation. All rights reserved.",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/microsoft/vstest",
+        "commit": "ef89ad17b5252e082698557246e61c98bef7a5d5"
+      },
+      "projectUrl": "https://github.com/microsoft/vstest",
+      "licenseFiles": []
+    },
+    {
+      "ecosystem": "NuGet",
+      "name": "Microsoft.TestPlatform.TestHost",
+      "version": "18.0.1",
+      "contentHash": "uDJKAEjFTaa2wHdWlfo6ektyoh+WD4/Eesrwb4FpBFKsLGehhACVnwwTI4qD3FrIlIEPlxdXg3SyrYRIcO+RRQ==",
+      "projects": [
+        {
+          "lockfile": "backend/Hengchuan.Tests/packages.lock.json",
+          "framework": "net10.0",
+          "type": "Transitive"
+        }
+      ],
+      "installed": true,
+      "nuspec": {
+        "path": "/workspace/.tools/nuget/microsoft.testplatform.testhost/18.0.1/microsoft.testplatform.testhost.nuspec",
+        "sha256": "57c5be863cc4a2c19a0a597c9ded5a474ddefb9fccdc1253e8fd6f01899e8165"
+      },
+      "installedVersion": "18.0.1",
+      "licenseDeclaration": {
+        "type": "expression",
+        "value": "MIT"
+      },
+      "legacyLicenseUrl": "https://licenses.nuget.org/MIT",
+      "declaredLicense": "MIT",
+      "licenseStatus": "nuspec-expression",
+      "authors": "Microsoft",
+      "copyright": "© Microsoft Corporation. All rights reserved.",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/microsoft/vstest",
+        "commit": "ef89ad17b5252e082698557246e61c98bef7a5d5"
+      },
+      "projectUrl": "https://github.com/microsoft/vstest",
+      "licenseFiles": [
+        {
+          "path": "/workspace/.tools/nuget/microsoft.testplatform.testhost/18.0.1/ThirdPartyNotices.txt",
+          "sha256": "e2ce7628e0f67d0d724eea9d9286a6938bf1eedd253fc84b23d72ae54778a5f7"
+        }
+      ]
+    },
+    {
+      "ecosystem": "NuGet",
+      "name": "Newtonsoft.Json",
+      "version": "13.0.3",
+      "contentHash": "HrC5BXdl00IP9zeV+0Z848QWPAoCr9P3bDEZguI+gkLcBKAOxix/tLEAAHC+UvDNPv4a2d18lOReHMOagPa+zQ==",
+      "projects": [
+        {
+          "lockfile": "backend/Hengchuan.Tests/packages.lock.json",
+          "framework": "net10.0",
+          "type": "Transitive"
+        }
+      ],
+      "installed": true,
+      "nuspec": {
+        "path": "/workspace/.tools/nuget/newtonsoft.json/13.0.3/newtonsoft.json.nuspec",
+        "sha256": "64aeffca22289eeb3bd32cbe72722ac878d2eadcee9f8885f17daa2e8357c518"
+      },
+      "installedVersion": "13.0.3",
+      "licenseDeclaration": {
+        "type": "expression",
+        "value": "MIT"
+      },
+      "legacyLicenseUrl": "https://licenses.nuget.org/MIT",
+      "declaredLicense": "MIT",
+      "licenseStatus": "nuspec-expression",
+      "authors": "James Newton-King",
+      "copyright": "Copyright © James Newton-King 2008",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/JamesNK/Newtonsoft.Json",
+        "commit": "0a2e291c0d9c0c7675d445703e51750363a549ef"
+      },
+      "projectUrl": "https://www.newtonsoft.com/json",
+      "licenseFiles": [
+        {
+          "path": "/workspace/.tools/nuget/newtonsoft.json/13.0.3/LICENSE.md",
+          "sha256": "b98a397897ff55f76cddc380041507a95a896b2946e0188703bf0496793d6516"
+        }
+      ]
+    },
+    {
+      "ecosystem": "NuGet",
+      "name": "SQLitePCLRaw.bundle_e_sqlite3",
+      "version": "2.1.13",
+      "contentHash": "NlDixlC7uHmo+ojXRgkNvN0tQtVGpLDZ3x2OpgNj+G07VHh5cXSszFDrAiC4BpUiPwkcaeuQkMV9WQ123xVtmQ==",
+      "projects": [
+        {
+          "lockfile": "backend/Hengchuan.Api/packages.lock.json",
+          "framework": "net10.0",
+          "type": "Transitive"
+        },
+        {
+          "lockfile": "backend/Hengchuan.Tests/packages.lock.json",
+          "framework": "net10.0",
+          "type": "Transitive"
+        }
+      ],
+      "installed": true,
+      "nuspec": {
+        "path": "/workspace/.tools/nuget/sqlitepclraw.bundle_e_sqlite3/2.1.13/sqlitepclraw.bundle_e_sqlite3.nuspec",
+        "sha256": "f04f469c99056d21b928d6677ae2cd6db582fa0228ce934741ecefa2fae3c09d"
+      },
+      "installedVersion": "2.1.13",
+      "licenseDeclaration": {
+        "type": "expression",
+        "value": "Apache-2.0"
+      },
+      "legacyLicenseUrl": "https://licenses.nuget.org/Apache-2.0",
+      "declaredLicense": "Apache-2.0",
+      "licenseStatus": "nuspec-expression",
+      "authors": "Eric Sink",
+      "copyright": "Copyright 2014-2024 SourceGear, LLC",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/ericsink/SQLitePCL.raw"
+      },
+      "projectUrl": null,
+      "licenseFiles": []
+    },
+    {
+      "ecosystem": "NuGet",
+      "name": "SQLitePCLRaw.core",
+      "version": "2.1.13",
+      "contentHash": "2joofoinuHBFs0nMX3nKuXgxpXryRkCOdM2Ua6HBqQLLy6IW+5f28ZI+HAvMyF8vG7XfNz/lwfBfE6V4juru8Q==",
+      "projects": [
+        {
+          "lockfile": "backend/Hengchuan.Api/packages.lock.json",
+          "framework": "net10.0",
+          "type": "Transitive"
+        },
+        {
+          "lockfile": "backend/Hengchuan.Tests/packages.lock.json",
+          "framework": "net10.0",
+          "type": "Transitive"
+        }
+      ],
+      "installed": true,
+      "nuspec": {
+        "path": "/workspace/.tools/nuget/sqlitepclraw.core/2.1.13/sqlitepclraw.core.nuspec",
+        "sha256": "8e410ff52c26114c7c3124cf3e77d663abbd9ec49801324ed1bc1aa7ea1c91ae"
+      },
+      "installedVersion": "2.1.13",
+      "licenseDeclaration": {
+        "type": "expression",
+        "value": "Apache-2.0"
+      },
+      "legacyLicenseUrl": "https://licenses.nuget.org/Apache-2.0",
+      "declaredLicense": "Apache-2.0",
+      "licenseStatus": "nuspec-expression",
+      "authors": "Eric Sink",
+      "copyright": "Copyright 2014-2024 SourceGear, LLC",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/ericsink/SQLitePCL.raw"
+      },
+      "projectUrl": null,
+      "licenseFiles": []
+    },
+    {
+      "ecosystem": "NuGet",
+      "name": "SQLitePCLRaw.lib.e_sqlite3",
+      "version": "2.1.13",
+      "contentHash": "D2UAuiGxFYBqeRXjjjGgvJ5UQifzn6wefmSqeKU7XcNGKLbJRP6X7kcPZ6opOBJGdCIlgbSxTvDpBbLvsN594A==",
+      "projects": [
+        {
+          "lockfile": "backend/Hengchuan.Api/packages.lock.json",
+          "framework": "net10.0",
+          "type": "Transitive"
+        },
+        {
+          "lockfile": "backend/Hengchuan.Tests/packages.lock.json",
+          "framework": "net10.0",
+          "type": "Transitive"
+        }
+      ],
+      "installed": true,
+      "nuspec": {
+        "path": "/workspace/.tools/nuget/sqlitepclraw.lib.e_sqlite3/2.1.13/sqlitepclraw.lib.e_sqlite3.nuspec",
+        "sha256": "5e0800665aeb09107c3b45e1162109efb9b83dbaad987a4eca5d686d34769e86"
+      },
+      "installedVersion": "2.1.13",
+      "licenseDeclaration": {
+        "type": "expression",
+        "value": "Apache-2.0"
+      },
+      "legacyLicenseUrl": "https://licenses.nuget.org/Apache-2.0",
+      "declaredLicense": "Apache-2.0",
+      "licenseStatus": "nuspec-expression",
+      "authors": "Eric Sink",
+      "copyright": "Copyright 2014-2024 SourceGear, LLC",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/ericsink/SQLitePCL.raw"
+      },
+      "projectUrl": null,
+      "licenseFiles": []
+    },
+    {
+      "ecosystem": "NuGet",
+      "name": "SQLitePCLRaw.provider.e_sqlite3",
+      "version": "2.1.13",
+      "contentHash": "ZU60dSqoSNRe49KcQDUmOVgdRtjITOssVXFtiISs+zJXDI4D2Sndwpn2NOtzDQNPu0ZAvpoLPQ+GLKv6iEZn8Q==",
+      "projects": [
+        {
+          "lockfile": "backend/Hengchuan.Api/packages.lock.json",
+          "framework": "net10.0",
+          "type": "Transitive"
+        },
+        {
+          "lockfile": "backend/Hengchuan.Tests/packages.lock.json",
+          "framework": "net10.0",
+          "type": "Transitive"
+        }
+      ],
+      "installed": true,
+      "nuspec": {
+        "path": "/workspace/.tools/nuget/sqlitepclraw.provider.e_sqlite3/2.1.13/sqlitepclraw.provider.e_sqlite3.nuspec",
+        "sha256": "d31fbb24bed1097f15170bc81b1de4832213f9d50deab423ec8c7aa16995b1c7"
+      },
+      "installedVersion": "2.1.13",
+      "licenseDeclaration": {
+        "type": "expression",
+        "value": "Apache-2.0"
+      },
+      "legacyLicenseUrl": "https://licenses.nuget.org/Apache-2.0",
+      "declaredLicense": "Apache-2.0",
+      "licenseStatus": "nuspec-expression",
+      "authors": "Eric Sink",
+      "copyright": "Copyright 2014-2024 SourceGear, LLC",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/ericsink/SQLitePCL.raw"
+      },
+      "projectUrl": null,
+      "licenseFiles": []
+    },
+    {
+      "ecosystem": "NuGet",
+      "name": "xunit",
+      "version": "2.9.3",
+      "contentHash": "TlXQBinK35LpOPKHAqbLY4xlEen9TBafjs0V5KnA4wZsoQLQJiirCR4CbIXvOH8NzkW4YeJKP5P/Bnrodm0h9Q==",
+      "projects": [
+        {
+          "lockfile": "backend/Hengchuan.Tests/packages.lock.json",
+          "framework": "net10.0",
+          "type": "Direct"
+        }
+      ],
+      "installed": true,
+      "nuspec": {
+        "path": "/workspace/.tools/nuget/xunit/2.9.3/xunit.nuspec",
+        "sha256": "8f3373c5260b2acec2874a280640e0fbb9ac538d754880d7abaa4473c3497d25"
+      },
+      "installedVersion": "2.9.3",
+      "licenseDeclaration": {
+        "type": "expression",
+        "value": "Apache-2.0"
+      },
+      "legacyLicenseUrl": "https://licenses.nuget.org/Apache-2.0",
+      "declaredLicense": "Apache-2.0",
+      "licenseStatus": "nuspec-expression",
+      "authors": "jnewkirk,bradwilson",
+      "copyright": "Copyright (C) .NET Foundation",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/xunit/xunit",
+        "commit": "9712244020d385955d33136b3fe3e87de43539cd"
+      },
+      "projectUrl": null,
+      "licenseFiles": []
+    },
+    {
+      "ecosystem": "NuGet",
+      "name": "xunit.abstractions",
+      "version": "2.0.3",
+      "contentHash": "pot1I4YOxlWjIb5jmwvvQNbTrZ3lJQ+jUGkGjWE3hEFM0l5gOnBWS+H3qsex68s5cO52g+44vpGzhAt+42vwKg==",
+      "projects": [
+        {
+          "lockfile": "backend/Hengchuan.Tests/packages.lock.json",
+          "framework": "net10.0",
+          "type": "Transitive"
+        }
+      ],
+      "installed": true,
+      "nuspec": {
+        "path": "/workspace/.tools/nuget/xunit.abstractions/2.0.3/xunit.abstractions.nuspec",
+        "sha256": "e59191df9e3047dd953b695c886597786ac2771f66897baa40877f643da9f7b1"
+      },
+      "installedVersion": "2.0.3",
+      "licenseDeclaration": null,
+      "legacyLicenseUrl": "https://raw.githubusercontent.com/xunit/xunit/master/license.txt",
+      "declaredLicense": null,
+      "licenseStatus": "unverified-legacy-license-url",
+      "authors": "James Newkirk,Brad Wilson",
+      "copyright": null,
+      "repository": null,
+      "projectUrl": "https://github.com/xunit/xunit",
+      "licenseFiles": []
+    },
+    {
+      "ecosystem": "NuGet",
+      "name": "xunit.analyzers",
+      "version": "1.18.0",
+      "contentHash": "OtFMHN8yqIcYP9wcVIgJrq01AfTxijjAqVDy/WeQVSyrDC1RzBWeQPztL49DN2syXRah8TYnfvk035s7L95EZQ==",
+      "projects": [
+        {
+          "lockfile": "backend/Hengchuan.Tests/packages.lock.json",
+          "framework": "net10.0",
+          "type": "Transitive"
+        }
+      ],
+      "installed": true,
+      "nuspec": {
+        "path": "/workspace/.tools/nuget/xunit.analyzers/1.18.0/xunit.analyzers.nuspec",
+        "sha256": "270ffb0dce41126154f16bad2ee025da605185fb5308247877745e5eef97689e"
+      },
+      "installedVersion": "1.18.0",
+      "licenseDeclaration": {
+        "type": "expression",
+        "value": "Apache-2.0"
+      },
+      "legacyLicenseUrl": "https://licenses.nuget.org/Apache-2.0",
+      "declaredLicense": "Apache-2.0",
+      "licenseStatus": "nuspec-expression",
+      "authors": "jnewkirk,bradwilson,marcind",
+      "copyright": "Copyright (C) .NET Foundation",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/xunit/xunit.analyzers",
+        "commit": "2620a4ddabcba16ceb64ea9ad19c566252015fe8"
+      },
+      "projectUrl": null,
+      "licenseFiles": []
+    },
+    {
+      "ecosystem": "NuGet",
+      "name": "xunit.assert",
+      "version": "2.9.3",
+      "contentHash": "/Kq28fCE7MjOV42YLVRAJzRF0WmEqsmflm0cfpMjGtzQ2lR5mYVj1/i0Y8uDAOLczkL3/jArrwehfMD0YogMAA==",
+      "projects": [
+        {
+          "lockfile": "backend/Hengchuan.Tests/packages.lock.json",
+          "framework": "net10.0",
+          "type": "Transitive"
+        }
+      ],
+      "installed": true,
+      "nuspec": {
+        "path": "/workspace/.tools/nuget/xunit.assert/2.9.3/xunit.assert.nuspec",
+        "sha256": "e3f99045088c262b14a62dd93cf025912e9e653f5ce1d77e7f858238e0bcb508"
+      },
+      "installedVersion": "2.9.3",
+      "licenseDeclaration": {
+        "type": "expression",
+        "value": "Apache-2.0"
+      },
+      "legacyLicenseUrl": "https://licenses.nuget.org/Apache-2.0",
+      "declaredLicense": "Apache-2.0",
+      "licenseStatus": "nuspec-expression",
+      "authors": "jnewkirk,bradwilson",
+      "copyright": "Copyright (C) .NET Foundation",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/xunit/xunit",
+        "commit": "9712244020d385955d33136b3fe3e87de43539cd"
+      },
+      "projectUrl": null,
+      "licenseFiles": []
+    },
+    {
+      "ecosystem": "NuGet",
+      "name": "xunit.core",
+      "version": "2.9.3",
+      "contentHash": "BiAEvqGvyme19wE0wTKdADH+NloYqikiU0mcnmiNyXaF9HyHmE6sr/3DC5vnBkgsWaE6yPyWszKSPSApWdRVeQ==",
+      "projects": [
+        {
+          "lockfile": "backend/Hengchuan.Tests/packages.lock.json",
+          "framework": "net10.0",
+          "type": "Transitive"
+        }
+      ],
+      "installed": true,
+      "nuspec": {
+        "path": "/workspace/.tools/nuget/xunit.core/2.9.3/xunit.core.nuspec",
+        "sha256": "08c844d40924a386d7600e2523c57f1a2a1d6a77c03b8c0001501831944a0691"
+      },
+      "installedVersion": "2.9.3",
+      "licenseDeclaration": {
+        "type": "expression",
+        "value": "Apache-2.0"
+      },
+      "legacyLicenseUrl": "https://licenses.nuget.org/Apache-2.0",
+      "declaredLicense": "Apache-2.0",
+      "licenseStatus": "nuspec-expression",
+      "authors": "jnewkirk,bradwilson",
+      "copyright": "Copyright (C) .NET Foundation",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/xunit/xunit",
+        "commit": "9712244020d385955d33136b3fe3e87de43539cd"
+      },
+      "projectUrl": null,
+      "licenseFiles": []
+    },
+    {
+      "ecosystem": "NuGet",
+      "name": "xunit.extensibility.core",
+      "version": "2.9.3",
+      "contentHash": "kf3si0YTn2a8J8eZNb+zFpwfoyvIrQ7ivNk5ZYA5yuYk1bEtMe4DxJ2CF/qsRgmEnDr7MnW1mxylBaHTZ4qErA==",
+      "projects": [
+        {
+          "lockfile": "backend/Hengchuan.Tests/packages.lock.json",
+          "framework": "net10.0",
+          "type": "Transitive"
+        }
+      ],
+      "installed": true,
+      "nuspec": {
+        "path": "/workspace/.tools/nuget/xunit.extensibility.core/2.9.3/xunit.extensibility.core.nuspec",
+        "sha256": "0c5886e9320c6dd828e50048c27cf355314fe20e2d8d4026b4a3a9fe42d4a359"
+      },
+      "installedVersion": "2.9.3",
+      "licenseDeclaration": {
+        "type": "expression",
+        "value": "Apache-2.0"
+      },
+      "legacyLicenseUrl": "https://licenses.nuget.org/Apache-2.0",
+      "declaredLicense": "Apache-2.0",
+      "licenseStatus": "nuspec-expression",
+      "authors": "jnewkirk,bradwilson",
+      "copyright": "Copyright (C) .NET Foundation",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/xunit/xunit",
+        "commit": "9712244020d385955d33136b3fe3e87de43539cd"
+      },
+      "projectUrl": null,
+      "licenseFiles": []
+    },
+    {
+      "ecosystem": "NuGet",
+      "name": "xunit.extensibility.execution",
+      "version": "2.9.3",
+      "contentHash": "yMb6vMESlSrE3Wfj7V6cjQ3S4TXdXpRqYeNEI3zsX31uTsGMJjEw6oD5F5u1cHnMptjhEECnmZSsPxB6ChZHDQ==",
+      "projects": [
+        {
+          "lockfile": "backend/Hengchuan.Tests/packages.lock.json",
+          "framework": "net10.0",
+          "type": "Transitive"
+        }
+      ],
+      "installed": true,
+      "nuspec": {
+        "path": "/workspace/.tools/nuget/xunit.extensibility.execution/2.9.3/xunit.extensibility.execution.nuspec",
+        "sha256": "9c5498549b5200b65ba0c7e0d4597c269c6bbb2e374ea8f1c28d76dc3f3a0bdd"
+      },
+      "installedVersion": "2.9.3",
+      "licenseDeclaration": {
+        "type": "expression",
+        "value": "Apache-2.0"
+      },
+      "legacyLicenseUrl": "https://licenses.nuget.org/Apache-2.0",
+      "declaredLicense": "Apache-2.0",
+      "licenseStatus": "nuspec-expression",
+      "authors": "jnewkirk,bradwilson",
+      "copyright": "Copyright (C) .NET Foundation",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/xunit/xunit",
+        "commit": "9712244020d385955d33136b3fe3e87de43539cd"
+      },
+      "projectUrl": null,
+      "licenseFiles": []
+    },
+    {
+      "ecosystem": "NuGet",
+      "name": "xunit.runner.visualstudio",
+      "version": "3.1.4",
+      "contentHash": "5mj99LvCqrq3CNi06xYdyIAXOEh+5b33F2nErCzI5zWiDdLHXiPXEWFSUAF8zlIv0ZWqjZNCwHTQeAPYbF3pCg==",
+      "projects": [
+        {
+          "lockfile": "backend/Hengchuan.Tests/packages.lock.json",
+          "framework": "net10.0",
+          "type": "Direct"
+        }
+      ],
+      "installed": true,
+      "nuspec": {
+        "path": "/workspace/.tools/nuget/xunit.runner.visualstudio/3.1.4/xunit.runner.visualstudio.nuspec",
+        "sha256": "5cb4620571521ee8627f8d81c3341aee015bccee0e2054caa08bbe43f7351436"
+      },
+      "installedVersion": "3.1.4",
+      "licenseDeclaration": {
+        "type": "expression",
+        "value": "Apache-2.0"
+      },
+      "legacyLicenseUrl": "https://licenses.nuget.org/Apache-2.0",
+      "declaredLicense": "Apache-2.0",
+      "licenseStatus": "nuspec-expression",
+      "authors": "jnewkirk,bradwilson",
+      "copyright": "Copyright (C) .NET Foundation",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/xunit/visualstudio.xunit",
+        "commit": "50e68bbb8b9ddd4b1bbb95d062b62010caf99909"
+      },
+      "projectUrl": null,
+      "licenseFiles": []
+    }
+  ],
+  "nativeSqlite": {
+    "component": "SQLite native engine (distinct from SQLitePCLRaw wrapper/package)",
+    "package": "SQLitePCLRaw.lib.e_sqlite3 2.1.13",
+    "license": "LicenseRef-SQLite-Public-Domain",
+    "licenseSource": "https://www.sqlite.org/copyright.html",
+    "wrapperPackageLicense": "Apache-2.0",
+    "verification": "Only sqlite3_libversion() on the installed Linux x64 library; no database opened, no application data read",
+    "otherPlatforms": "Package contains other native builds; their binary versions were not executed/verified here",
+    "version": "3.53.3",
+    "binary": {
+      "path": "/workspace/.tools/nuget/sqlitepclraw.lib.e_sqlite3/2.1.13/runtimes/linux-x64/native/libe_sqlite3.so",
+      "sha256": "b0f5c48026fedcf9f05cf31c6fadf9e1e001ca59cd85aa68b8b6814e52c18a07"
+    },
+    "status": "verified-local-version; upstream-public-domain-declaration"
+  },
+  "notices": {
+    "path": "docs/THIRD-PARTY-NOTICES.txt",
+    "sha256": "6790312aa85ca7c838b544e98b8ce8369b076692da4a7f93ecd893584d3e5713",
+    "uniqueFiles": 37,
+    "attributedFiles": 54
+  },
+  "vulnerabilityAudit": {
+    "checkedAt": "2026-10-17T07:46:08.489Z",
+    "scope": "NuGet direct and transitive package advisory lookup; excludes native SQLite and npm/OS/runtime audits",
+    "tool": "dotnet SDK 10.0.402",
+    "projects": [
+      {
+        "project": "backend/Hengchuan.Api/Hengchuan.Api.csproj",
+        "command": "dotnet list backend/Hengchuan.Api/Hengchuan.Api.csproj package --vulnerable --include-transitive --no-restore --format json",
+        "exitCode": 0,
+        "report": {
+          "version": 1,
+          "parameters": "--vulnerable --include-transitive",
+          "sources": [
+            "https://api.nuget.org/v3/index.json"
+          ],
+          "projects": [
+            {
+              "path": "/workspace/aiopsctl/backend/Hengchuan.Api/Hengchuan.Api.csproj"
+            }
+          ]
+        }
+      },
+      {
+        "project": "backend/Hengchuan.Tests/Hengchuan.Tests.csproj",
+        "command": "dotnet list backend/Hengchuan.Tests/Hengchuan.Tests.csproj package --vulnerable --include-transitive --no-restore --format json",
+        "exitCode": 0,
+        "report": {
+          "version": 1,
+          "parameters": "--vulnerable --include-transitive",
+          "sources": [
+            "https://api.nuget.org/v3/index.json"
+          ],
+          "projects": [
+            {
+              "path": "/workspace/aiopsctl/backend/Hengchuan.Tests/Hengchuan.Tests.csproj"
+            }
+          ]
+        }
+      }
+    ],
+    "result": "No vulnerable NuGet packages reported by either successful query",
+    "reportedVulnerablePackages": 0
+  },
+  "exclusions": [
+    "Original business code, native SVG UI/charts and synthetic fixtures",
+    "Flashcat source code, trademarks and assets: not copied",
+    "REA tool: installed outside the project, not a product/runtime dependency, no REA implementation copied",
+    "LogMind, HolmesGPT and Aurora: not incorporated",
+    "OS Chromium, SDK and container/OS dependency inventories are outside the npm/NuGet lock inventory"
+  ]
+}

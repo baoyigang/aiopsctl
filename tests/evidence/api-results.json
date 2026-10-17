@@ -1,0 +1,55 @@
+{
+  "base": "http://127.0.0.1:5080",
+  "ranAt": "2026-10-17T07:50:08.512Z",
+  "syntheticTag": "5ef391a1",
+  "results": [
+    {
+      "name": "health, demo source boundaries and seed spaces",
+      "status": "passed"
+    },
+    {
+      "name": "space overview and combined indicator filtering stay scoped",
+      "status": "passed"
+    },
+    {
+      "name": "business create, search, edit, persisted reread and revision conflict",
+      "status": "passed"
+    },
+    {
+      "name": "write guard, invalid origin and invalid payload do not change state",
+      "status": "passed"
+    },
+    {
+      "name": "thirteen-chart drilldown, real empty state, raw aggregation and statistics",
+      "status": "passed"
+    },
+    {
+      "name": "indicator creation, pagination, edit and cross-space references",
+      "status": "passed"
+    },
+    {
+      "name": "indicator batch enable is atomic, scoped and revision guarded",
+      "status": "passed"
+    },
+    {
+      "name": "stability event window, level filter, future empty state and expansion detail",
+      "status": "passed"
+    },
+    {
+      "name": "seven-day status matrix preserves UTC and supported status values",
+      "status": "passed"
+    },
+    {
+      "name": "screen create, edit, persisted read, export and preview",
+      "status": "passed"
+    },
+    {
+      "name": "screen import roundtrip, duplicate conflict and strict format atomicity",
+      "status": "passed"
+    },
+    {
+      "name": "resource deletion persists and unavailable ids are explicit",
+      "status": "passed"
+    }
+  ]
+}

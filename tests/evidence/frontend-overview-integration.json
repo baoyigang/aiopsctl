@@ -1,0 +1,33 @@
+{
+  "ranAt": "2026-10-17T07:47:39.319Z",
+  "outcomes": [
+    {
+      "name": "real UI compact list and desktop two-column cards",
+      "status": "passed"
+    },
+    {
+      "name": "30-second control triggers exactly one real overview refresh",
+      "status": "passed"
+    },
+    {
+      "name": "hidden page pauses real reads; visibility resumes with fresh 30-second countdown",
+      "status": "passed"
+    },
+    {
+      "name": "off control stops scheduled network reads",
+      "status": "passed"
+    },
+    {
+      "name": "leaving overview disposes automatic refresh timer",
+      "status": "passed"
+    },
+    {
+      "name": "actual 13-chart business detail uses two columns on desktop",
+      "status": "passed"
+    },
+    {
+      "name": "mobile home and business detail remain one column",
+      "status": "passed"
+    }
+  ]
+}
