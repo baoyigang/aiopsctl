@@ -1,0 +1,54 @@
+{
+  "base": "http://127.0.0.1:5173",
+  "ranAt": "2026-10-19T02:53:14.182Z",
+  "chromium": "151.0.7922.173",
+  "sandbox": true,
+  "results": [
+    {
+      "name": "overview renders genuine demo, scoped cards and search empty state",
+      "status": "passed"
+    },
+    {
+      "name": "business cancel, create, edit, saved refresh and explicit deletion",
+      "status": "passed"
+    },
+    {
+      "name": "business drilldown shows thirteen charts with comparison and honest empty state",
+      "status": "passed"
+    },
+    {
+      "name": "indicator paging, AND filters, columns and atomic batch conflict recovery",
+      "status": "passed"
+    },
+    {
+      "name": "status matrix expands all demo spaces with seven UTC day columns",
+      "status": "passed"
+    },
+    {
+      "name": "stability filters event windows, expands source detail and shows future empty state",
+      "status": "passed"
+    },
+    {
+      "name": "screen create, edit, refresh, per-panel preview and actual export download",
+      "status": "passed"
+    },
+    {
+      "name": "screen import rejects malformed/unknown JSON, roundtrips and deletes explicitly",
+      "status": "passed"
+    },
+    {
+      "name": "space switching ignores a delayed previous-space response",
+      "status": "passed"
+    },
+    {
+      "name": "local API error and canceled drilldown recover without stale results",
+      "status": "passed"
+    },
+    {
+      "name": "browser has no script errors or external requests",
+      "status": "passed"
+    }
+  ],
+  "pageErrors": [],
+  "blockedExternalOrigins": []
+}

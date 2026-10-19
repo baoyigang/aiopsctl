@@ -5,7 +5,8 @@
   "type": "module",
   "scripts": {
     "api": "node api-acceptance.mjs",
-    "browser": "node browser-acceptance.mjs"
+    "browser": "node browser-acceptance.mjs",
+    "browser:space": "node url-space-acceptance.mjs"
   },
   "devDependencies": {
     "playwright-core": "1.58.2"

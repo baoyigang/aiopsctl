@@ -1,15 +1,14 @@
 <script setup lang="ts">
 import { computed, ref, watch } from 'vue';
-import { RouterLink, useRoute, useRouter } from 'vue-router';
+import { RouterLink, useRoute } from 'vue-router';
 import { api } from '../api';
-import { app, inputIso, num, params, time, utcInput } from '../context';
+import { app, inputIso, num, params, spaceRoute, time, utcInput } from '../context';
 import { chartLabels, chartSeries, sourceLabel } from '../chartData';
 import type { BusinessDetail, ChartKind, Dashboard } from '../types';
 import { useRequest } from '../composables/useRequest';
 import EmptyState from '../components/EmptyState.vue';
 import ObservationChart from '../components/charts/ObservationChart.vue';
 const route = useRoute(),
-  router = useRouter(),
   read = useRequest();
 const detail = ref<BusinessDetail | null>(null),
   dashboard = ref<Dashboard | null>(null),
@@ -27,15 +26,19 @@ function setRange(hours: number) {
   preset.value = String(hours);
 }
 async function load() {
+  detail.value = null;
   dashboard.value = null;
   await read.run(
     async (signal) => {
       const start = inputIso(from.value),
         end = inputIso(to.value);
       if (new Date(start) >= new Date(end)) throw new Error('结束时间须晚于开始时间。');
-      return await Promise.all([
-        api<BusinessDetail>(`/api/businesses/${encodeURIComponent(currentId.value)}`, { signal }),
-        api<Dashboard>(
+      const business = await api<BusinessDetail>(
+        `/api/businesses/${encodeURIComponent(currentId.value)}`, { signal },
+      );
+      if (business.data.spaceId !== app.spaceId)
+        throw new Error('该业务不属于 URL 指定的工作空间，请返回业务概览。');
+      const result = await api<Dashboard>(
           `/api/businesses/${encodeURIComponent(currentId.value)}/dashboard?` +
             params({
               from: start,
@@ -44,11 +47,10 @@ async function load() {
               comparison: comparison.value,
             }),
           { signal },
-        ),
-      ]);
+        );
+      return [business, result] as const;
     },
     ([business, result]) => {
-      app.spaceId = business.data.spaceId;
       detail.value = business;
       dashboard.value = result;
     },
@@ -63,18 +65,12 @@ watch(
   },
   { immediate: true },
 );
-watch(
-  () => app.spaceId,
-  (value) => {
-    if (detail.value && detail.value.data.spaceId !== value) router.push('/polaris');
-  },
-);
 </script>
 <template>
   <div class="page-header">
     <div>
       <div class="row" style="gap: 12px">
-        <RouterLink class="muted small-text" to="/polaris">业务概览</RouterLink
+        <RouterLink class="muted small-text" :to="spaceRoute('/polaris')">业务概览</RouterLink
         ><span class="muted">/</span>
         <h1>{{ detail?.data.name ?? '业务详情' }}</h1>
         <span class="badge" :class="dashboard?.mode === 'demo' ? 'green' : 'yellow'">{{
@@ -90,7 +86,7 @@ watch(
     <div class="page-actions">
       <RouterLink
         class="button secondary"
-        :to="{ path: '/polaris/indicator', query: { businessId: currentId } }"
+        :to="spaceRoute('/polaris/indicator', app.spaceId, { businessId: currentId })"
         >管理关联指标</RouterLink
       ><button class="button secondary" @click="load">↻ 刷新</button>
     </div>

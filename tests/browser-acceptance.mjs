@@ -54,7 +54,10 @@ try {
     await page.waitForFunction(id => !document.querySelector(`[data-testid="business-card-${id}"]`), businessId);
   });
   await check('business drilldown shows thirteen charts with comparison and honest empty state', async () => {
-    await byId('business-drill-biz-checkout').click(); await page.waitForURL('**/polaris/n/biz-checkout');
+    const space = meta.spaces.find(item => item.id === checkout.spaceId);
+    assert.ok(space);
+    await byId('business-drill-biz-checkout').click();
+    await page.waitForURL(url => url.pathname === '/polaris/n/biz-checkout' && url.searchParams.get('space') === space.name);
     await page.reload({ waitUntil: 'networkidle' });
     await byId('dashboard-chart-ind-empty').waitFor(); assert.equal(await page.locator('[data-testid^="dashboard-chart-"]').count(), 13);
     assert.equal(await byId('business-dashboard-grid').evaluate(element => getComputedStyle(element).gridTemplateColumns.split(' ').length), 2);

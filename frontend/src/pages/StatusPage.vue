@@ -2,7 +2,7 @@
 import { ref, onMounted } from 'vue';
 import { RouterLink } from 'vue-router';
 import { api } from '../api';
-import { num } from '../context';
+import { num, spaceRoute } from '../context';
 import type { StatusMatrix } from '../types';
 import { useRequest } from '../composables/useRequest';
 import EmptyState from '../components/EmptyState.vue';
@@ -104,7 +104,7 @@ onMounted(load);
                 :data-testid="`status-business-${business.id}`"
               >
                 <td>
-                  <RouterLink :to="`/polaris/n/${business.id}`">{{ business.name }}</RouterLink>
+                  <RouterLink :to="spaceRoute(`/polaris/n/${encodeURIComponent(business.id)}`, space.id)">{{ business.name }}</RouterLink>
                 </td>
                 <td v-for="day in business.days" :key="day.date">
                   <div class="matrix-cell" :title="`${day.date} · ${day.eventCount} 次事件`">

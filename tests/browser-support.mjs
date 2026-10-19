@@ -1,7 +1,8 @@
 import { createRequire } from 'node:module';
 import { mkdir, mkdtemp, rm, writeFile } from 'node:fs/promises';
-import { join } from 'node:path';
+import { join, resolve } from 'node:path';
 import { tmpdir } from 'node:os';
+import { pathToFileURL } from 'node:url';
 import assert from 'node:assert/strict';
 
 const require = createRequire(import.meta.url);
@@ -18,7 +19,10 @@ export async function startBrowser() {
   const context = await browser.newContext({ viewport: { width: 1440, height: 1050 }, locale: 'zh-CN', timezoneId: 'UTC' });
   const page = await context.newPage();
   const results = [], errors = [], external = [];
-  const evidence = new URL('./evidence/', import.meta.url), screenshots = new URL('./evidence/screenshots/', import.meta.url);
+  const evidence = process.env.HENGCHUAN_EVIDENCE_DIR
+    ? pathToFileURL(resolve(process.env.HENGCHUAN_EVIDENCE_DIR) + '/')
+    : new URL('./evidence/', import.meta.url);
+  const screenshots = new URL('screenshots/', evidence);
   await mkdir(screenshots, { recursive: true });
   page.on('pageerror', error => errors.push(error.message));
   page.on('console', message => {

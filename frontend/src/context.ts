@@ -1,17 +1,31 @@
 import { reactive } from 'vue';
 import { api } from './api';
 import type { Meta } from './types';
+import type { LocationQuery } from 'vue-router';
+import { spaceQuery } from './spaceQuery';
 export const app = reactive({
   meta: null as Meta | null,
   spaceId: 'space-default',
+  spaceError: '',
+  spaceReady: false,
   error: '',
   toast: '',
 });
 let toastTimer = 0;
+let metaRequest: Promise<void> | null = null;
 export async function loadMeta() {
-  app.meta = await api<Meta>('/api/meta');
-  if (!app.meta.spaces.some((item) => item.id === app.spaceId))
-    app.spaceId = app.meta.spaces[0]?.id ?? '';
+  if (metaRequest) return metaRequest;
+  metaRequest = api<Meta>('/api/meta')
+    .then((meta) => {
+      app.meta = meta;
+      app.error = '';
+    })
+    .finally(() => { metaRequest = null; });
+  return metaRequest;
+}
+export function spaceRoute(path: string, spaceId = app.spaceId, query: LocationQuery = {}) {
+  const space = app.meta?.spaces.find((item) => item.id === spaceId);
+  return { path, query: space ? spaceQuery(query, space, app.meta?.spaces) : query };
 }
 export function notify(message: string) {
   app.toast = message;

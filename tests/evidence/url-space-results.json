@@ -1,0 +1,1302 @@
+{
+  "base": "http://127.0.0.1:5173",
+  "apiBase": "http://127.0.0.1:5080",
+  "ranAt": "2026-10-19T02:53:35.286Z",
+  "chromium": "151.0.7922.173",
+  "sandbox": true,
+  "scope": "Local synthetic demo only; GET requests; isolated context; special space mocked without persistence.",
+  "selectedSpaces": [
+    {
+      "id": "space-default",
+      "name": "核心交易"
+    },
+    {
+      "id": "space-growth",
+      "name": "用户增长"
+    }
+  ],
+  "results": [
+    {
+      "name": "overview: non-default named deep link and browser refresh keep the same space",
+      "status": "passed"
+    },
+    {
+      "name": "business detail: non-default named deep link and browser refresh keep the same space",
+      "status": "passed"
+    },
+    {
+      "name": "indicators: non-default named deep link and browser refresh keep the same space",
+      "status": "passed"
+    },
+    {
+      "name": "status matrix: non-default named deep link and browser refresh keep the same space",
+      "status": "passed"
+    },
+    {
+      "name": "stability: non-default named deep link and browser refresh keep the same space",
+      "status": "passed"
+    },
+    {
+      "name": "screens: non-default named deep link and browser refresh keep the same space",
+      "status": "passed"
+    },
+    {
+      "name": "missing space uses a documented, canonical default without a second history entry",
+      "status": "passed"
+    },
+    {
+      "name": "selector, navigation, back and forward keep URL, selector and data consistent",
+      "status": "passed"
+    },
+    {
+      "name": "special-character Chinese names survive encoding, selector changes and refresh without database writes",
+      "status": "passed"
+    },
+    {
+      "name": "duplicate names retain the explicit spaceId through refresh and selector changes",
+      "status": "passed"
+    },
+    {
+      "name": "unknown, empty and multi-value parameters show an explicit error and issue no data requests",
+      "status": "passed"
+    },
+    {
+      "name": "a valid spaceId has precedence and canonicalizes to one encoded space name",
+      "status": "passed"
+    },
+    {
+      "name": "legacy unscoped business bookmarks infer the actual space before rendering",
+      "status": "passed"
+    },
+    {
+      "name": "an old delayed legacy-space lookup cannot replace a newer indicator navigation",
+      "status": "passed"
+    },
+    {
+      "name": "all six pages wait for delayed metadata and never request default-space data first",
+      "status": "passed"
+    },
+    {
+      "name": "metadata failure and same-page recovery never load data for the previous unknown-space URL",
+      "status": "passed"
+    },
+    {
+      "name": "business details reject an explicit different space without displaying or adopting that business",
+      "status": "passed"
+    },
+    {
+      "name": "status matrix explicitly shows all spaces and business links select their actual target space",
+      "status": "passed"
+    },
+    {
+      "name": "a delayed old-space response cannot restore stale cards after selector navigation",
+      "status": "passed"
+    },
+    {
+      "name": "browser reports no script errors, external requests or write attempts",
+      "status": "passed"
+    }
+  ],
+  "pageErrors": [],
+  "blockedExternalOrigins": [],
+  "blockedWriteAttempts": [],
+  "apiRequests": [
+    {
+      "method": "GET",
+      "path": "/api/meta",
+      "query": "",
+      "documentPath": "/polaris",
+      "documentQuery": "?space=%E7%94%A8%E6%88%B7%E5%A2%9E%E9%95%BF"
+    },
+    {
+      "method": "GET",
+      "path": "/api/overview",
+      "query": "?spaceId=space-growth",
+      "documentPath": "/polaris",
+      "documentQuery": "?space=%E7%94%A8%E6%88%B7%E5%A2%9E%E9%95%BF"
+    },
+    {
+      "method": "GET",
+      "path": "/api/businesses/biz-member/dashboard",
+      "query": "",
+      "documentPath": "/polaris",
+      "documentQuery": "?space=%E7%94%A8%E6%88%B7%E5%A2%9E%E9%95%BF"
+    },
+    {
+      "method": "GET",
+      "path": "/api/businesses/biz-marketing/dashboard",
+      "query": "",
+      "documentPath": "/polaris",
+      "documentQuery": "?space=%E7%94%A8%E6%88%B7%E5%A2%9E%E9%95%BF"
+    },
+    {
+      "method": "GET",
+      "path": "/api/meta",
+      "query": "",
+      "documentPath": "/polaris",
+      "documentQuery": "?space=%E7%94%A8%E6%88%B7%E5%A2%9E%E9%95%BF"
+    },
+    {
+      "method": "GET",
+      "path": "/api/overview",
+      "query": "?spaceId=space-growth",
+      "documentPath": "/polaris",
+      "documentQuery": "?space=%E7%94%A8%E6%88%B7%E5%A2%9E%E9%95%BF"
+    },
+    {
+      "method": "GET",
+      "path": "/api/businesses/biz-member/dashboard",
+      "query": "",
+      "documentPath": "/polaris",
+      "documentQuery": "?space=%E7%94%A8%E6%88%B7%E5%A2%9E%E9%95%BF"
+    },
+    {
+      "method": "GET",
+      "path": "/api/businesses/biz-marketing/dashboard",
+      "query": "",
+      "documentPath": "/polaris",
+      "documentQuery": "?space=%E7%94%A8%E6%88%B7%E5%A2%9E%E9%95%BF"
+    },
+    {
+      "method": "GET",
+      "path": "/api/meta",
+      "query": "",
+      "documentPath": "/polaris/n/biz-member",
+      "documentQuery": "?space=%E7%94%A8%E6%88%B7%E5%A2%9E%E9%95%BF"
+    },
+    {
+      "method": "GET",
+      "path": "/api/businesses/biz-member",
+      "query": "",
+      "documentPath": "/polaris/n/biz-member",
+      "documentQuery": "?space=%E7%94%A8%E6%88%B7%E5%A2%9E%E9%95%BF"
+    },
+    {
+      "method": "GET",
+      "path": "/api/businesses/biz-member/dashboard",
+      "query": "?from=2026-10-18T14%3A53%3A00.000Z&to=2026-10-19T02%3A53%3A00.000Z&aggregation=avg&comparison=none",
+      "documentPath": "/polaris/n/biz-member",
+      "documentQuery": "?space=%E7%94%A8%E6%88%B7%E5%A2%9E%E9%95%BF"
+    },
+    {
+      "method": "GET",
+      "path": "/api/meta",
+      "query": "",
+      "documentPath": "/polaris/n/biz-member",
+      "documentQuery": "?space=%E7%94%A8%E6%88%B7%E5%A2%9E%E9%95%BF"
+    },
+    {
+      "method": "GET",
+      "path": "/api/businesses/biz-member",
+      "query": "",
+      "documentPath": "/polaris/n/biz-member",
+      "documentQuery": "?space=%E7%94%A8%E6%88%B7%E5%A2%9E%E9%95%BF"
+    },
+    {
+      "method": "GET",
+      "path": "/api/businesses/biz-member/dashboard",
+      "query": "?from=2026-10-18T14%3A53%3A00.000Z&to=2026-10-19T02%3A53%3A00.000Z&aggregation=avg&comparison=none",
+      "documentPath": "/polaris/n/biz-member",
+      "documentQuery": "?space=%E7%94%A8%E6%88%B7%E5%A2%9E%E9%95%BF"
+    },
+    {
+      "method": "GET",
+      "path": "/api/meta",
+      "query": "",
+      "documentPath": "/polaris/indicator",
+      "documentQuery": "?space=%E7%94%A8%E6%88%B7%E5%A2%9E%E9%95%BF"
+    },
+    {
+      "method": "GET",
+      "path": "/api/indicators",
+      "query": "?spaceId=space-growth&page=1&pageSize=10",
+      "documentPath": "/polaris/indicator",
+      "documentQuery": "?space=%E7%94%A8%E6%88%B7%E5%A2%9E%E9%95%BF"
+    },
+    {
+      "method": "GET",
+      "path": "/api/overview",
+      "query": "?spaceId=space-growth",
+      "documentPath": "/polaris/indicator",
+      "documentQuery": "?space=%E7%94%A8%E6%88%B7%E5%A2%9E%E9%95%BF"
+    },
+    {
+      "method": "GET",
+      "path": "/api/meta",
+      "query": "",
+      "documentPath": "/polaris/indicator",
+      "documentQuery": "?space=%E7%94%A8%E6%88%B7%E5%A2%9E%E9%95%BF"
+    },
+    {
+      "method": "GET",
+      "path": "/api/indicators",
+      "query": "?spaceId=space-growth&page=1&pageSize=10",
+      "documentPath": "/polaris/indicator",
+      "documentQuery": "?space=%E7%94%A8%E6%88%B7%E5%A2%9E%E9%95%BF"
+    },
+    {
+      "method": "GET",
+      "path": "/api/overview",
+      "query": "?spaceId=space-growth",
+      "documentPath": "/polaris/indicator",
+      "documentQuery": "?space=%E7%94%A8%E6%88%B7%E5%A2%9E%E9%95%BF"
+    },
+    {
+      "method": "GET",
+      "path": "/api/meta",
+      "query": "",
+      "documentPath": "/polaris/statuspage",
+      "documentQuery": "?space=%E7%94%A8%E6%88%B7%E5%A2%9E%E9%95%BF"
+    },
+    {
+      "method": "GET",
+      "path": "/api/statuspage",
+      "query": "",
+      "documentPath": "/polaris/statuspage",
+      "documentQuery": "?space=%E7%94%A8%E6%88%B7%E5%A2%9E%E9%95%BF"
+    },
+    {
+      "method": "GET",
+      "path": "/api/meta",
+      "query": "",
+      "documentPath": "/polaris/statuspage",
+      "documentQuery": "?space=%E7%94%A8%E6%88%B7%E5%A2%9E%E9%95%BF"
+    },
+    {
+      "method": "GET",
+      "path": "/api/statuspage",
+      "query": "",
+      "documentPath": "/polaris/statuspage",
+      "documentQuery": "?space=%E7%94%A8%E6%88%B7%E5%A2%9E%E9%95%BF"
+    },
+    {
+      "method": "GET",
+      "path": "/api/meta",
+      "query": "",
+      "documentPath": "/polaris/stability",
+      "documentQuery": "?space=%E7%94%A8%E6%88%B7%E5%A2%9E%E9%95%BF"
+    },
+    {
+      "method": "GET",
+      "path": "/api/stability",
+      "query": "?spaceId=space-growth&year=2026&level=all&period=year&anchor=2026-10-19",
+      "documentPath": "/polaris/stability",
+      "documentQuery": "?space=%E7%94%A8%E6%88%B7%E5%A2%9E%E9%95%BF"
+    },
+    {
+      "method": "GET",
+      "path": "/api/meta",
+      "query": "",
+      "documentPath": "/polaris/stability",
+      "documentQuery": "?space=%E7%94%A8%E6%88%B7%E5%A2%9E%E9%95%BF"
+    },
+    {
+      "method": "GET",
+      "path": "/api/stability",
+      "query": "?spaceId=space-growth&year=2026&level=all&period=year&anchor=2026-10-19",
+      "documentPath": "/polaris/stability",
+      "documentQuery": "?space=%E7%94%A8%E6%88%B7%E5%A2%9E%E9%95%BF"
+    },
+    {
+      "method": "GET",
+      "path": "/api/meta",
+      "query": "",
+      "documentPath": "/polaris/screen",
+      "documentQuery": "?space=%E7%94%A8%E6%88%B7%E5%A2%9E%E9%95%BF"
+    },
+    {
+      "method": "GET",
+      "path": "/api/screens",
+      "query": "?spaceId=space-growth&page=1&pageSize=9",
+      "documentPath": "/polaris/screen",
+      "documentQuery": "?space=%E7%94%A8%E6%88%B7%E5%A2%9E%E9%95%BF"
+    },
+    {
+      "method": "GET",
+      "path": "/api/overview",
+      "query": "?spaceId=space-growth",
+      "documentPath": "/polaris/screen",
+      "documentQuery": "?space=%E7%94%A8%E6%88%B7%E5%A2%9E%E9%95%BF"
+    },
+    {
+      "method": "GET",
+      "path": "/api/meta",
+      "query": "",
+      "documentPath": "/polaris/screen",
+      "documentQuery": "?space=%E7%94%A8%E6%88%B7%E5%A2%9E%E9%95%BF"
+    },
+    {
+      "method": "GET",
+      "path": "/api/screens",
+      "query": "?spaceId=space-growth&page=1&pageSize=9",
+      "documentPath": "/polaris/screen",
+      "documentQuery": "?space=%E7%94%A8%E6%88%B7%E5%A2%9E%E9%95%BF"
+    },
+    {
+      "method": "GET",
+      "path": "/api/overview",
+      "query": "?spaceId=space-growth",
+      "documentPath": "/polaris/screen",
+      "documentQuery": "?space=%E7%94%A8%E6%88%B7%E5%A2%9E%E9%95%BF"
+    },
+    {
+      "method": "GET",
+      "path": "/api/meta",
+      "query": "",
+      "documentPath": "/polaris",
+      "documentQuery": "?space=%E7%94%A8%E6%88%B7%E5%A2%9E%E9%95%BF"
+    },
+    {
+      "method": "GET",
+      "path": "/api/overview",
+      "query": "?spaceId=space-growth",
+      "documentPath": "/polaris",
+      "documentQuery": "?space=%E7%94%A8%E6%88%B7%E5%A2%9E%E9%95%BF"
+    },
+    {
+      "method": "GET",
+      "path": "/api/businesses/biz-member/dashboard",
+      "query": "",
+      "documentPath": "/polaris",
+      "documentQuery": "?space=%E7%94%A8%E6%88%B7%E5%A2%9E%E9%95%BF"
+    },
+    {
+      "method": "GET",
+      "path": "/api/businesses/biz-marketing/dashboard",
+      "query": "",
+      "documentPath": "/polaris",
+      "documentQuery": "?space=%E7%94%A8%E6%88%B7%E5%A2%9E%E9%95%BF"
+    },
+    {
+      "method": "GET",
+      "path": "/api/meta",
+      "query": "",
+      "documentPath": "/polaris",
+      "documentQuery": "?search=preserved"
+    },
+    {
+      "method": "GET",
+      "path": "/api/overview",
+      "query": "?spaceId=space-default",
+      "documentPath": "/polaris",
+      "documentQuery": "?search=preserved&space=%E6%A0%B8%E5%BF%83%E4%BA%A4%E6%98%93"
+    },
+    {
+      "method": "GET",
+      "path": "/api/businesses/biz-checkout/dashboard",
+      "query": "",
+      "documentPath": "/polaris",
+      "documentQuery": "?search=preserved&space=%E6%A0%B8%E5%BF%83%E4%BA%A4%E6%98%93"
+    },
+    {
+      "method": "GET",
+      "path": "/api/businesses/biz-payment/dashboard",
+      "query": "",
+      "documentPath": "/polaris",
+      "documentQuery": "?search=preserved&space=%E6%A0%B8%E5%BF%83%E4%BA%A4%E6%98%93"
+    },
+    {
+      "method": "GET",
+      "path": "/api/meta",
+      "query": "",
+      "documentPath": "/polaris",
+      "documentQuery": "?space=%E7%94%A8%E6%88%B7%E5%A2%9E%E9%95%BF"
+    },
+    {
+      "method": "GET",
+      "path": "/api/overview",
+      "query": "?spaceId=space-growth",
+      "documentPath": "/polaris",
+      "documentQuery": "?space=%E7%94%A8%E6%88%B7%E5%A2%9E%E9%95%BF"
+    },
+    {
+      "method": "GET",
+      "path": "/api/businesses/biz-member/dashboard",
+      "query": "",
+      "documentPath": "/polaris",
+      "documentQuery": "?space=%E7%94%A8%E6%88%B7%E5%A2%9E%E9%95%BF"
+    },
+    {
+      "method": "GET",
+      "path": "/api/businesses/biz-marketing/dashboard",
+      "query": "",
+      "documentPath": "/polaris",
+      "documentQuery": "?space=%E7%94%A8%E6%88%B7%E5%A2%9E%E9%95%BF"
+    },
+    {
+      "method": "GET",
+      "path": "/api/meta",
+      "query": "",
+      "documentPath": "/polaris",
+      "documentQuery": "?space=%E7%94%A8%E6%88%B7%E5%A2%9E%E9%95%BF"
+    },
+    {
+      "method": "GET",
+      "path": "/api/overview",
+      "query": "?spaceId=space-growth",
+      "documentPath": "/polaris",
+      "documentQuery": "?space=%E7%94%A8%E6%88%B7%E5%A2%9E%E9%95%BF"
+    },
+    {
+      "method": "GET",
+      "path": "/api/businesses/biz-member/dashboard",
+      "query": "",
+      "documentPath": "/polaris",
+      "documentQuery": "?space=%E7%94%A8%E6%88%B7%E5%A2%9E%E9%95%BF"
+    },
+    {
+      "method": "GET",
+      "path": "/api/businesses/biz-marketing/dashboard",
+      "query": "",
+      "documentPath": "/polaris",
+      "documentQuery": "?space=%E7%94%A8%E6%88%B7%E5%A2%9E%E9%95%BF"
+    },
+    {
+      "method": "GET",
+      "path": "/api/overview",
+      "query": "?spaceId=space-default",
+      "documentPath": "/polaris",
+      "documentQuery": "?space=%E6%A0%B8%E5%BF%83%E4%BA%A4%E6%98%93"
+    },
+    {
+      "method": "GET",
+      "path": "/api/businesses/biz-checkout/dashboard",
+      "query": "",
+      "documentPath": "/polaris",
+      "documentQuery": "?space=%E6%A0%B8%E5%BF%83%E4%BA%A4%E6%98%93"
+    },
+    {
+      "method": "GET",
+      "path": "/api/businesses/biz-payment/dashboard",
+      "query": "",
+      "documentPath": "/polaris",
+      "documentQuery": "?space=%E6%A0%B8%E5%BF%83%E4%BA%A4%E6%98%93"
+    },
+    {
+      "method": "GET",
+      "path": "/api/indicators",
+      "query": "?spaceId=space-default&page=1&pageSize=10",
+      "documentPath": "/polaris/indicator",
+      "documentQuery": "?space=%E6%A0%B8%E5%BF%83%E4%BA%A4%E6%98%93"
+    },
+    {
+      "method": "GET",
+      "path": "/api/overview",
+      "query": "?spaceId=space-default",
+      "documentPath": "/polaris/indicator",
+      "documentQuery": "?space=%E6%A0%B8%E5%BF%83%E4%BA%A4%E6%98%93"
+    },
+    {
+      "method": "GET",
+      "path": "/api/overview",
+      "query": "?spaceId=space-default",
+      "documentPath": "/polaris",
+      "documentQuery": "?space=%E6%A0%B8%E5%BF%83%E4%BA%A4%E6%98%93"
+    },
+    {
+      "method": "GET",
+      "path": "/api/businesses/biz-checkout/dashboard",
+      "query": "",
+      "documentPath": "/polaris",
+      "documentQuery": "?space=%E6%A0%B8%E5%BF%83%E4%BA%A4%E6%98%93"
+    },
+    {
+      "method": "GET",
+      "path": "/api/businesses/biz-payment/dashboard",
+      "query": "",
+      "documentPath": "/polaris",
+      "documentQuery": "?space=%E6%A0%B8%E5%BF%83%E4%BA%A4%E6%98%93"
+    },
+    {
+      "method": "GET",
+      "path": "/api/overview",
+      "query": "?spaceId=space-growth",
+      "documentPath": "/polaris",
+      "documentQuery": "?space=%E7%94%A8%E6%88%B7%E5%A2%9E%E9%95%BF"
+    },
+    {
+      "method": "GET",
+      "path": "/api/businesses/biz-member/dashboard",
+      "query": "",
+      "documentPath": "/polaris",
+      "documentQuery": "?space=%E7%94%A8%E6%88%B7%E5%A2%9E%E9%95%BF"
+    },
+    {
+      "method": "GET",
+      "path": "/api/businesses/biz-marketing/dashboard",
+      "query": "",
+      "documentPath": "/polaris",
+      "documentQuery": "?space=%E7%94%A8%E6%88%B7%E5%A2%9E%E9%95%BF"
+    },
+    {
+      "method": "GET",
+      "path": "/api/overview",
+      "query": "?spaceId=space-default",
+      "documentPath": "/polaris",
+      "documentQuery": "?space=%E6%A0%B8%E5%BF%83%E4%BA%A4%E6%98%93"
+    },
+    {
+      "method": "GET",
+      "path": "/api/businesses/biz-checkout/dashboard",
+      "query": "",
+      "documentPath": "/polaris",
+      "documentQuery": "?space=%E6%A0%B8%E5%BF%83%E4%BA%A4%E6%98%93"
+    },
+    {
+      "method": "GET",
+      "path": "/api/businesses/biz-payment/dashboard",
+      "query": "",
+      "documentPath": "/polaris",
+      "documentQuery": "?space=%E6%A0%B8%E5%BF%83%E4%BA%A4%E6%98%93"
+    },
+    {
+      "method": "GET",
+      "path": "/api/indicators",
+      "query": "?spaceId=space-default&page=1&pageSize=10",
+      "documentPath": "/polaris/indicator",
+      "documentQuery": "?space=%E6%A0%B8%E5%BF%83%E4%BA%A4%E6%98%93"
+    },
+    {
+      "method": "GET",
+      "path": "/api/overview",
+      "query": "?spaceId=space-default",
+      "documentPath": "/polaris/indicator",
+      "documentQuery": "?space=%E6%A0%B8%E5%BF%83%E4%BA%A4%E6%98%93"
+    },
+    {
+      "method": "GET",
+      "path": "/api/statuspage",
+      "query": "",
+      "documentPath": "/polaris/statuspage",
+      "documentQuery": "?space=%E6%A0%B8%E5%BF%83%E4%BA%A4%E6%98%93"
+    },
+    {
+      "method": "GET",
+      "path": "/api/stability",
+      "query": "?spaceId=space-default&year=2026&level=all&period=year&anchor=2026-10-19",
+      "documentPath": "/polaris/stability",
+      "documentQuery": "?space=%E6%A0%B8%E5%BF%83%E4%BA%A4%E6%98%93"
+    },
+    {
+      "method": "GET",
+      "path": "/api/screens",
+      "query": "?spaceId=space-default&page=1&pageSize=9",
+      "documentPath": "/polaris/screen",
+      "documentQuery": "?space=%E6%A0%B8%E5%BF%83%E4%BA%A4%E6%98%93"
+    },
+    {
+      "method": "GET",
+      "path": "/api/overview",
+      "query": "?spaceId=space-default",
+      "documentPath": "/polaris/screen",
+      "documentQuery": "?space=%E6%A0%B8%E5%BF%83%E4%BA%A4%E6%98%93"
+    },
+    {
+      "method": "GET",
+      "path": "/api/overview",
+      "query": "?spaceId=space-default",
+      "documentPath": "/polaris",
+      "documentQuery": "?space=%E6%A0%B8%E5%BF%83%E4%BA%A4%E6%98%93"
+    },
+    {
+      "method": "GET",
+      "path": "/api/businesses/biz-checkout/dashboard",
+      "query": "",
+      "documentPath": "/polaris",
+      "documentQuery": "?space=%E6%A0%B8%E5%BF%83%E4%BA%A4%E6%98%93"
+    },
+    {
+      "method": "GET",
+      "path": "/api/businesses/biz-payment/dashboard",
+      "query": "",
+      "documentPath": "/polaris",
+      "documentQuery": "?space=%E6%A0%B8%E5%BF%83%E4%BA%A4%E6%98%93"
+    },
+    {
+      "method": "GET",
+      "path": "/api/meta",
+      "query": "",
+      "documentPath": "/polaris",
+      "documentQuery": "?space=%E6%A0%B8%E5%BF%83%E4%BA%A4%E6%98%93"
+    },
+    {
+      "method": "GET",
+      "path": "/api/overview",
+      "query": "?spaceId=space-default",
+      "documentPath": "/polaris",
+      "documentQuery": "?space=%E6%A0%B8%E5%BF%83%E4%BA%A4%E6%98%93"
+    },
+    {
+      "method": "GET",
+      "path": "/api/businesses/biz-checkout/dashboard",
+      "query": "",
+      "documentPath": "/polaris",
+      "documentQuery": "?space=%E6%A0%B8%E5%BF%83%E4%BA%A4%E6%98%93"
+    },
+    {
+      "method": "GET",
+      "path": "/api/businesses/biz-payment/dashboard",
+      "query": "",
+      "documentPath": "/polaris",
+      "documentQuery": "?space=%E6%A0%B8%E5%BF%83%E4%BA%A4%E6%98%93"
+    },
+    {
+      "method": "GET",
+      "path": "/api/meta",
+      "query": "",
+      "documentPath": "/polaris",
+      "documentQuery": "?space=%E7%94%A8%E6%88%B7%E5%A2%9E%E9%95%BF"
+    },
+    {
+      "method": "GET",
+      "path": "/api/overview",
+      "query": "?spaceId=space-growth",
+      "documentPath": "/polaris",
+      "documentQuery": "?space=%E7%94%A8%E6%88%B7%E5%A2%9E%E9%95%BF"
+    },
+    {
+      "method": "GET",
+      "path": "/api/businesses/biz-member/dashboard",
+      "query": "",
+      "documentPath": "/polaris",
+      "documentQuery": "?space=%E7%94%A8%E6%88%B7%E5%A2%9E%E9%95%BF"
+    },
+    {
+      "method": "GET",
+      "path": "/api/businesses/biz-marketing/dashboard",
+      "query": "",
+      "documentPath": "/polaris",
+      "documentQuery": "?space=%E7%94%A8%E6%88%B7%E5%A2%9E%E9%95%BF"
+    },
+    {
+      "method": "GET",
+      "path": "/api/overview",
+      "query": "?spaceId=space-url-test-only",
+      "documentPath": "/polaris",
+      "documentQuery": "?space=%E7%A0%94%E5%8F%91+%26+%E5%A2%9E%E9%95%BF/%E6%B5%8B%E8%AF%95%2B?%23=%25+%E7%A9%BA%E9%97%B4"
+    },
+    {
+      "method": "GET",
+      "path": "/api/meta",
+      "query": "",
+      "documentPath": "/polaris",
+      "documentQuery": "?space=%E7%A0%94%E5%8F%91+%26+%E5%A2%9E%E9%95%BF/%E6%B5%8B%E8%AF%95%2B?%23=%25+%E7%A9%BA%E9%97%B4"
+    },
+    {
+      "method": "GET",
+      "path": "/api/overview",
+      "query": "?spaceId=space-url-test-only",
+      "documentPath": "/polaris",
+      "documentQuery": "?space=%E7%A0%94%E5%8F%91+%26+%E5%A2%9E%E9%95%BF/%E6%B5%8B%E8%AF%95%2B?%23=%25+%E7%A9%BA%E9%97%B4"
+    },
+    {
+      "method": "GET",
+      "path": "/api/overview",
+      "query": "?spaceId=space-growth",
+      "documentPath": "/polaris",
+      "documentQuery": "?space=%E7%94%A8%E6%88%B7%E5%A2%9E%E9%95%BF"
+    },
+    {
+      "method": "GET",
+      "path": "/api/businesses/biz-member/dashboard",
+      "query": "",
+      "documentPath": "/polaris",
+      "documentQuery": "?space=%E7%94%A8%E6%88%B7%E5%A2%9E%E9%95%BF"
+    },
+    {
+      "method": "GET",
+      "path": "/api/businesses/biz-marketing/dashboard",
+      "query": "",
+      "documentPath": "/polaris",
+      "documentQuery": "?space=%E7%94%A8%E6%88%B7%E5%A2%9E%E9%95%BF"
+    },
+    {
+      "method": "GET",
+      "path": "/api/meta",
+      "query": "",
+      "documentPath": "/polaris",
+      "documentQuery": "?space=%E7%94%A8%E6%88%B7%E5%A2%9E%E9%95%BF&spaceId=space-duplicate-first-test-only"
+    },
+    {
+      "method": "GET",
+      "path": "/api/overview",
+      "query": "?spaceId=space-duplicate-first-test-only",
+      "documentPath": "/polaris",
+      "documentQuery": "?space=%E9%87%8D%E5%90%8D%E7%A9%BA%E9%97%B4+URL+%E6%B5%8B%E8%AF%95&spaceId=space-duplicate-first-test-only"
+    },
+    {
+      "method": "GET",
+      "path": "/api/meta",
+      "query": "",
+      "documentPath": "/polaris",
+      "documentQuery": "?space=%E9%87%8D%E5%90%8D%E7%A9%BA%E9%97%B4+URL+%E6%B5%8B%E8%AF%95&spaceId=space-duplicate-first-test-only"
+    },
+    {
+      "method": "GET",
+      "path": "/api/overview",
+      "query": "?spaceId=space-duplicate-first-test-only",
+      "documentPath": "/polaris",
+      "documentQuery": "?space=%E9%87%8D%E5%90%8D%E7%A9%BA%E9%97%B4+URL+%E6%B5%8B%E8%AF%95&spaceId=space-duplicate-first-test-only"
+    },
+    {
+      "method": "GET",
+      "path": "/api/overview",
+      "query": "?spaceId=space-duplicate-second-test-only",
+      "documentPath": "/polaris",
+      "documentQuery": "?space=%E9%87%8D%E5%90%8D%E7%A9%BA%E9%97%B4+URL+%E6%B5%8B%E8%AF%95&spaceId=space-duplicate-second-test-only"
+    },
+    {
+      "method": "GET",
+      "path": "/api/meta",
+      "query": "",
+      "documentPath": "/polaris",
+      "documentQuery": "?space=%E9%87%8D%E5%90%8D%E7%A9%BA%E9%97%B4+URL+%E6%B5%8B%E8%AF%95&spaceId=space-duplicate-second-test-only"
+    },
+    {
+      "method": "GET",
+      "path": "/api/overview",
+      "query": "?spaceId=space-duplicate-second-test-only",
+      "documentPath": "/polaris",
+      "documentQuery": "?space=%E9%87%8D%E5%90%8D%E7%A9%BA%E9%97%B4+URL+%E6%B5%8B%E8%AF%95&spaceId=space-duplicate-second-test-only"
+    },
+    {
+      "method": "GET",
+      "path": "/api/meta",
+      "query": "",
+      "documentPath": "/polaris",
+      "documentQuery": "?space=%E9%87%8D%E5%90%8D%E7%A9%BA%E9%97%B4+URL+%E6%B5%8B%E8%AF%95"
+    },
+    {
+      "method": "GET",
+      "path": "/api/overview",
+      "query": "?spaceId=space-duplicate-first-test-only",
+      "documentPath": "/polaris",
+      "documentQuery": "?space=%E9%87%8D%E5%90%8D%E7%A9%BA%E9%97%B4+URL+%E6%B5%8B%E8%AF%95&spaceId=space-duplicate-first-test-only"
+    },
+    {
+      "method": "GET",
+      "path": "/api/meta",
+      "query": "",
+      "documentPath": "/polaris",
+      "documentQuery": "?space=URL_TEST_UNKNOWN_SPACE"
+    },
+    {
+      "method": "GET",
+      "path": "/api/meta",
+      "query": "",
+      "documentPath": "/polaris",
+      "documentQuery": "?space="
+    },
+    {
+      "method": "GET",
+      "path": "/api/meta",
+      "query": "",
+      "documentPath": "/polaris",
+      "documentQuery": "?space"
+    },
+    {
+      "method": "GET",
+      "path": "/api/meta",
+      "query": "",
+      "documentPath": "/polaris",
+      "documentQuery": "?space=%E7%94%A8%E6%88%B7%E5%A2%9E%E9%95%BF&space=%E6%A0%B8%E5%BF%83%E4%BA%A4%E6%98%93"
+    },
+    {
+      "method": "GET",
+      "path": "/api/meta",
+      "query": "",
+      "documentPath": "/polaris",
+      "documentQuery": "?space=%E7%94%A8%E6%88%B7%E5%A2%9E%E9%95%BF&space=%E7%94%A8%E6%88%B7%E5%A2%9E%E9%95%BF"
+    },
+    {
+      "method": "GET",
+      "path": "/api/meta",
+      "query": "",
+      "documentPath": "/polaris",
+      "documentQuery": "?spaceId=space-url-test-unknown&space=%E7%94%A8%E6%88%B7%E5%A2%9E%E9%95%BF"
+    },
+    {
+      "method": "GET",
+      "path": "/api/meta",
+      "query": "",
+      "documentPath": "/polaris",
+      "documentQuery": "?spaceId=space-growth&spaceId=space-growth"
+    },
+    {
+      "method": "GET",
+      "path": "/api/meta",
+      "query": "",
+      "documentPath": "/polaris",
+      "documentQuery": "?spaceId="
+    },
+    {
+      "method": "GET",
+      "path": "/api/meta",
+      "query": "",
+      "documentPath": "/polaris",
+      "documentQuery": "?space=%E9%BB%98%E8%AE%A4%E7%A9%BA%E9%97%B4"
+    },
+    {
+      "method": "GET",
+      "path": "/api/overview",
+      "query": "?spaceId=space-growth",
+      "documentPath": "/polaris",
+      "documentQuery": "?space=%E7%94%A8%E6%88%B7%E5%A2%9E%E9%95%BF"
+    },
+    {
+      "method": "GET",
+      "path": "/api/businesses/biz-member/dashboard",
+      "query": "",
+      "documentPath": "/polaris",
+      "documentQuery": "?space=%E7%94%A8%E6%88%B7%E5%A2%9E%E9%95%BF"
+    },
+    {
+      "method": "GET",
+      "path": "/api/businesses/biz-marketing/dashboard",
+      "query": "",
+      "documentPath": "/polaris",
+      "documentQuery": "?space=%E7%94%A8%E6%88%B7%E5%A2%9E%E9%95%BF"
+    },
+    {
+      "method": "GET",
+      "path": "/api/meta",
+      "query": "",
+      "documentPath": "/polaris",
+      "documentQuery": "?spaceId=space-growth&space=URL_TEST_UNKNOWN_SPACE&search=kept"
+    },
+    {
+      "method": "GET",
+      "path": "/api/overview",
+      "query": "?spaceId=space-growth",
+      "documentPath": "/polaris",
+      "documentQuery": "?space=%E7%94%A8%E6%88%B7%E5%A2%9E%E9%95%BF&search=kept"
+    },
+    {
+      "method": "GET",
+      "path": "/api/businesses/biz-member/dashboard",
+      "query": "",
+      "documentPath": "/polaris",
+      "documentQuery": "?space=%E7%94%A8%E6%88%B7%E5%A2%9E%E9%95%BF&search=kept"
+    },
+    {
+      "method": "GET",
+      "path": "/api/businesses/biz-marketing/dashboard",
+      "query": "",
+      "documentPath": "/polaris",
+      "documentQuery": "?space=%E7%94%A8%E6%88%B7%E5%A2%9E%E9%95%BF&search=kept"
+    },
+    {
+      "method": "GET",
+      "path": "/api/meta",
+      "query": "",
+      "documentPath": "/polaris",
+      "documentQuery": "?space=%E7%94%A8%E6%88%B7%E5%A2%9E%E9%95%BF&search=kept"
+    },
+    {
+      "method": "GET",
+      "path": "/api/overview",
+      "query": "?spaceId=space-growth",
+      "documentPath": "/polaris",
+      "documentQuery": "?space=%E7%94%A8%E6%88%B7%E5%A2%9E%E9%95%BF&search=kept"
+    },
+    {
+      "method": "GET",
+      "path": "/api/businesses/biz-member/dashboard",
+      "query": "",
+      "documentPath": "/polaris",
+      "documentQuery": "?space=%E7%94%A8%E6%88%B7%E5%A2%9E%E9%95%BF&search=kept"
+    },
+    {
+      "method": "GET",
+      "path": "/api/businesses/biz-marketing/dashboard",
+      "query": "",
+      "documentPath": "/polaris",
+      "documentQuery": "?space=%E7%94%A8%E6%88%B7%E5%A2%9E%E9%95%BF&search=kept"
+    },
+    {
+      "method": "GET",
+      "path": "/api/meta",
+      "query": "",
+      "documentPath": "/polaris/n/biz-member",
+      "documentQuery": ""
+    },
+    {
+      "method": "GET",
+      "path": "/api/businesses/biz-member",
+      "query": "",
+      "documentPath": "/polaris/n/biz-member",
+      "documentQuery": ""
+    },
+    {
+      "method": "GET",
+      "path": "/api/businesses/biz-member",
+      "query": "",
+      "documentPath": "/polaris/n/biz-member",
+      "documentQuery": "?space=%E7%94%A8%E6%88%B7%E5%A2%9E%E9%95%BF"
+    },
+    {
+      "method": "GET",
+      "path": "/api/businesses/biz-member/dashboard",
+      "query": "?from=2026-10-18T14%3A53%3A00.000Z&to=2026-10-19T02%3A53%3A00.000Z&aggregation=avg&comparison=none",
+      "documentPath": "/polaris/n/biz-member",
+      "documentQuery": "?space=%E7%94%A8%E6%88%B7%E5%A2%9E%E9%95%BF"
+    },
+    {
+      "method": "GET",
+      "path": "/api/meta",
+      "query": "",
+      "documentPath": "/polaris/n/biz-member",
+      "documentQuery": "?space=%E7%94%A8%E6%88%B7%E5%A2%9E%E9%95%BF"
+    },
+    {
+      "method": "GET",
+      "path": "/api/businesses/biz-member",
+      "query": "",
+      "documentPath": "/polaris/n/biz-member",
+      "documentQuery": "?space=%E7%94%A8%E6%88%B7%E5%A2%9E%E9%95%BF"
+    },
+    {
+      "method": "GET",
+      "path": "/api/businesses/biz-member/dashboard",
+      "query": "?from=2026-10-18T14%3A53%3A00.000Z&to=2026-10-19T02%3A53%3A00.000Z&aggregation=avg&comparison=none",
+      "documentPath": "/polaris/n/biz-member",
+      "documentQuery": "?space=%E7%94%A8%E6%88%B7%E5%A2%9E%E9%95%BF"
+    },
+    {
+      "method": "GET",
+      "path": "/api/meta",
+      "query": "",
+      "documentPath": "/polaris/n/biz-member",
+      "documentQuery": ""
+    },
+    {
+      "method": "GET",
+      "path": "/api/businesses/biz-member",
+      "query": "",
+      "documentPath": "/polaris/n/biz-member",
+      "documentQuery": ""
+    },
+    {
+      "method": "GET",
+      "path": "/api/indicators",
+      "query": "?spaceId=space-default&page=1&pageSize=10",
+      "documentPath": "/polaris/indicator",
+      "documentQuery": "?space=%E6%A0%B8%E5%BF%83%E4%BA%A4%E6%98%93"
+    },
+    {
+      "method": "GET",
+      "path": "/api/overview",
+      "query": "?spaceId=space-default",
+      "documentPath": "/polaris/indicator",
+      "documentQuery": "?space=%E6%A0%B8%E5%BF%83%E4%BA%A4%E6%98%93"
+    },
+    {
+      "method": "GET",
+      "path": "/api/meta",
+      "query": "",
+      "documentPath": "/polaris",
+      "documentQuery": "?space=%E7%94%A8%E6%88%B7%E5%A2%9E%E9%95%BF"
+    },
+    {
+      "method": "GET",
+      "path": "/api/overview",
+      "query": "?spaceId=space-growth",
+      "documentPath": "/polaris",
+      "documentQuery": "?space=%E7%94%A8%E6%88%B7%E5%A2%9E%E9%95%BF"
+    },
+    {
+      "method": "GET",
+      "path": "/api/businesses/biz-member/dashboard",
+      "query": "",
+      "documentPath": "/polaris",
+      "documentQuery": "?space=%E7%94%A8%E6%88%B7%E5%A2%9E%E9%95%BF"
+    },
+    {
+      "method": "GET",
+      "path": "/api/businesses/biz-marketing/dashboard",
+      "query": "",
+      "documentPath": "/polaris",
+      "documentQuery": "?space=%E7%94%A8%E6%88%B7%E5%A2%9E%E9%95%BF"
+    },
+    {
+      "method": "GET",
+      "path": "/api/meta",
+      "query": "",
+      "documentPath": "/polaris/n/biz-member",
+      "documentQuery": "?space=%E7%94%A8%E6%88%B7%E5%A2%9E%E9%95%BF"
+    },
+    {
+      "method": "GET",
+      "path": "/api/businesses/biz-member",
+      "query": "",
+      "documentPath": "/polaris/n/biz-member",
+      "documentQuery": "?space=%E7%94%A8%E6%88%B7%E5%A2%9E%E9%95%BF"
+    },
+    {
+      "method": "GET",
+      "path": "/api/businesses/biz-member/dashboard",
+      "query": "?from=2026-10-18T14%3A53%3A00.000Z&to=2026-10-19T02%3A53%3A00.000Z&aggregation=avg&comparison=none",
+      "documentPath": "/polaris/n/biz-member",
+      "documentQuery": "?space=%E7%94%A8%E6%88%B7%E5%A2%9E%E9%95%BF"
+    },
+    {
+      "method": "GET",
+      "path": "/api/meta",
+      "query": "",
+      "documentPath": "/polaris/indicator",
+      "documentQuery": "?space=%E7%94%A8%E6%88%B7%E5%A2%9E%E9%95%BF"
+    },
+    {
+      "method": "GET",
+      "path": "/api/indicators",
+      "query": "?spaceId=space-growth&page=1&pageSize=10",
+      "documentPath": "/polaris/indicator",
+      "documentQuery": "?space=%E7%94%A8%E6%88%B7%E5%A2%9E%E9%95%BF"
+    },
+    {
+      "method": "GET",
+      "path": "/api/overview",
+      "query": "?spaceId=space-growth",
+      "documentPath": "/polaris/indicator",
+      "documentQuery": "?space=%E7%94%A8%E6%88%B7%E5%A2%9E%E9%95%BF"
+    },
+    {
+      "method": "GET",
+      "path": "/api/meta",
+      "query": "",
+      "documentPath": "/polaris/statuspage",
+      "documentQuery": "?space=%E7%94%A8%E6%88%B7%E5%A2%9E%E9%95%BF"
+    },
+    {
+      "method": "GET",
+      "path": "/api/statuspage",
+      "query": "",
+      "documentPath": "/polaris/statuspage",
+      "documentQuery": "?space=%E7%94%A8%E6%88%B7%E5%A2%9E%E9%95%BF"
+    },
+    {
+      "method": "GET",
+      "path": "/api/meta",
+      "query": "",
+      "documentPath": "/polaris/stability",
+      "documentQuery": "?space=%E7%94%A8%E6%88%B7%E5%A2%9E%E9%95%BF"
+    },
+    {
+      "method": "GET",
+      "path": "/api/stability",
+      "query": "?spaceId=space-growth&year=2026&level=all&period=year&anchor=2026-10-19",
+      "documentPath": "/polaris/stability",
+      "documentQuery": "?space=%E7%94%A8%E6%88%B7%E5%A2%9E%E9%95%BF"
+    },
+    {
+      "method": "GET",
+      "path": "/api/meta",
+      "query": "",
+      "documentPath": "/polaris/screen",
+      "documentQuery": "?space=%E7%94%A8%E6%88%B7%E5%A2%9E%E9%95%BF"
+    },
+    {
+      "method": "GET",
+      "path": "/api/screens",
+      "query": "?spaceId=space-growth&page=1&pageSize=9",
+      "documentPath": "/polaris/screen",
+      "documentQuery": "?space=%E7%94%A8%E6%88%B7%E5%A2%9E%E9%95%BF"
+    },
+    {
+      "method": "GET",
+      "path": "/api/overview",
+      "query": "?spaceId=space-growth",
+      "documentPath": "/polaris/screen",
+      "documentQuery": "?space=%E7%94%A8%E6%88%B7%E5%A2%9E%E9%95%BF"
+    },
+    {
+      "method": "GET",
+      "path": "/api/meta",
+      "query": "",
+      "documentPath": "/polaris",
+      "documentQuery": "?space=UNKNOWN_SPACE"
+    },
+    {
+      "method": "GET",
+      "path": "/api/meta",
+      "query": "",
+      "documentPath": "/polaris",
+      "documentQuery": "?space=UNKNOWN_SPACE"
+    },
+    {
+      "method": "GET",
+      "path": "/api/indicators",
+      "query": "?spaceId=space-default&page=1&pageSize=10",
+      "documentPath": "/polaris/indicator",
+      "documentQuery": "?space=%E6%A0%B8%E5%BF%83%E4%BA%A4%E6%98%93"
+    },
+    {
+      "method": "GET",
+      "path": "/api/overview",
+      "query": "?spaceId=space-default",
+      "documentPath": "/polaris/indicator",
+      "documentQuery": "?space=%E6%A0%B8%E5%BF%83%E4%BA%A4%E6%98%93"
+    },
+    {
+      "method": "GET",
+      "path": "/api/meta",
+      "query": "",
+      "documentPath": "/polaris/n/biz-checkout",
+      "documentQuery": "?space=%E7%94%A8%E6%88%B7%E5%A2%9E%E9%95%BF"
+    },
+    {
+      "method": "GET",
+      "path": "/api/businesses/biz-checkout",
+      "query": "",
+      "documentPath": "/polaris/n/biz-checkout",
+      "documentQuery": "?space=%E7%94%A8%E6%88%B7%E5%A2%9E%E9%95%BF"
+    },
+    {
+      "method": "GET",
+      "path": "/api/overview",
+      "query": "?spaceId=space-default",
+      "documentPath": "/polaris",
+      "documentQuery": "?space=%E6%A0%B8%E5%BF%83%E4%BA%A4%E6%98%93"
+    },
+    {
+      "method": "GET",
+      "path": "/api/businesses/biz-checkout/dashboard",
+      "query": "",
+      "documentPath": "/polaris",
+      "documentQuery": "?space=%E6%A0%B8%E5%BF%83%E4%BA%A4%E6%98%93"
+    },
+    {
+      "method": "GET",
+      "path": "/api/businesses/biz-payment/dashboard",
+      "query": "",
+      "documentPath": "/polaris",
+      "documentQuery": "?space=%E6%A0%B8%E5%BF%83%E4%BA%A4%E6%98%93"
+    },
+    {
+      "method": "GET",
+      "path": "/api/businesses/biz-checkout",
+      "query": "",
+      "documentPath": "/polaris/n/biz-checkout",
+      "documentQuery": "?space=%E6%A0%B8%E5%BF%83%E4%BA%A4%E6%98%93"
+    },
+    {
+      "method": "GET",
+      "path": "/api/businesses/biz-checkout/dashboard",
+      "query": "?from=2026-10-18T14%3A53%3A00.000Z&to=2026-10-19T02%3A53%3A00.000Z&aggregation=avg&comparison=none",
+      "documentPath": "/polaris/n/biz-checkout",
+      "documentQuery": "?space=%E6%A0%B8%E5%BF%83%E4%BA%A4%E6%98%93"
+    },
+    {
+      "method": "GET",
+      "path": "/api/indicators",
+      "query": "?spaceId=space-default&businessId=biz-checkout&page=1&pageSize=10",
+      "documentPath": "/polaris/indicator",
+      "documentQuery": "?businessId=biz-checkout&space=%E6%A0%B8%E5%BF%83%E4%BA%A4%E6%98%93"
+    },
+    {
+      "method": "GET",
+      "path": "/api/overview",
+      "query": "?spaceId=space-default",
+      "documentPath": "/polaris/indicator",
+      "documentQuery": "?businessId=biz-checkout&space=%E6%A0%B8%E5%BF%83%E4%BA%A4%E6%98%93"
+    },
+    {
+      "method": "GET",
+      "path": "/api/indicators",
+      "query": "?spaceId=space-growth&page=1&pageSize=10",
+      "documentPath": "/polaris/indicator",
+      "documentQuery": "?space=%E7%94%A8%E6%88%B7%E5%A2%9E%E9%95%BF"
+    },
+    {
+      "method": "GET",
+      "path": "/api/overview",
+      "query": "?spaceId=space-growth",
+      "documentPath": "/polaris/indicator",
+      "documentQuery": "?space=%E7%94%A8%E6%88%B7%E5%A2%9E%E9%95%BF"
+    },
+    {
+      "method": "GET",
+      "path": "/api/meta",
+      "query": "",
+      "documentPath": "/polaris/statuspage",
+      "documentQuery": "?space=%E7%94%A8%E6%88%B7%E5%A2%9E%E9%95%BF"
+    },
+    {
+      "method": "GET",
+      "path": "/api/statuspage",
+      "query": "",
+      "documentPath": "/polaris/statuspage",
+      "documentQuery": "?space=%E7%94%A8%E6%88%B7%E5%A2%9E%E9%95%BF"
+    },
+    {
+      "method": "GET",
+      "path": "/api/businesses/biz-checkout",
+      "query": "",
+      "documentPath": "/polaris/n/biz-checkout",
+      "documentQuery": "?space=%E6%A0%B8%E5%BF%83%E4%BA%A4%E6%98%93"
+    },
+    {
+      "method": "GET",
+      "path": "/api/businesses/biz-checkout/dashboard",
+      "query": "?from=2026-10-18T14%3A53%3A00.000Z&to=2026-10-19T02%3A53%3A00.000Z&aggregation=avg&comparison=none",
+      "documentPath": "/polaris/n/biz-checkout",
+      "documentQuery": "?space=%E6%A0%B8%E5%BF%83%E4%BA%A4%E6%98%93"
+    },
+    {
+      "method": "GET",
+      "path": "/api/meta",
+      "query": "",
+      "documentPath": "/polaris",
+      "documentQuery": "?space=%E7%94%A8%E6%88%B7%E5%A2%9E%E9%95%BF"
+    },
+    {
+      "method": "GET",
+      "path": "/api/overview",
+      "query": "?spaceId=space-growth",
+      "documentPath": "/polaris",
+      "documentQuery": "?space=%E7%94%A8%E6%88%B7%E5%A2%9E%E9%95%BF"
+    },
+    {
+      "method": "GET",
+      "path": "/api/businesses/biz-member/dashboard",
+      "query": "",
+      "documentPath": "/polaris",
+      "documentQuery": "?space=%E7%94%A8%E6%88%B7%E5%A2%9E%E9%95%BF"
+    },
+    {
+      "method": "GET",
+      "path": "/api/businesses/biz-marketing/dashboard",
+      "query": "",
+      "documentPath": "/polaris",
+      "documentQuery": "?space=%E7%94%A8%E6%88%B7%E5%A2%9E%E9%95%BF"
+    },
+    {
+      "method": "GET",
+      "path": "/api/overview",
+      "query": "?spaceId=space-growth",
+      "documentPath": "/polaris",
+      "documentQuery": "?space=%E7%94%A8%E6%88%B7%E5%A2%9E%E9%95%BF"
+    },
+    {
+      "method": "GET",
+      "path": "/api/overview",
+      "query": "?spaceId=space-default",
+      "documentPath": "/polaris",
+      "documentQuery": "?space=%E6%A0%B8%E5%BF%83%E4%BA%A4%E6%98%93"
+    },
+    {
+      "method": "GET",
+      "path": "/api/businesses/biz-checkout/dashboard",
+      "query": "",
+      "documentPath": "/polaris",
+      "documentQuery": "?space=%E6%A0%B8%E5%BF%83%E4%BA%A4%E6%98%93"
+    },
+    {
+      "method": "GET",
+      "path": "/api/businesses/biz-payment/dashboard",
+      "query": "",
+      "documentPath": "/polaris",
+      "documentQuery": "?space=%E6%A0%B8%E5%BF%83%E4%BA%A4%E6%98%93"
+    }
+  ]
+}

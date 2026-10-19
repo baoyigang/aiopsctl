@@ -2,7 +2,7 @@
 
 一个可运行的原创业务可观测工作台：.NET 10 + Vue 3 / TypeScript + SQLite。产品名、组件、图标、SVG图表和业务代码为本次原创实现；默认使用隔离合成数据，没有接入真实 Elasticsearch 或 Oracle。
 
-规格来自父线程在合法登录浏览器中的**只读文字观察**。REA fork 虽已另行安装并验证 CLI/CDP，但其环境访问演示站被代理403拒绝，没有得到成功的页面分析证据。本项目没有复制 Flashcat 受保护源码、商标或素材；没有参考站截图，视觉设计依据文字规格独立完成，不声称像素级还原。所有编辑、导入导出及持久化行为是独立设计，没有在参考站执行写操作。
+规格来自父线程在合法登录浏览器中的**只读文字观察**。2026-10-17 的 REA 环境曾在代理 CONNECT 阶段收到403；2026-10-19 新环境正常代理访问已恢复，固定 fork 6.4.0 完成公开登录页被动观察和公开空间逻辑片段的静态分析，仍未取得已登录内页实测。本项目没有复制 Flashcat 受保护源码、商标或素材；视觉设计依据文字规格独立完成，不声称像素级还原。所有编辑、导入导出及持久化行为是独立设计，没有在参考站执行写操作。
 
 ## 启动
 
@@ -23,8 +23,10 @@ bash scripts/dev.sh
 ```sh
 export DOTNET_BIN=/workspace/.tools/dotnet/dotnet
 export DOTNET_CLI_HOME=/workspace/.tools/dotnet-home
-export NUGET_PACKAGES=/workspace/.tools/nuget
+export NUGET_PACKAGES=/workspace/.tools/nuget-packages
 export XDG_DATA_HOME=/workspace/.tools/xdg-data
+export XDG_RUNTIME_DIR=/workspace/.tools/xdg-runtime
+install -d -m 700 "$XDG_RUNTIME_DIR"
 export TMPDIR=/workspace/.tools/tmp
 export DOTNET_CLI_TELEMETRY_OPTOUT=1
 export DOTNET_GENERATE_ASPNET_CERTIFICATE=false
@@ -54,6 +56,8 @@ dotnet Hengchuan.Api.dll
 - `/polaris/screen`：搜索分页选择、大屏新建编辑删除、严格UTF8/JSON格式校验导入导出、独立面板聚合/图形设置与预览。导入仅接受本项目格式`hengchuan-screen` version1，不导入参考站私有格式。
 - 所有配置与事件存SQLite；revision乐观并发、原子批量及引用验证、失败回滚、输入边界与JSON错误、取消支持。演示操作者固定显示`demo-operator`，不是账号或认证。
 
+六页支持 URL `space` 名称、选择器与浏览器历史同步；未知空间明确报错并隐藏页面，不回退显示其他空间。规则和测试见 [URL 空间选择](docs/URL-SPACE.md)。本地合成空间名称由元数据确定；参考站的“默认空间”不是本地空间别名。
+
 ## 统计口径
 
 全部UTC，窗口采用半开区间`[from,to)`。首页最近30天滚动窗口，卡片微趋势是最近12小时合成时序；稳定性采用选定自然年/月/ISO周/日，与所选年度相交并截至当前。两者窗口不同，不应强行统一数值。
@@ -74,11 +78,13 @@ Oracle仅显示未接入的来源扩展状态，没有访问数据库、日志�
 
 ```sh
 bash scripts/check.sh
+npm --prefix frontend test
 node tests/api-acceptance.mjs
 # 仅浏览器验收需要此测试依赖，应用运行不需要
 npm ci --prefix tests
 # Chromium需安装，默认读取CHROMIUM_PATH或/usr/bin/chromium
 node tests/browser-acceptance.mjs
+node tests/url-space-acceptance.mjs
 ```
 
 API/浏览器测试需先启动本地应用；URL及测试环境详见 [tests/README.md](tests/README.md)。本云端浏览器需经执行器自动审核允许正常用户命名空间，测试显式保留Chromium sandbox，不使用`--no-sandbox`，不修改SUID helper/内核权限；新建测试profile，不读取已有会话。证据适用范围见 [测试矩阵](tests/MATRIX.md)、[独立复核](docs/INDEPENDENT-REVIEW.md)。

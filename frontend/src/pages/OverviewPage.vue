@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import { computed, reactive, ref, watch } from 'vue';
-import { RouterLink } from 'vue-router';
+import { RouterLink, useRouter } from 'vue-router';
 import { api } from '../api';
-import { app, loadMeta, notify, num, params, time } from '../context';
+import { app, loadMeta, notify, num, params, spaceRoute, time } from '../context';
 import type {
   BusinessInput,
   BusinessSummary,
@@ -17,6 +17,7 @@ import { useAutoRefresh } from '../composables/useAutoRefresh';
 import EmptyState from '../components/EmptyState.vue';
 import FormDialog from '../components/FormDialog.vue';
 import MicroTrend from '../components/charts/MicroTrend.vue';
+const router = useRouter();
 const result = ref<Overview | null>(null),
   search = ref(''),
   trends = ref<Record<string, number[]>>({});
@@ -209,7 +210,7 @@ async function saveSpace() {
     async (value) => {
       modal.value = null;
       await loadMeta();
-      app.spaceId = value.data.id;
+      await router.push(spaceRoute('/polaris', value.data.id));
       notify('工作空间已创建');
     },
   );
@@ -361,7 +362,7 @@ async function saveSpace() {
         <tbody>
           <tr v-for="item in result.items" :key="item.id" :data-testid="`business-card-${item.id}`">
             <td>
-              <RouterLink class="primary-cell" :to="`/polaris/n/${encodeURIComponent(item.id)}`">{{
+              <RouterLink class="primary-cell" :to="spaceRoute(`/polaris/n/${encodeURIComponent(item.id)}`)">{{
                 item.name
               }}</RouterLink>
               <div class="sub-cell">{{ item.service }} · {{ item.environment }}</div>
@@ -402,7 +403,7 @@ async function saveSpace() {
                 >
                   删除</button
                 ><RouterLink
-                  :to="`/polaris/n/${encodeURIComponent(item.id)}`"
+                  :to="spaceRoute(`/polaris/n/${encodeURIComponent(item.id)}`)"
                   :data-testid="`business-drill-${item.id}`"
                   >进入 →</RouterLink
                 >
@@ -423,7 +424,7 @@ async function saveSpace() {
       <div class="business-card-head">
         <span class="business-icon">{{ ['◈', '▧', '⌘', '◷'][index % 4] }}</span>
         <div>
-          <RouterLink :to="`/polaris/n/${encodeURIComponent(item.id)}`"
+          <RouterLink :to="spaceRoute(`/polaris/n/${encodeURIComponent(item.id)}`)"
             ><h2>{{ item.name }}</h2></RouterLink
           ><small>{{ item.service }} · {{ item.environment }} · 负责人 {{ item.owner }}</small>
         </div>
@@ -515,7 +516,7 @@ async function saveSpace() {
           >
             删除</button
           ><RouterLink
-            :to="`/polaris/n/${encodeURIComponent(item.id)}`"
+            :to="spaceRoute(`/polaris/n/${encodeURIComponent(item.id)}`)"
             :data-testid="`business-drill-${item.id}`"
             >进入业务 →</RouterLink
           >

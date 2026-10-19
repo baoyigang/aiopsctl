@@ -2,7 +2,7 @@
 import { computed, ref, watch } from 'vue';
 import { RouterLink } from 'vue-router';
 import { api } from '../api';
-import { app, num, params, time } from '../context';
+import { app, num, params, spaceRoute, time } from '../context';
 import type { EntityResult, IncidentEvent, Stability } from '../types';
 import { useRequest } from '../composables/useRequest';
 import EmptyState from '../components/EmptyState.vue';
@@ -176,7 +176,7 @@ function duration(event: IncidentEvent) {
           <tbody>
             <tr v-for="item in result.items" :key="item.id">
               <td>
-                <RouterLink :to="`/polaris/n/${item.id}`" class="primary-cell">{{
+                <RouterLink :to="spaceRoute(`/polaris/n/${encodeURIComponent(item.id)}`)" class="primary-cell">{{
                   item.name
                 }}</RouterLink>
                 <div class="sub-cell">{{ item.owner }}</div>

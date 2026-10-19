@@ -9,6 +9,7 @@
 ```bash
 node tests/api-acceptance.mjs
 node tests/browser-acceptance.mjs
+node tests/url-space-acceptance.mjs
 ```
 
 本云端已有 Playwright Core，可直接从 `/workspace/rea-tool/node_modules/playwright-core` 使用，不运行 REA 或其 setup/MCP。其他开发环境可先 `npm --prefix tests ci`；版本锁定为 `1.58.2`。`PLAYWRIGHT_CORE_DIR` 可指定已安装模块目录，`CHROMIUM_PATH` 默认 `/usr/bin/chromium`。
@@ -16,6 +17,8 @@ node tests/browser-acceptance.mjs
 浏览器脚本显式启用 Chromium sandbox，只禁用 SUID helper，使用新的临时上下文、独立 XDG 目录和最小环境变量；不连接 CDP 9222 或任何其他会话。本云端默认执行器禁止 namespace sandbox，已用平台批准的普通用户上下文实测可启动，正式浏览器验收也必须保持该上下文，不使用 `--no-sandbox`。
 
 可用 `HENGCHUAN_API`、`HENGCHUAN_WEB` 覆盖回环端点。合并发布模式可将两者均指向 `http://127.0.0.1:5080`。API 与浏览器测试按顺序运行；两者均验证 revision，避免相互并发写入干扰。
+
+URL 空间专项只读本地合成 API，特殊字符/重名空间通过 GET 响应替身提供；结果为 `tests/evidence/url-space-results.json`。两套浏览器脚本均支持 `HENGCHUAN_EVIDENCE_DIR=/absolute/evidence/path`，用于保留新一轮证据而不覆盖旧记录。URL 参数、未知空间处理和回归范围见 [URL 空间选择](../docs/URL-SPACE.md)。纯函数测试使用 `npm --prefix frontend test`，不需运行服务或浏览器。
 
 ## 证据与覆盖
 

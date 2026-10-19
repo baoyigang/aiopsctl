@@ -1,0 +1,85 @@
+{
+  "recorded_at_utc": "2026-10-19T02:54:33.051980+00:00",
+  "base_commit": "8c6b77a2a5e39adcd079528cb798761ea3cc22a8",
+  "scope": "URL-space fix, independent local synthetic implementation. No remote demo authentication or writes. No production/RBAC acceptance.",
+  "frontend": {
+    "unit_tests": {
+      "passed": 17,
+      "total": 17,
+      "exit_code": 0,
+      "command": "npm --prefix frontend test"
+    },
+    "typecheck": {
+      "exit_code": 0,
+      "command": "npm --prefix frontend run typecheck"
+    },
+    "production_build": {
+      "exit_code": 0,
+      "command": "npm --prefix frontend run build",
+      "assets": {
+        "assets/index-BdQ2LQiC.css": "ae802d63edef0fa8071942fbd8123c08beb286a7f4f048f57782172c86526cee",
+        "assets/index-Bjbcdmm1.js": "0efe6a83309966a8acca38b3db57901ad6a130d6175ec4b18b166daf7dab1f8a"
+      }
+    }
+  },
+  "browser_url_space": {
+    "passed": 20,
+    "total": 20,
+    "page_errors": [],
+    "external_origins": [],
+    "sandbox": true
+  },
+  "browser_six_page_regression": {
+    "passed": 11,
+    "total": 11,
+    "page_errors": [],
+    "external_origins": [],
+    "sandbox": true
+  },
+  "backend": {
+    "sdk": "10.0.402",
+    "runtime": "10.0.13",
+    "locked_restore_exit_code": 0,
+    "test_exit_code": 0,
+    "trx_counters": {
+      "total": "157",
+      "executed": "157",
+      "passed": "157",
+      "failed": "0",
+      "error": "0",
+      "timeout": "0",
+      "aborted": "0",
+      "inconclusive": "0",
+      "passedButRunAborted": "0",
+      "notRunnable": "0",
+      "notExecuted": "0",
+      "disconnected": "0",
+      "warning": "0",
+      "completed": "0",
+      "inProgress": "0",
+      "pending": "0"
+    },
+    "trx_sha256": "f41d30cd0c1fabacc8c1cfd6ceb9f865d2983e98e030e96faa46012d82cc37d3"
+  },
+  "source_sha256": {
+    "frontend/src/spaceQuery.ts": "ed3ac7d1c6e91c7f68a77a2d3cd4e0a279f0cd5bf1162eec878050d6b0f7fcf6",
+    "frontend/src/context.ts": "67ff4ed7f0f99f3b67270449d73d87592497fba544af2c37a0ebe75f22c0297d",
+    "frontend/src/main.ts": "ecd6ab0ea8da4ab4b8d4486ca5bc716fbb10eab5759a3f219eb7434d651fb8b6",
+    "frontend/src/App.vue": "06d75436a2f0f46a30f80185f1bce1d7bec67ecf92806485c4e3722f7bffa157",
+    "frontend/src/pages/BusinessPage.vue": "e6f92ba6872333d3a08e9a433803006a72ce96130b3cee56d45138f3472bb844",
+    "frontend/src/pages/OverviewPage.vue": "1ca9a9417d314ae630540ebf0e1acc46fcc1c99a00d0b46d2cfe8c4c919586b3",
+    "frontend/src/pages/StabilityPage.vue": "085df3a8b17fb7b88dc11ab6506a4ffd7af15bb9170fd5c124568f110ba066d5",
+    "frontend/src/pages/StatusPage.vue": "bebdc6964c4123baaf8708fbf1ad7ba6a0f9e7918b0b548cec0dfcbdd6ee7e71",
+    "frontend/tests/spaceQuery.test.mjs": "642d7f7c9c924b7856f6bcb14c9340c55b384a1c28331f549aa35679ee122847",
+    "tests/url-space-acceptance.mjs": "1fb525d65f9bdfa9f18c82b8620fadc44c73a26f4d0e20ce0573274b1e6a8a13"
+  },
+  "external_evidence_directory": "/workspace/rea-evidence-20261019/url-space-fix",
+  "notes": [
+    "Original 2026-10-17 results are unchanged. This run did not rerun the 12 API groups.",
+    "Initial regression wait assumed a queryless detail URL; corrected to assert pathname and exact space.",
+    "Initial URL test read a native select before its options loaded; corrected to await the option and retain strict value assertion.",
+    "Three independently reproduced issues (business filter, metadata retry gating, stale guard redirect) were fixed and covered by the final URL suite.",
+    "GET response mocks are declared in the URL suite for special names, duplicate names and metadata timing.",
+    "The final browser suites ran against local Vite5173 and API5080; no claim of current single-host Release browser acceptance."
+  ]
+}
